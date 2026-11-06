@@ -315,23 +315,26 @@ export function MiniStat({ label, value }: { label: ReactNode; value: ReactNode 
 // ----------------------------------------------------------------- feedback
 
 export function ProvenanceBar({
-  dates,
+  dates = [],
+  notes = [],
   onIrParaRessalvas,
   children,
 }: {
-  dates: string[];
+  /** datas do pleito; omitir deixa a faixa sem elas */
+  dates?: string[];
+  /** avisos curtos ao lado das datas, igualmente opcionais */
+  notes?: string[];
   onIrParaRessalvas: () => void;
   children?: ReactNode;
 }) {
   return (
     <div className="ag-provenance" role="note">
       <span className="ag-provenance__live">Dados oficiais do TSE e do IBGE</span>
-      {dates.map((d) => (
+      {[...dates, ...notes].map((d) => (
         <span key={d} className="ag-provenance__muted">
           {d}
         </span>
       ))}
-      <span className="ag-provenance__muted">nada estimado ou interpolado</span>
       <button type="button" className="ag-provenance__link" onClick={onIrParaRessalvas}>
         3 ressalvas &darr;
       </button>

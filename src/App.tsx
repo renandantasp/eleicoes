@@ -107,10 +107,7 @@ export default function App() {
 
   return (
     <div className="ag-root">
-      <ProvenanceBar
-        dates={[`1o turno ${meta.datas.turno1}`, `2o turno ${meta.datas.turno2}`]}
-        onIrParaRessalvas={irParaRessalvas}
-      >
+      <ProvenanceBar onIrParaRessalvas={irParaRessalvas}>
         <span className="tema-switch">
           <Segmented
             label="Tema"
