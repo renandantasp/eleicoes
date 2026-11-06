@@ -44,13 +44,29 @@ button {
 
 @media (max-width: 640px) {
   .faixa-pagina {
-    padding: 0 var(--ag-space-05);
+    padding: 0 var(--ag-space-07);
   }
   .ag-provenance {
-    padding-left: var(--ag-space-05);
-    padding-right: var(--ag-space-05);
-    gap: var(--ag-space-04);
+    padding-left: var(--ag-space-07);
+    padding-right: var(--ag-space-07);
+    gap: var(--ag-space-03) var(--ag-space-04);
     flex-wrap: wrap;
+  }
+  /*
+   * Na faixa de uma linha o link e empurrado para a direita por margin-left
+   * auto. Quebrada em duas, ele cai sozinho na segunda linha e esse empurrao
+   * o deixa boiando no meio: aqui ele encosta a esquerda e quem vai para a
+   * direita e o botao de tema.
+   */
+  .ag-provenance__link {
+    margin-left: 0;
+  }
+  .tema-botao {
+    margin-left: auto;
+  }
+  /* compensa a largura perdida para o padding, para as cinco abas caberem */
+  .ag-tabs {
+    gap: var(--ag-space-05);
   }
   /*
    * Com as datas sob cada aba a faixa mede 419px e a ultima aba fica fora
@@ -121,7 +137,12 @@ button {
 /* --------------------------------------------------------------- cabecalho */
 
 .cabecalho {
-  padding: var(--ag-space-09) 0 var(--ag-space-07);
+  /*
+   * padding-block, e nao o atalho de quatro lados: o elemento tambem leva a
+   * classe faixa-pagina, e um `padding` completo aqui venceria e zeraria a
+   * folga lateral dela - era por isso que o titulo encostava na borda.
+   */
+  padding-block: var(--ag-space-09) var(--ag-space-07);
   display: flex;
   flex-direction: column;
   gap: var(--ag-space-04);
@@ -848,7 +869,8 @@ button {
 }
 
 .rodape {
-  padding: var(--ag-space-07) 0 var(--ag-space-10);
+  /* mesmo caso do cabecalho: o atalho zeraria a folga lateral da faixa */
+  padding-block: var(--ag-space-07) var(--ag-space-10);
   font: 400 var(--ag-fs-mono) / 1.6 var(--ag-font-mono);
   color: var(--ag-text-helper);
 }
@@ -1043,4 +1065,41 @@ button {
   text-align: center;
   color: var(--ag-text-helper);
   font-size: var(--ag-fs-small);
+}
+
+/* ------------------------------------------------- ajustes finais: celular */
+
+/*
+ * Este bloco fica no fim de proposito: as regras que ele ajusta aparecem mais
+ * acima no arquivo e, com a mesma especificidade, a ultima e que vale.
+ */
+@media (max-width: 640px) {
+  /*
+   * O titulo em 44px toma duas linhas largas num telefone e empurra o resto
+   * para fora da primeira tela; com a folga lateral maior, o corpo menor
+   * tambem deixa a linha de texto com uma medida mais confortavel.
+   */
+  .cabecalho {
+    padding-block: var(--ag-space-08) var(--ag-space-06);
+  }
+
+  .cabecalho h1 {
+    font-size: 32px;
+  }
+
+  .cabecalho__lede {
+    font-size: 16px;
+  }
+
+  /* a folga da faixa ja afasta o bloco da borda; somar os 32px de dentro
+     jogaria o texto longe demais para o centro */
+  .sobre {
+    padding: var(--ag-space-06);
+  }
+
+  /* na faixa quebrada em duas linhas, o link encosta a esquerda e quem vai
+     para a direita e o botao de tema */
+  .tema-botao {
+    margin-left: auto;
+  }
 }
