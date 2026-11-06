@@ -1,0 +1,11 @@
+/* Grade - design system de "Araraquara em dois turnos".
+   Copiado de design_guides/, com os caminhos de @import ajustados e as
+   fontes trocadas por self-host. Nao editar aqui: mudancas de sistema vao
+   em design_guides/ e sao recopiadas. Ajustes do app ficam em app.css. */
+@import "./tokens/fonts.css";
+@import "./tokens/colors.css";
+@import "./tokens/scales.css";
+@import "./tokens/typography.css";
+@import "./tokens/spacing.css";
+@import "./tokens/motion.css";
+@import "./components.css";

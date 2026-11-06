@@ -1,0 +1,19 @@
+:root{
+  --ag-font-sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ag-font-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --ag-weight-light:300;--ag-weight-regular:400;--ag-weight-medium:500;--ag-weight-semibold:600;
+
+  --ag-fs-display:44px;  --ag-lh-display:1.1;   /* título do site, Light */
+  --ag-fs-value-lg:26px; --ag-lh-value:1.15;    /* nome do bairro, valor de cartão, Light/Regular */
+  --ag-fs-value-md:22px;                        /* valor no tooltip, Light */
+  --ag-fs-lede:18px;     --ag-lh-lede:1.5;      /* frase do cabeçalho */
+  --ag-fs-heading:16px;                         /* título de seção, Semibold */
+  --ag-fs-tab:15px;                             /* abas, Semibold */
+  --ag-fs-body:14px;     --ag-lh-body:1.45;
+  --ag-fs-small:13px;                           /* tabela, painel */
+  --ag-fs-caption:12px;
+  --ag-fs-mono:11px;                            /* fonte, unidade, rótulos de seção em caixa alta */
+  --ag-fs-mono-xs:10.5px;                       /* intervalos da legenda, etiquetas */
+  --ag-tracking-label:.04em;
+  --ag-numeric:tabular-nums;
+}

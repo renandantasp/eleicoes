@@ -1,0 +1,4646 @@
+{
+ "SIMULADO": false,
+ "fonte": {
+  "orgao": "Tribunal Superior Eleitoral (TSE) - dados abertos",
+  "conjuntos": [
+   "Resultados / Votacao por secao eleitoral (votacao_secao_2026_SP)",
+   "Eleitorado / Locais de votacao (eleitorado_local_votacao_2026_SP)"
+  ],
+  "url": "https://dadosabertos.tse.jus.br",
+  "arquivo": "votos_br_araraquara.csv"
+ },
+ "metodo": "Votos somados por secao e agrupados pelo bairro do local de votacao, campo NM_BAIRRO publicado pelo TSE. Comparecimento = soma de todos os votos (nominais + brancos + nulos) da secao. Abstencao = eleitorado da secao (QT_ELEITOR_SECAO) menos comparecimento. Nenhum valor estimado ou interpolado.",
+ "ressalva": "O bairro e o do LOCAL DE VOTACAO, nao o da residencia do eleitor.",
+ "notaSecoesAgregadas": "2 das 604 secoes do cadastro sao do tipo 'Agregada' (52 eleitores) e nao recebem apuracao propria: seus eleitores votam na secao principal. Nas duas, a secao principal fica no mesmo local e no mesmo bairro, entao o eleitorado por bairro conta o cadastro completo sem deslocar eleitor entre bairros.",
+ "municipio": "ARARAQUARA",
+ "uf": "SP",
+ "codigoIbge": "3503208",
+ "pleito": "Eleicao presidencial 2026",
+ "extraidoEm": "2026-11-05",
+ "candidatos": [
+  {
+   "id": "luiz-inacio-lula-da-silva",
+   "nr": "13",
+   "nome": "LUIZ INÁCIO LULA DA SILVA",
+   "votos1": 56181,
+   "votos2": 68699
+  },
+  {
+   "id": "flavio-nantes-bolsonaro",
+   "nr": "22",
+   "nome": "FLAVIO NANTES BOLSONARO",
+   "votos1": 57432,
+   "votos2": 63218
+  },
+  {
+   "id": "augusto-jorge-cury",
+   "nr": "70",
+   "nome": "AUGUSTO JORGE CURY",
+   "votos1": 4143,
+   "votos2": 0
+  },
+  {
+   "id": "renan-antonio-ferreira-dos-santos",
+   "nr": "14",
+   "nome": "RENAN ANTONIO FERREIRA DOS SANTOS",
+   "votos1": 3963,
+   "votos2": 0
+  },
+  {
+   "id": "ronaldo-ramos-caiado",
+   "nr": "55",
+   "nome": "RONALDO RAMOS CAIADO",
+   "votos1": 2622,
+   "votos2": 0
+  },
+  {
+   "id": "romeu-zema-neto",
+   "nr": "30",
+   "nome": "ROMEU ZEMA NETO",
+   "votos1": 570,
+   "votos2": 0
+  },
+  {
+   "id": "samara-martins-da-silva-feitosa",
+   "nr": "80",
+   "nome": "SAMARA MARTINS DA SILVA FEITOSA",
+   "votos1": 165,
+   "votos2": 0
+  },
+  {
+   "id": "hertz-da-conceicao-dias",
+   "nr": "16",
+   "nome": "HERTZ DA CONCEICAO DIAS",
+   "votos1": 104,
+   "votos2": 0
+  },
+  {
+   "id": "clariana-zacarkim-barao",
+   "nr": "27",
+   "nome": "CLARIANA ZACARKIM BARAO",
+   "votos1": 51,
+   "votos2": 0
+  },
+  {
+   "id": "edmilson-silva-costa",
+   "nr": "21",
+   "nome": "EDMILSON SILVA COSTA",
+   "votos1": 40,
+   "votos2": 0
+  },
+  {
+   "id": "rui-costa-pimenta",
+   "nr": "29",
+   "nome": "RUI COSTA PIMENTA",
+   "votos1": 30,
+   "votos2": 0
+  },
+  {
+   "id": "wilson-grassi-junior",
+   "nr": "35",
+   "nome": "WILSON GRASSI JUNIOR",
+   "votos1": 21,
+   "votos2": 0
+  },
+  {
+   "id": "leonardo-alves-de-araujo",
+   "nr": "28",
+   "nome": "LEONARDO ALVES DE ARAUJO",
+   "votos1": 15,
+   "votos2": 0
+  }
+ ],
+ "locais": [
+  {
+   "id": "13-1449",
+   "zona": 13,
+   "codigo": "1449",
+   "nome": "E.M. CAÍC DO VALE DO SOL  RICARDO CARAMURU DE CASTRO MONTEIRO",
+   "endereco": "AVENIDA CARLOS DE ANGELI, SEM NÚMERO",
+   "bairro": "JARDIM NOVA ARARAQUARA",
+   "bairroId": "jardim-nova-araraquara",
+   "cep": "14804199",
+   "latitude": -21.7737529,
+   "longitude": -48.20562,
+   "eleitorado": 8948,
+   "qtdSecoes": 26,
+   "turno1": {
+    "comparecimento": 7006,
+    "validos": 6473,
+    "brancos": 208,
+    "nulos": 325,
+    "abstencoes": 1942,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 5,
+     "romeu-zema-neto": 23,
+     "luiz-inacio-lula-da-silva": 2992,
+     "augusto-jorge-cury": 214,
+     "renan-antonio-ferreira-dos-santos": 263,
+     "ronaldo-ramos-caiado": 140,
+     "flavio-nantes-bolsonaro": 2820,
+     "hertz-da-conceicao-dias": 9,
+     "leonardo-alves-de-araujo": 1,
+     "rui-costa-pimenta": 1,
+     "edmilson-silva-costa": 2,
+     "wilson-grassi-junior": 1,
+     "clariana-zacarkim-barao": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 7196,
+    "validos": 6799,
+    "brancos": 133,
+    "nulos": 264,
+    "abstencoes": 1752,
+    "votos": {
+     "flavio-nantes-bolsonaro": 3149,
+     "luiz-inacio-lula-da-silva": 3650
+    }
+   }
+  },
+  {
+   "id": "385-1023",
+   "zona": 385,
+   "codigo": "1023",
+   "nome": "EE PROFª. LÉA DE FREITAS MONTEIRO",
+   "endereco": "AV. ALAGOAS,  45",
+   "bairro": "JARDIM SILVANIA",
+   "bairroId": "jardim-silvania",
+   "cep": "14811100",
+   "latitude": -21.7882873,
+   "longitude": -48.1569582,
+   "eleitorado": 5033,
+   "qtdSecoes": 18,
+   "turno1": {
+    "comparecimento": 3891,
+    "validos": 3678,
+    "brancos": 67,
+    "nulos": 146,
+    "abstencoes": 1142,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 6,
+     "renan-antonio-ferreira-dos-santos": 99,
+     "luiz-inacio-lula-da-silva": 1569,
+     "augusto-jorge-cury": 124,
+     "ronaldo-ramos-caiado": 87,
+     "flavio-nantes-bolsonaro": 1779,
+     "romeu-zema-neto": 10,
+     "leonardo-alves-de-araujo": 1,
+     "clariana-zacarkim-barao": 1,
+     "edmilson-silva-costa": 1,
+     "hertz-da-conceicao-dias": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 4039,
+    "validos": 3862,
+    "brancos": 49,
+    "nulos": 128,
+    "abstencoes": 994,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1931,
+     "luiz-inacio-lula-da-silva": 1931
+    }
+   }
+  },
+  {
+   "id": "385-1228",
+   "zona": 385,
+   "codigo": "1228",
+   "nome": "SESI - SERVIÇO SOCIAL DA INDÚSTRIA",
+   "endereco": "AVENIDA JOSÉ DE ALENCAR, 1.031",
+   "bairro": "JARDIM FLORIDIANA",
+   "bairroId": "jardim-floridiana",
+   "cep": "14810251",
+   "latitude": -21.778503,
+   "longitude": -48.1563269,
+   "eleitorado": 4943,
+   "qtdSecoes": 16,
+   "turno1": {
+    "comparecimento": 3866,
+    "validos": 3684,
+    "brancos": 59,
+    "nulos": 123,
+    "abstencoes": 1077,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 5,
+     "renan-antonio-ferreira-dos-santos": 130,
+     "romeu-zema-neto": 16,
+     "luiz-inacio-lula-da-silva": 1496,
+     "augusto-jorge-cury": 171,
+     "ronaldo-ramos-caiado": 65,
+     "flavio-nantes-bolsonaro": 1793,
+     "edmilson-silva-costa": 1,
+     "clariana-zacarkim-barao": 2,
+     "hertz-da-conceicao-dias": 4,
+     "rui-costa-pimenta": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3980,
+    "validos": 3811,
+    "brancos": 42,
+    "nulos": 127,
+    "abstencoes": 963,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1991,
+     "luiz-inacio-lula-da-silva": 1820
+    }
+   }
+  },
+  {
+   "id": "13-1392",
+   "zona": 13,
+   "codigo": "1392",
+   "nome": "CER. ZILDA MARTINS PIERRI",
+   "endereco": "AVENIDA PROF. GUSTAVO FLEURY CHAMILOT, 101",
+   "bairro": "JARDIM RESIDENCIAL PARAISO",
+   "bairroId": "jardim-residencial-paraiso",
+   "cep": "14804012",
+   "latitude": -21.764363,
+   "longitude": -48.1958067,
+   "eleitorado": 4819,
+   "qtdSecoes": 15,
+   "turno1": {
+    "comparecimento": 3820,
+    "validos": 3600,
+    "brancos": 86,
+    "nulos": 134,
+    "abstencoes": 999,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "romeu-zema-neto": 23,
+     "luiz-inacio-lula-da-silva": 1523,
+     "augusto-jorge-cury": 152,
+     "renan-antonio-ferreira-dos-santos": 103,
+     "ronaldo-ramos-caiado": 83,
+     "flavio-nantes-bolsonaro": 1707,
+     "hertz-da-conceicao-dias": 2,
+     "clariana-zacarkim-barao": 4
+    }
+   },
+   "turno2": {
+    "comparecimento": 3948,
+    "validos": 3790,
+    "brancos": 44,
+    "nulos": 114,
+    "abstencoes": 871,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1875,
+     "luiz-inacio-lula-da-silva": 1915
+    }
+   }
+  },
+  {
+   "id": "385-1252",
+   "zona": 385,
+   "codigo": "1252",
+   "nome": "EMEF PREFEITO RUBENS CRUZ",
+   "endereco": "RUA DR. JOSÉ LOGATTI, S/N",
+   "bairro": "JARDIM ROBERTO SELMI DEI III",
+   "bairroId": "jardim-roberto-selmi-dei-iii",
+   "cep": "14806344",
+   "latitude": -21.7273303,
+   "longitude": -48.1524187,
+   "eleitorado": 4740,
+   "qtdSecoes": 16,
+   "turno1": {
+    "comparecimento": 3338,
+    "validos": 3088,
+    "brancos": 109,
+    "nulos": 141,
+    "abstencoes": 1402,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "romeu-zema-neto": 4,
+     "luiz-inacio-lula-da-silva": 1775,
+     "augusto-jorge-cury": 97,
+     "renan-antonio-ferreira-dos-santos": 59,
+     "ronaldo-ramos-caiado": 50,
+     "flavio-nantes-bolsonaro": 1094,
+     "hertz-da-conceicao-dias": 2,
+     "clariana-zacarkim-barao": 1,
+     "edmilson-silva-costa": 2,
+     "wilson-grassi-junior": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3522,
+    "validos": 3395,
+    "brancos": 47,
+    "nulos": 80,
+    "abstencoes": 1218,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1192,
+     "luiz-inacio-lula-da-silva": 2203
+    }
+   }
+  },
+  {
+   "id": "385-1082",
+   "zona": 385,
+   "codigo": "1082",
+   "nome": "EE PROFª. ERGILIA MICELLI",
+   "endereco": "RUA DR. JOSE DE FREITAS MADEIRA, S/N",
+   "bairro": "JARDIM ROBERTO SELMI DEI",
+   "bairroId": "jardim-roberto-selmi-dei",
+   "cep": "14806303",
+   "latitude": -21.7402363,
+   "longitude": -48.1525895,
+   "eleitorado": 4413,
+   "qtdSecoes": 14,
+   "turno1": {
+    "comparecimento": 3426,
+    "validos": 3190,
+    "brancos": 94,
+    "nulos": 142,
+    "abstencoes": 987,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 1,
+     "luiz-inacio-lula-da-silva": 1566,
+     "augusto-jorge-cury": 84,
+     "renan-antonio-ferreira-dos-santos": 75,
+     "ronaldo-ramos-caiado": 62,
+     "flavio-nantes-bolsonaro": 1386,
+     "rui-costa-pimenta": 1,
+     "romeu-zema-neto": 13,
+     "clariana-zacarkim-barao": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 3556,
+    "validos": 3402,
+    "brancos": 48,
+    "nulos": 106,
+    "abstencoes": 857,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1517,
+     "luiz-inacio-lula-da-silva": 1885
+    }
+   }
+  },
+  {
+   "id": "385-1236",
+   "zona": 385,
+   "codigo": "1236",
+   "nome": "EMEF PROFª GILDA ROCHA DE MELLO E SOUZA",
+   "endereco": "AVENIDA CLÓVIS VAN DICKE, S/N",
+   "bairro": "JARDIM INDAIA",
+   "bairroId": "jardim-indaia",
+   "cep": "14806456",
+   "latitude": -21.7465063,
+   "longitude": -48.1445454,
+   "eleitorado": 4202,
+   "qtdSecoes": 13,
+   "turno1": {
+    "comparecimento": 3080,
+    "validos": 2891,
+    "brancos": 85,
+    "nulos": 104,
+    "abstencoes": 1122,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 4,
+     "renan-antonio-ferreira-dos-santos": 102,
+     "luiz-inacio-lula-da-silva": 1523,
+     "augusto-jorge-cury": 77,
+     "ronaldo-ramos-caiado": 69,
+     "flavio-nantes-bolsonaro": 1109,
+     "romeu-zema-neto": 4,
+     "hertz-da-conceicao-dias": 1,
+     "wilson-grassi-junior": 1,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3268,
+    "validos": 3135,
+    "brancos": 48,
+    "nulos": 85,
+    "abstencoes": 934,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1243,
+     "luiz-inacio-lula-da-silva": 1892
+    }
+   }
+  },
+  {
+   "id": "13-1104",
+   "zona": 13,
+   "codigo": "1104",
+   "nome": "EE. BENTO DE ABREU",
+   "endereco": "RUA PADRE DUARTE, 2821",
+   "bairro": "CENTRO",
+   "bairroId": "centro",
+   "cep": "14801310",
+   "latitude": -21.7814659,
+   "longitude": -48.181288,
+   "eleitorado": 4201,
+   "qtdSecoes": 21,
+   "turno1": {
+    "comparecimento": 3290,
+    "validos": 3180,
+    "brancos": 31,
+    "nulos": 79,
+    "abstencoes": 911,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "luiz-inacio-lula-da-silva": 1232,
+     "augusto-jorge-cury": 99,
+     "hertz-da-conceicao-dias": 2,
+     "renan-antonio-ferreira-dos-santos": 95,
+     "ronaldo-ramos-caiado": 85,
+     "flavio-nantes-bolsonaro": 1644,
+     "romeu-zema-neto": 14,
+     "rui-costa-pimenta": 3,
+     "edmilson-silva-costa": 2,
+     "wilson-grassi-junior": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 3389,
+    "validos": 3283,
+    "brancos": 34,
+    "nulos": 72,
+    "abstencoes": 812,
+    "votos": {
+     "luiz-inacio-lula-da-silva": 1484,
+     "flavio-nantes-bolsonaro": 1799
+    }
+   }
+  },
+  {
+   "id": "13-1376",
+   "zona": 13,
+   "codigo": "1376",
+   "nome": "EE. PROFª OLGA FERREIRA CAMPOS",
+   "endereco": "AV ROMULO LUPO, SEM NÚMERO",
+   "bairro": "JARDIM UNIVERSAL",
+   "bairroId": "jardim-universal",
+   "cep": "14801700",
+   "latitude": -21.7923296,
+   "longitude": -48.2029994,
+   "eleitorado": 4123,
+   "qtdSecoes": 12,
+   "turno1": {
+    "comparecimento": 3317,
+    "validos": 3138,
+    "brancos": 66,
+    "nulos": 113,
+    "abstencoes": 806,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "luiz-inacio-lula-da-silva": 1303,
+     "augusto-jorge-cury": 133,
+     "renan-antonio-ferreira-dos-santos": 128,
+     "ronaldo-ramos-caiado": 53,
+     "flavio-nantes-bolsonaro": 1494,
+     "rui-costa-pimenta": 2,
+     "romeu-zema-neto": 14,
+     "hertz-da-conceicao-dias": 4,
+     "clariana-zacarkim-barao": 3,
+     "leonardo-alves-de-araujo": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3385,
+    "validos": 3234,
+    "brancos": 39,
+    "nulos": 112,
+    "abstencoes": 738,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1635,
+     "luiz-inacio-lula-da-silva": 1599
+    }
+   }
+  },
+  {
+   "id": "385-1260",
+   "zona": 385,
+   "codigo": "1260",
+   "nome": "EE PROF. OACYR ANTONIO ELLERO",
+   "endereco": "AVENIDA PAULO PLANAS, S/N",
+   "bairro": "PARQUE SAO PAULO",
+   "bairroId": "parque-sao-paulo",
+   "cep": "14811483",
+   "latitude": -21.7778935,
+   "longitude": -48.1312898,
+   "eleitorado": 4104,
+   "qtdSecoes": 13,
+   "turno1": {
+    "comparecimento": 3119,
+    "validos": 2861,
+    "brancos": 113,
+    "nulos": 145,
+    "abstencoes": 985,
+    "votos": {
+     "leonardo-alves-de-araujo": 1,
+     "renan-antonio-ferreira-dos-santos": 90,
+     "luiz-inacio-lula-da-silva": 1466,
+     "augusto-jorge-cury": 82,
+     "ronaldo-ramos-caiado": 57,
+     "flavio-nantes-bolsonaro": 1151,
+     "samara-martins-da-silva-feitosa": 2,
+     "romeu-zema-neto": 8,
+     "edmilson-silva-costa": 3,
+     "hertz-da-conceicao-dias": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3228,
+    "validos": 3078,
+    "brancos": 56,
+    "nulos": 94,
+    "abstencoes": 876,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1265,
+     "luiz-inacio-lula-da-silva": 1813
+    }
+   }
+  },
+  {
+   "id": "385-1066",
+   "zona": 385,
+   "codigo": "1066",
+   "nome": "EE DEPUTADO LEONARDO BARBIERI",
+   "endereco": "RUA DOMINGOS PAULO REAL, 287",
+   "bairro": "JARDIM RESIDENCIAL ITALIA",
+   "bairroId": "jardim-residencial-italia",
+   "cep": "14807300",
+   "latitude": -21.8000408,
+   "longitude": -48.1487227,
+   "eleitorado": 3910,
+   "qtdSecoes": 13,
+   "turno1": {
+    "comparecimento": 3021,
+    "validos": 2764,
+    "brancos": 77,
+    "nulos": 180,
+    "abstencoes": 889,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "renan-antonio-ferreira-dos-santos": 93,
+     "luiz-inacio-lula-da-silva": 1336,
+     "augusto-jorge-cury": 83,
+     "ronaldo-ramos-caiado": 53,
+     "flavio-nantes-bolsonaro": 1185,
+     "romeu-zema-neto": 5,
+     "leonardo-alves-de-araujo": 2,
+     "edmilson-silva-costa": 2,
+     "hertz-da-conceicao-dias": 1,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3149,
+    "validos": 2986,
+    "brancos": 49,
+    "nulos": 114,
+    "abstencoes": 761,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1299,
+     "luiz-inacio-lula-da-silva": 1687
+    }
+   }
+  },
+  {
+   "id": "385-1244",
+   "zona": 385,
+   "codigo": "1244",
+   "nome": "EMEF PROF. WALDEMAR SAFFIOTTI",
+   "endereco": "RUA MÁRIO BARBUGLI, N 1.015",
+   "bairro": "JARDIM CRUZEIRO DO SUL I E II",
+   "bairroId": "jardim-cruzeiro-do-sul-i-e-ii",
+   "cep": "14808384",
+   "latitude": -21.8105601,
+   "longitude": -48.14267,
+   "eleitorado": 3883,
+   "qtdSecoes": 12,
+   "turno1": {
+    "comparecimento": 2995,
+    "validos": 2750,
+    "brancos": 93,
+    "nulos": 152,
+    "abstencoes": 888,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 6,
+     "rui-costa-pimenta": 1,
+     "luiz-inacio-lula-da-silva": 1426,
+     "augusto-jorge-cury": 74,
+     "renan-antonio-ferreira-dos-santos": 73,
+     "ronaldo-ramos-caiado": 37,
+     "flavio-nantes-bolsonaro": 1119,
+     "romeu-zema-neto": 8,
+     "hertz-da-conceicao-dias": 3,
+     "edmilson-silva-costa": 1,
+     "leonardo-alves-de-araujo": 1,
+     "wilson-grassi-junior": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3160,
+    "validos": 3001,
+    "brancos": 42,
+    "nulos": 117,
+    "abstencoes": 723,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1235,
+     "luiz-inacio-lula-da-silva": 1766
+    }
+   }
+  },
+  {
+   "id": "13-1333",
+   "zona": 13,
+   "codigo": "1333",
+   "nome": "EMEF. RUTH VILAÇA CORREIA LEITE CARDOSO",
+   "endereco": "AVENIDA DR. ARLINDO FALCONE,  268",
+   "bairro": "JARDIM MARIA LUIZA",
+   "bairroId": "jardim-maria-luiza",
+   "cep": "14800000",
+   "latitude": -21.7419074,
+   "longitude": -48.1942749,
+   "eleitorado": 3794,
+   "qtdSecoes": 11,
+   "turno1": {
+    "comparecimento": 2963,
+    "validos": 2788,
+    "brancos": 68,
+    "nulos": 107,
+    "abstencoes": 831,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 1,
+     "luiz-inacio-lula-da-silva": 1155,
+     "augusto-jorge-cury": 85,
+     "renan-antonio-ferreira-dos-santos": 97,
+     "ronaldo-ramos-caiado": 51,
+     "flavio-nantes-bolsonaro": 1378,
+     "rui-costa-pimenta": 1,
+     "romeu-zema-neto": 15,
+     "hertz-da-conceicao-dias": 2,
+     "clariana-zacarkim-barao": 3
+    }
+   },
+   "turno2": {
+    "comparecimento": 3010,
+    "validos": 2888,
+    "brancos": 31,
+    "nulos": 91,
+    "abstencoes": 784,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1479,
+     "luiz-inacio-lula-da-silva": 1409
+    }
+   }
+  },
+  {
+   "id": "385-1139",
+   "zona": 385,
+   "codigo": "1139",
+   "nome": "EE PROFA. LUISA ROLFSEN PETRILLI",
+   "endereco": "AV. AGNES GONXHIA BOJAXHIU, 200",
+   "bairro": "PARQUE RESIDENCIAL IGUATEMI",
+   "bairroId": "parque-residencial-iguatemi",
+   "cep": "14808263",
+   "latitude": -21.8335045,
+   "longitude": -48.139252,
+   "eleitorado": 3714,
+   "qtdSecoes": 12,
+   "turno1": {
+    "comparecimento": 2961,
+    "validos": 2733,
+    "brancos": 92,
+    "nulos": 136,
+    "abstencoes": 753,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "luiz-inacio-lula-da-silva": 1354,
+     "romeu-zema-neto": 9,
+     "augusto-jorge-cury": 95,
+     "renan-antonio-ferreira-dos-santos": 65,
+     "edmilson-silva-costa": 2,
+     "ronaldo-ramos-caiado": 61,
+     "flavio-nantes-bolsonaro": 1142,
+     "wilson-grassi-junior": 1,
+     "hertz-da-conceicao-dias": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 3048,
+    "validos": 2904,
+    "brancos": 48,
+    "nulos": 96,
+    "abstencoes": 666,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1248,
+     "luiz-inacio-lula-da-silva": 1656
+    }
+   }
+  },
+  {
+   "id": "385-1058",
+   "zona": 385,
+   "codigo": "1058",
+   "nome": "EE PROFª ANTONIA EUGENIA MARTINS",
+   "endereco": "AV. SANTA ADELIA, S/N",
+   "bairro": "JARDIM AMÉRICA",
+   "bairroId": "jardim-america",
+   "cep": "14811230",
+   "latitude": -21.7803257,
+   "longitude": -48.1479555,
+   "eleitorado": 3600,
+   "qtdSecoes": 11,
+   "turno1": {
+    "comparecimento": 2772,
+    "validos": 2550,
+    "brancos": 88,
+    "nulos": 134,
+    "abstencoes": 828,
+    "votos": {
+     "leonardo-alves-de-araujo": 2,
+     "luiz-inacio-lula-da-silva": 1188,
+     "augusto-jorge-cury": 79,
+     "renan-antonio-ferreira-dos-santos": 65,
+     "ronaldo-ramos-caiado": 53,
+     "flavio-nantes-bolsonaro": 1143,
+     "samara-martins-da-silva-feitosa": 4,
+     "romeu-zema-neto": 11,
+     "hertz-da-conceicao-dias": 2,
+     "wilson-grassi-junior": 1,
+     "edmilson-silva-costa": 1,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2886,
+    "validos": 2733,
+    "brancos": 48,
+    "nulos": 105,
+    "abstencoes": 714,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1260,
+     "luiz-inacio-lula-da-silva": 1473
+    }
+   }
+  },
+  {
+   "id": "385-1147",
+   "zona": 385,
+   "codigo": "1147",
+   "nome": "EE ANTONIO DE OLIVEIRA BUENO FILHO",
+   "endereco": "RUA CICERO PINTO FERRAZ, S/N",
+   "bairro": "JARDIM PINHEIROS",
+   "bairroId": "jardim-pinheiros",
+   "cep": "14811424",
+   "latitude": -21.7696066,
+   "longitude": -48.137157,
+   "eleitorado": 3572,
+   "qtdSecoes": 12,
+   "turno1": {
+    "comparecimento": 2901,
+    "validos": 2700,
+    "brancos": 77,
+    "nulos": 124,
+    "abstencoes": 671,
+    "votos": {
+     "rui-costa-pimenta": 1,
+     "luiz-inacio-lula-da-silva": 1264,
+     "augusto-jorge-cury": 77,
+     "renan-antonio-ferreira-dos-santos": 77,
+     "edmilson-silva-costa": 1,
+     "ronaldo-ramos-caiado": 63,
+     "flavio-nantes-bolsonaro": 1206,
+     "romeu-zema-neto": 8,
+     "hertz-da-conceicao-dias": 2,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3001,
+    "validos": 2848,
+    "brancos": 41,
+    "nulos": 112,
+    "abstencoes": 571,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1325,
+     "luiz-inacio-lula-da-silva": 1523
+    }
+   }
+  },
+  {
+   "id": "13-1090",
+   "zona": 13,
+   "codigo": "1090",
+   "nome": "EE. JOÃO BATISTA DE OLIVEIRA",
+   "endereco": "AVENIDA PROF. SEBASTIÃO DE ALMEIDA MACHADO, 382",
+   "bairro": "VILA JOSE BONIFACIO",
+   "bairroId": "vila-jose-bonifacio",
+   "cep": "14802285",
+   "latitude": -21.7702842,
+   "longitude": -48.1815672,
+   "eleitorado": 3571,
+   "qtdSecoes": 12,
+   "turno1": {
+    "comparecimento": 2886,
+    "validos": 2729,
+    "brancos": 50,
+    "nulos": 107,
+    "abstencoes": 685,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 6,
+     "romeu-zema-neto": 15,
+     "luiz-inacio-lula-da-silva": 1071,
+     "augusto-jorge-cury": 87,
+     "renan-antonio-ferreira-dos-santos": 83,
+     "ronaldo-ramos-caiado": 56,
+     "flavio-nantes-bolsonaro": 1407,
+     "clariana-zacarkim-barao": 2,
+     "hertz-da-conceicao-dias": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 2987,
+    "validos": 2867,
+    "brancos": 34,
+    "nulos": 86,
+    "abstencoes": 584,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1555,
+     "luiz-inacio-lula-da-silva": 1312
+    }
+   }
+  },
+  {
+   "id": "385-1074",
+   "zona": 385,
+   "codigo": "1074",
+   "nome": "EE PROFª. ANGELINA LIA ROLFSEN",
+   "endereco": "AV. ENG. DOMINGOS FERRARI JUNIOR, 111",
+   "bairro": "JARDIM ALTOS DO CECAP I E II",
+   "bairroId": "jardim-altos-do-cecap-i-e-ii",
+   "cep": "14808293",
+   "latitude": -21.8333824,
+   "longitude": -48.1471726,
+   "eleitorado": 3521,
+   "qtdSecoes": 11,
+   "turno1": {
+    "comparecimento": 2757,
+    "validos": 2579,
+    "brancos": 84,
+    "nulos": 94,
+    "abstencoes": 764,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 4,
+     "luiz-inacio-lula-da-silva": 1128,
+     "augusto-jorge-cury": 72,
+     "renan-antonio-ferreira-dos-santos": 83,
+     "ronaldo-ramos-caiado": 48,
+     "flavio-nantes-bolsonaro": 1234,
+     "clariana-zacarkim-barao": 1,
+     "romeu-zema-neto": 5,
+     "hertz-da-conceicao-dias": 4
+    }
+   },
+   "turno2": {
+    "comparecimento": 2872,
+    "validos": 2753,
+    "brancos": 43,
+    "nulos": 76,
+    "abstencoes": 649,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1363,
+     "luiz-inacio-lula-da-silva": 1390
+    }
+   }
+  },
+  {
+   "id": "385-1040",
+   "zona": 385,
+   "codigo": "1040",
+   "nome": "EE  PROF GERALDO HONORATO AZZI SACHS",
+   "endereco": "RUA BENEDITO FLORIO (VILA DONOFRE), S/N",
+   "bairro": "JARDIM PAULISTANO",
+   "bairroId": "jardim-paulistano",
+   "cep": "14810284",
+   "latitude": -21.7715293,
+   "longitude": -48.157836,
+   "eleitorado": 3457,
+   "qtdSecoes": 11,
+   "turno1": {
+    "comparecimento": 2752,
+    "validos": 2614,
+    "brancos": 46,
+    "nulos": 92,
+    "abstencoes": 705,
+    "votos": {
+     "romeu-zema-neto": 10,
+     "luiz-inacio-lula-da-silva": 1118,
+     "augusto-jorge-cury": 91,
+     "renan-antonio-ferreira-dos-santos": 70,
+     "ronaldo-ramos-caiado": 44,
+     "flavio-nantes-bolsonaro": 1278,
+     "wilson-grassi-junior": 1,
+     "clariana-zacarkim-barao": 1,
+     "edmilson-silva-costa": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2864,
+    "validos": 2769,
+    "brancos": 20,
+    "nulos": 75,
+    "abstencoes": 593,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1415,
+     "luiz-inacio-lula-da-silva": 1354
+    }
+   }
+  },
+  {
+   "id": "13-1309",
+   "zona": 13,
+   "codigo": "1309",
+   "nome": "COLÉGIO MASTER ANGLO DE ARARAQUARA",
+   "endereco": "AVENIDA QUEIROZ FILHO, 1599",
+   "bairro": "VILA HARMONIA",
+   "bairroId": "vila-harmonia",
+   "cep": "14802610",
+   "latitude": -21.7709662,
+   "longitude": -48.1773755,
+   "eleitorado": 3453,
+   "qtdSecoes": 10,
+   "turno1": {
+    "comparecimento": 2828,
+    "validos": 2715,
+    "brancos": 41,
+    "nulos": 72,
+    "abstencoes": 625,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 5,
+     "rui-costa-pimenta": 3,
+     "romeu-zema-neto": 23,
+     "luiz-inacio-lula-da-silva": 955,
+     "augusto-jorge-cury": 107,
+     "renan-antonio-ferreira-dos-santos": 105,
+     "ronaldo-ramos-caiado": 63,
+     "flavio-nantes-bolsonaro": 1450,
+     "wilson-grassi-junior": 1,
+     "clariana-zacarkim-barao": 2,
+     "edmilson-silva-costa": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2925,
+    "validos": 2820,
+    "brancos": 33,
+    "nulos": 72,
+    "abstencoes": 528,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1600,
+     "luiz-inacio-lula-da-silva": 1220
+    }
+   }
+  },
+  {
+   "id": "385-1201",
+   "zona": 385,
+   "codigo": "1201",
+   "nome": "EMEF RAFAEL DE MEDINA",
+   "endereco": "RUA ADALGIZA DELBON MICHETTI, 1.240",
+   "bairro": "JARDIM ELIANA",
+   "bairroId": "jardim-eliana",
+   "cep": "14807262",
+   "latitude": -21.8078268,
+   "longitude": -48.1553944,
+   "eleitorado": 3276,
+   "qtdSecoes": 10,
+   "turno1": {
+    "comparecimento": 2647,
+    "validos": 2513,
+    "brancos": 50,
+    "nulos": 84,
+    "abstencoes": 629,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "romeu-zema-neto": 10,
+     "luiz-inacio-lula-da-silva": 1034,
+     "augusto-jorge-cury": 92,
+     "renan-antonio-ferreira-dos-santos": 85,
+     "ronaldo-ramos-caiado": 52,
+     "flavio-nantes-bolsonaro": 1233,
+     "edmilson-silva-costa": 1,
+     "rui-costa-pimenta": 1,
+     "wilson-grassi-junior": 2,
+     "hertz-da-conceicao-dias": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2707,
+    "validos": 2604,
+    "brancos": 27,
+    "nulos": 76,
+    "abstencoes": 569,
+    "votos": {
+     "luiz-inacio-lula-da-silva": 1270,
+     "flavio-nantes-bolsonaro": 1334
+    }
+   }
+  },
+  {
+   "id": "385-1120",
+   "zona": 385,
+   "codigo": "1120",
+   "nome": "EE DORIVAL ALVES",
+   "endereco": "RUA CEARA, S/N",
+   "bairro": "VILA XAVIER",
+   "bairroId": "vila-xavier",
+   "cep": "14810165",
+   "latitude": -21.7830432,
+   "longitude": -48.1616022,
+   "eleitorado": 3262,
+   "qtdSecoes": 15,
+   "turno1": {
+    "comparecimento": 2495,
+    "validos": 2370,
+    "brancos": 57,
+    "nulos": 68,
+    "abstencoes": 767,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "rui-costa-pimenta": 1,
+     "luiz-inacio-lula-da-silva": 1020,
+     "augusto-jorge-cury": 65,
+     "renan-antonio-ferreira-dos-santos": 65,
+     "ronaldo-ramos-caiado": 46,
+     "flavio-nantes-bolsonaro": 1155,
+     "romeu-zema-neto": 12,
+     "hertz-da-conceicao-dias": 3,
+     "edmilson-silva-costa": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2603,
+    "validos": 2529,
+    "brancos": 20,
+    "nulos": 54,
+    "abstencoes": 659,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1252,
+     "luiz-inacio-lula-da-silva": 1277
+    }
+   }
+  },
+  {
+   "id": "385-1155",
+   "zona": 385,
+   "codigo": "1155",
+   "nome": "EE PROF. ANTONIO DOS SANTOS",
+   "endereco": "RUA ISMAEL DE ARAUJO, 310",
+   "bairro": "JARDIM DAS ESTAÇÕES",
+   "bairroId": "jardim-das-estacoes",
+   "cep": "14810325",
+   "latitude": -21.7726311,
+   "longitude": -48.149015,
+   "eleitorado": 3247,
+   "qtdSecoes": 10,
+   "turno1": {
+    "comparecimento": 2519,
+    "validos": 2341,
+    "brancos": 62,
+    "nulos": 116,
+    "abstencoes": 728,
+    "votos": {
+     "leonardo-alves-de-araujo": 1,
+     "romeu-zema-neto": 8,
+     "luiz-inacio-lula-da-silva": 1047,
+     "augusto-jorge-cury": 81,
+     "renan-antonio-ferreira-dos-santos": 80,
+     "ronaldo-ramos-caiado": 46,
+     "flavio-nantes-bolsonaro": 1072,
+     "samara-martins-da-silva-feitosa": 2,
+     "hertz-da-conceicao-dias": 2,
+     "rui-costa-pimenta": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 2613,
+    "validos": 2492,
+    "brancos": 34,
+    "nulos": 87,
+    "abstencoes": 634,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1202,
+     "luiz-inacio-lula-da-silva": 1290
+    }
+   }
+  },
+  {
+   "id": "13-1066",
+   "zona": 13,
+   "codigo": "1066",
+   "nome": "EE. FLORESTANO LIBUTTI",
+   "endereco": "AVENIDA SAO JOSE, 905",
+   "bairro": "CENTRO",
+   "bairroId": "centro",
+   "cep": "14800410",
+   "latitude": -21.8018146,
+   "longitude": -48.1824883,
+   "eleitorado": 3177,
+   "qtdSecoes": 13,
+   "turno1": {
+    "comparecimento": 2594,
+    "validos": 2479,
+    "brancos": 41,
+    "nulos": 74,
+    "abstencoes": 583,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 7,
+     "luiz-inacio-lula-da-silva": 991,
+     "augusto-jorge-cury": 73,
+     "renan-antonio-ferreira-dos-santos": 70,
+     "ronaldo-ramos-caiado": 76,
+     "flavio-nantes-bolsonaro": 1251,
+     "romeu-zema-neto": 7,
+     "edmilson-silva-costa": 1,
+     "clariana-zacarkim-barao": 3
+    }
+   },
+   "turno2": {
+    "comparecimento": 2679,
+    "validos": 2598,
+    "brancos": 22,
+    "nulos": 59,
+    "abstencoes": 498,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1381,
+     "luiz-inacio-lula-da-silva": 1217
+    }
+   }
+  },
+  {
+   "id": "13-1074",
+   "zona": 13,
+   "codigo": "1074",
+   "nome": "EE. PROF. VICTOR LACORTE",
+   "endereco": "AVENIDA MÁRIO YBARRA DE ALMEIDA, 1335",
+   "bairro": "VILA PROGRESSO",
+   "bairroId": "vila-progresso",
+   "cep": "14800417",
+   "latitude": -21.8036377,
+   "longitude": -48.1865062,
+   "eleitorado": 3169,
+   "qtdSecoes": 12,
+   "turno1": {
+    "comparecimento": 2408,
+    "validos": 2268,
+    "brancos": 46,
+    "nulos": 94,
+    "abstencoes": 761,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 8,
+     "romeu-zema-neto": 12,
+     "luiz-inacio-lula-da-silva": 1008,
+     "augusto-jorge-cury": 73,
+     "renan-antonio-ferreira-dos-santos": 49,
+     "ronaldo-ramos-caiado": 51,
+     "flavio-nantes-bolsonaro": 1058,
+     "wilson-grassi-junior": 1,
+     "hertz-da-conceicao-dias": 2,
+     "clariana-zacarkim-barao": 2,
+     "edmilson-silva-costa": 4
+    }
+   },
+   "turno2": {
+    "comparecimento": 2515,
+    "validos": 2419,
+    "brancos": 31,
+    "nulos": 65,
+    "abstencoes": 654,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1176,
+     "luiz-inacio-lula-da-silva": 1243
+    }
+   }
+  },
+  {
+   "id": "385-1350",
+   "zona": 385,
+   "codigo": "1350",
+   "nome": "EE PROFª MARIA ISABEL RODRIGUES ORSO",
+   "endereco": "RUA DOUTOR JOSÉ LOGATTI, S/N",
+   "bairro": "JARDIM ADALBERTO FREDERICO DE OLIVEIRA ROXO I",
+   "bairroId": "jardim-adalberto-frederico-de-oliveira-roxo-i",
+   "cep": "14806738",
+   "latitude": -21.732037,
+   "longitude": -48.1551498,
+   "eleitorado": 3013,
+   "qtdSecoes": 10,
+   "turno1": {
+    "comparecimento": 2228,
+    "validos": 2052,
+    "brancos": 88,
+    "nulos": 88,
+    "abstencoes": 785,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "luiz-inacio-lula-da-silva": 1072,
+     "augusto-jorge-cury": 61,
+     "renan-antonio-ferreira-dos-santos": 52,
+     "ronaldo-ramos-caiado": 31,
+     "flavio-nantes-bolsonaro": 821,
+     "romeu-zema-neto": 11,
+     "rui-costa-pimenta": 1,
+     "edmilson-silva-costa": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2289,
+    "validos": 2188,
+    "brancos": 34,
+    "nulos": 67,
+    "abstencoes": 724,
+    "votos": {
+     "flavio-nantes-bolsonaro": 881,
+     "luiz-inacio-lula-da-silva": 1307
+    }
+   }
+  },
+  {
+   "id": "13-1015",
+   "zona": 13,
+   "codigo": "1015",
+   "nome": "ETESG. PROFª ANNA DE OLIVEIRA FERRAZ",
+   "endereco": "RUA SAO BENTO, 1515",
+   "bairro": "CENTRO",
+   "bairroId": "centro",
+   "cep": "14801300",
+   "latitude": -21.7864466,
+   "longitude": -48.177623,
+   "eleitorado": 2887,
+   "qtdSecoes": 17,
+   "turno1": {
+    "comparecimento": 2309,
+    "validos": 2200,
+    "brancos": 36,
+    "nulos": 73,
+    "abstencoes": 578,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 6,
+     "romeu-zema-neto": 13,
+     "luiz-inacio-lula-da-silva": 925,
+     "augusto-jorge-cury": 84,
+     "renan-antonio-ferreira-dos-santos": 67,
+     "ronaldo-ramos-caiado": 75,
+     "flavio-nantes-bolsonaro": 1028,
+     "clariana-zacarkim-barao": 1,
+     "edmilson-silva-costa": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2351,
+    "validos": 2256,
+    "brancos": 27,
+    "nulos": 68,
+    "abstencoes": 536,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1135,
+     "luiz-inacio-lula-da-silva": 1121
+    }
+   }
+  },
+  {
+   "id": "385-1112",
+   "zona": 385,
+   "codigo": "1112",
+   "nome": "EE  ANTONIO LOURENCO CORREA",
+   "endereco": "RUA TREZE DE MAIO, 718",
+   "bairro": "VILA XAVIER",
+   "bairroId": "vila-xavier",
+   "cep": "14810088",
+   "latitude": -21.7893895,
+   "longitude": -48.1671613,
+   "eleitorado": 2882,
+   "qtdSecoes": 10,
+   "turno1": {
+    "comparecimento": 2289,
+    "validos": 2182,
+    "brancos": 37,
+    "nulos": 70,
+    "abstencoes": 593,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 4,
+     "romeu-zema-neto": 16,
+     "luiz-inacio-lula-da-silva": 936,
+     "augusto-jorge-cury": 72,
+     "renan-antonio-ferreira-dos-santos": 67,
+     "ronaldo-ramos-caiado": 48,
+     "flavio-nantes-bolsonaro": 1037,
+     "hertz-da-conceicao-dias": 1,
+     "wilson-grassi-junior": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2380,
+    "validos": 2311,
+    "brancos": 21,
+    "nulos": 48,
+    "abstencoes": 502,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1173,
+     "luiz-inacio-lula-da-silva": 1138
+    }
+   }
+  },
+  {
+   "id": "385-1015",
+   "zona": 385,
+   "codigo": "1015",
+   "nome": "EE FRANCISCO PEDRO MONTEIRO DA SILVA",
+   "endereco": "RUA MARECHAL DEODORO DA FONSECA, 1450",
+   "bairro": "VILA XAVIER",
+   "bairroId": "vila-xavier",
+   "cep": "14810112",
+   "latitude": -21.7832914,
+   "longitude": -48.1634023,
+   "eleitorado": 2783,
+   "qtdSecoes": 13,
+   "turno1": {
+    "comparecimento": 2199,
+    "validos": 2087,
+    "brancos": 39,
+    "nulos": 73,
+    "abstencoes": 584,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 4,
+     "luiz-inacio-lula-da-silva": 897,
+     "augusto-jorge-cury": 61,
+     "renan-antonio-ferreira-dos-santos": 77,
+     "ronaldo-ramos-caiado": 54,
+     "flavio-nantes-bolsonaro": 981,
+     "romeu-zema-neto": 7,
+     "wilson-grassi-junior": 2,
+     "rui-costa-pimenta": 1,
+     "hertz-da-conceicao-dias": 3
+    }
+   },
+   "turno2": {
+    "comparecimento": 2281,
+    "validos": 2191,
+    "brancos": 26,
+    "nulos": 64,
+    "abstencoes": 502,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1112,
+     "luiz-inacio-lula-da-silva": 1079
+    }
+   }
+  },
+  {
+   "id": "13-1279",
+   "zona": 13,
+   "codigo": "1279",
+   "nome": "EE. PROFª LETÍCIA DE GODOY B DE C LOPES",
+   "endereco": "AVENIDA PEDRO GALEAZI, SEM NÚMERO",
+   "bairro": "VILA SEDENHO",
+   "bairroId": "vila-sedenho",
+   "cep": "14806015",
+   "latitude": -21.7664788,
+   "longitude": -48.1660341,
+   "eleitorado": 2767,
+   "qtdSecoes": 8,
+   "turno1": {
+    "comparecimento": 2301,
+    "validos": 2210,
+    "brancos": 41,
+    "nulos": 50,
+    "abstencoes": 466,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "hertz-da-conceicao-dias": 1,
+     "renan-antonio-ferreira-dos-santos": 86,
+     "augusto-jorge-cury": 83,
+     "romeu-zema-neto": 17,
+     "luiz-inacio-lula-da-silva": 818,
+     "ronaldo-ramos-caiado": 45,
+     "flavio-nantes-bolsonaro": 1157,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2375,
+    "validos": 2274,
+    "brancos": 30,
+    "nulos": 71,
+    "abstencoes": 392,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1262,
+     "luiz-inacio-lula-da-silva": 1012
+    }
+   }
+  },
+  {
+   "id": "13-1120",
+   "zona": 13,
+   "codigo": "1120",
+   "nome": "EE. NARCISO DA SILVA CESAR",
+   "endereco": "AVENIDA BANDEIRANTES, 1582",
+   "bairro": "VILA SANTANA",
+   "bairroId": "vila-santana",
+   "cep": "14801180",
+   "latitude": -21.788948,
+   "longitude": -48.189053,
+   "eleitorado": 2711,
+   "qtdSecoes": 12,
+   "turno1": {
+    "comparecimento": 2134,
+    "validos": 2014,
+    "brancos": 47,
+    "nulos": 73,
+    "abstencoes": 577,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "luiz-inacio-lula-da-silva": 897,
+     "augusto-jorge-cury": 69,
+     "renan-antonio-ferreira-dos-santos": 56,
+     "ronaldo-ramos-caiado": 43,
+     "flavio-nantes-bolsonaro": 933,
+     "romeu-zema-neto": 7,
+     "hertz-da-conceicao-dias": 3,
+     "clariana-zacarkim-barao": 2,
+     "wilson-grassi-junior": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2210,
+    "validos": 2115,
+    "brancos": 31,
+    "nulos": 64,
+    "abstencoes": 501,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1027,
+     "luiz-inacio-lula-da-silva": 1088
+    }
+   }
+  },
+  {
+   "id": "385-1198",
+   "zona": 385,
+   "codigo": "1198",
+   "nome": "EE PROFª JANDYRA NERY GATTI",
+   "endereco": "RUA MARECHAL ARTUR DA COSTA E SILVA, S/N",
+   "bairro": "JARDIM ADALGISA",
+   "bairroId": "jardim-adalgisa",
+   "cep": "14806165",
+   "latitude": -21.7543405,
+   "longitude": -48.1613736,
+   "eleitorado": 2693,
+   "qtdSecoes": 8,
+   "turno1": {
+    "comparecimento": 2202,
+    "validos": 2078,
+    "brancos": 46,
+    "nulos": 78,
+    "abstencoes": 491,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "romeu-zema-neto": 7,
+     "luiz-inacio-lula-da-silva": 851,
+     "augusto-jorge-cury": 84,
+     "renan-antonio-ferreira-dos-santos": 61,
+     "ronaldo-ramos-caiado": 40,
+     "flavio-nantes-bolsonaro": 1031,
+     "rui-costa-pimenta": 1,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2262,
+    "validos": 2179,
+    "brancos": 29,
+    "nulos": 54,
+    "abstencoes": 431,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1148,
+     "luiz-inacio-lula-da-silva": 1031
+    }
+   }
+  },
+  {
+   "id": "385-1384",
+   "zona": 385,
+   "codigo": "1384",
+   "nome": "EE PROF JOAQUIM PINTO MACHADO JÚNIOR - ''PROFESSOR MACHADINHO''",
+   "endereco": "RUA DOUTOR LÁZARO LUIZ ZAMENHOF, N 589",
+   "bairro": "JARDIM RESIDENCIAL SILVESTRE",
+   "bairroId": "jardim-residencial-silvestre",
+   "cep": "14808331",
+   "latitude": -21.8193925,
+   "longitude": -48.1422666,
+   "eleitorado": 2556,
+   "qtdSecoes": 8,
+   "turno1": {
+    "comparecimento": 2016,
+    "validos": 1876,
+    "brancos": 54,
+    "nulos": 86,
+    "abstencoes": 540,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "luiz-inacio-lula-da-silva": 1048,
+     "augusto-jorge-cury": 54,
+     "renan-antonio-ferreira-dos-santos": 58,
+     "ronaldo-ramos-caiado": 29,
+     "flavio-nantes-bolsonaro": 672,
+     "romeu-zema-neto": 12,
+     "hertz-da-conceicao-dias": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2070,
+    "validos": 1972,
+    "brancos": 35,
+    "nulos": 63,
+    "abstencoes": 486,
+    "votos": {
+     "flavio-nantes-bolsonaro": 728,
+     "luiz-inacio-lula-da-silva": 1244
+    }
+   }
+  },
+  {
+   "id": "385-1031",
+   "zona": 385,
+   "codigo": "1031",
+   "nome": "EE DR. JOAO PIRES DE CAMARGO",
+   "endereco": "AV. JOSE NOGUEIRA NEVES, S/N",
+   "bairro": "VILA MELHADO",
+   "bairroId": "vila-melhado",
+   "cep": "14807034",
+   "latitude": -21.80511,
+   "longitude": -48.1664009,
+   "eleitorado": 2532,
+   "qtdSecoes": 8,
+   "turno1": {
+    "comparecimento": 2030,
+    "validos": 1919,
+    "brancos": 44,
+    "nulos": 67,
+    "abstencoes": 502,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "luiz-inacio-lula-da-silva": 895,
+     "renan-antonio-ferreira-dos-santos": 62,
+     "augusto-jorge-cury": 58,
+     "ronaldo-ramos-caiado": 37,
+     "flavio-nantes-bolsonaro": 855,
+     "romeu-zema-neto": 7,
+     "hertz-da-conceicao-dias": 2,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2088,
+    "validos": 2007,
+    "brancos": 25,
+    "nulos": 56,
+    "abstencoes": 444,
+    "votos": {
+     "flavio-nantes-bolsonaro": 928,
+     "luiz-inacio-lula-da-silva": 1079
+    }
+   }
+  },
+  {
+   "id": "385-1406",
+   "zona": 385,
+   "codigo": "1406",
+   "nome": "FATEC",
+   "endereco": "RUA PRECIDE SCARPIO MARTIM, 126",
+   "bairro": "JARDIM SANTA CLARA",
+   "bairroId": "jardim-santa-clara",
+   "cep": "14811373",
+   "latitude": -21.7735178,
+   "longitude": -48.1363377,
+   "eleitorado": 2517,
+   "qtdSecoes": 8,
+   "turno1": {
+    "comparecimento": 1960,
+    "validos": 1832,
+    "brancos": 54,
+    "nulos": 74,
+    "abstencoes": 557,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 4,
+     "romeu-zema-neto": 8,
+     "luiz-inacio-lula-da-silva": 814,
+     "augusto-jorge-cury": 70,
+     "hertz-da-conceicao-dias": 1,
+     "renan-antonio-ferreira-dos-santos": 45,
+     "ronaldo-ramos-caiado": 23,
+     "flavio-nantes-bolsonaro": 861,
+     "clariana-zacarkim-barao": 3,
+     "rui-costa-pimenta": 1,
+     "edmilson-silva-costa": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 1982,
+    "validos": 1899,
+    "brancos": 33,
+    "nulos": 50,
+    "abstencoes": 535,
+    "votos": {
+     "flavio-nantes-bolsonaro": 912,
+     "luiz-inacio-lula-da-silva": 987
+    }
+   }
+  },
+  {
+   "id": "13-1031",
+   "zona": 13,
+   "codigo": "1031",
+   "nome": "UNIARA",
+   "endereco": "RUA CARLOS GOMES, 1324",
+   "bairro": "CENTRO",
+   "bairroId": "centro",
+   "cep": "14801340",
+   "latitude": -21.7961125,
+   "longitude": -48.1782192,
+   "eleitorado": 2480,
+   "qtdSecoes": 15,
+   "turno1": {
+    "comparecimento": 1969,
+    "validos": 1909,
+    "brancos": 20,
+    "nulos": 40,
+    "abstencoes": 511,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 1,
+     "luiz-inacio-lula-da-silva": 777,
+     "augusto-jorge-cury": 72,
+     "renan-antonio-ferreira-dos-santos": 56,
+     "ronaldo-ramos-caiado": 31,
+     "flavio-nantes-bolsonaro": 954,
+     "rui-costa-pimenta": 1,
+     "romeu-zema-neto": 11,
+     "hertz-da-conceicao-dias": 5,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2037,
+    "validos": 1974,
+    "brancos": 12,
+    "nulos": 51,
+    "abstencoes": 443,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1036,
+     "luiz-inacio-lula-da-silva": 938
+    }
+   }
+  },
+  {
+   "id": "13-1023",
+   "zona": 13,
+   "codigo": "1023",
+   "nome": "COLÉGIO OBJETIVO",
+   "endereco": "AVENIDA DUQUE DE CAXIAS, 834",
+   "bairro": "CENTRO",
+   "bairroId": "centro",
+   "cep": "14801120",
+   "latitude": -21.7935575,
+   "longitude": -48.179479,
+   "eleitorado": 2381,
+   "qtdSecoes": 10,
+   "turno1": {
+    "comparecimento": 1936,
+    "validos": 1872,
+    "brancos": 20,
+    "nulos": 44,
+    "abstencoes": 445,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "romeu-zema-neto": 17,
+     "luiz-inacio-lula-da-silva": 765,
+     "augusto-jorge-cury": 66,
+     "renan-antonio-ferreira-dos-santos": 53,
+     "ronaldo-ramos-caiado": 35,
+     "flavio-nantes-bolsonaro": 932,
+     "edmilson-silva-costa": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 1990,
+    "validos": 1939,
+    "brancos": 19,
+    "nulos": 32,
+    "abstencoes": 391,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1026,
+     "luiz-inacio-lula-da-silva": 913
+    }
+   }
+  },
+  {
+   "id": "385-1210",
+   "zona": 385,
+   "codigo": "1210",
+   "nome": "EMEF PROF. HENRIQUE SCABELLO",
+   "endereco": "AVENIDA REMO FRONTAROLLI, 450",
+   "bairro": "PARQUE DAS HORTENCIAS",
+   "bairroId": "parque-das-hortencias",
+   "cep": "14808518",
+   "latitude": -21.8041888,
+   "longitude": -48.1318431,
+   "eleitorado": 2371,
+   "qtdSecoes": 8,
+   "turno1": {
+    "comparecimento": 1732,
+    "validos": 1586,
+    "brancos": 82,
+    "nulos": 64,
+    "abstencoes": 639,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "romeu-zema-neto": 5,
+     "luiz-inacio-lula-da-silva": 980,
+     "augusto-jorge-cury": 28,
+     "renan-antonio-ferreira-dos-santos": 35,
+     "edmilson-silva-costa": 1,
+     "ronaldo-ramos-caiado": 24,
+     "flavio-nantes-bolsonaro": 508,
+     "hertz-da-conceicao-dias": 3
+    }
+   },
+   "turno2": {
+    "comparecimento": 1826,
+    "validos": 1748,
+    "brancos": 37,
+    "nulos": 41,
+    "abstencoes": 545,
+    "votos": {
+     "flavio-nantes-bolsonaro": 553,
+     "luiz-inacio-lula-da-silva": 1195
+    }
+   }
+  },
+  {
+   "id": "385-1163",
+   "zona": 385,
+   "codigo": "1163",
+   "nome": "EE PROF. LYSANIAS DE OLIVEIRA CAMPOS",
+   "endereco": "RUA PRINCESA IZABEL, 34",
+   "bairro": "VILA XAVIER",
+   "bairroId": "vila-xavier",
+   "cep": "14810043",
+   "latitude": -21.7956129,
+   "longitude": -48.1644546,
+   "eleitorado": 2263,
+   "qtdSecoes": 7,
+   "turno1": {
+    "comparecimento": 1789,
+    "validos": 1686,
+    "brancos": 46,
+    "nulos": 57,
+    "abstencoes": 474,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 4,
+     "romeu-zema-neto": 8,
+     "luiz-inacio-lula-da-silva": 752,
+     "augusto-jorge-cury": 62,
+     "renan-antonio-ferreira-dos-santos": 70,
+     "ronaldo-ramos-caiado": 24,
+     "flavio-nantes-bolsonaro": 761,
+     "hertz-da-conceicao-dias": 1,
+     "edmilson-silva-costa": 3,
+     "rui-costa-pimenta": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 1830,
+    "validos": 1752,
+    "brancos": 25,
+    "nulos": 53,
+    "abstencoes": 433,
+    "votos": {
+     "flavio-nantes-bolsonaro": 824,
+     "luiz-inacio-lula-da-silva": 928
+    }
+   }
+  },
+  {
+   "id": "13-1295",
+   "zona": 13,
+   "codigo": "1295",
+   "nome": "SENAC ARARAQUARA",
+   "endereco": "RUA JOÃO GURGEL, 1935",
+   "bairro": "CENTRO",
+   "bairroId": "centro",
+   "cep": "14801405",
+   "latitude": -21.7946918,
+   "longitude": -48.1860735,
+   "eleitorado": 2239,
+   "qtdSecoes": 9,
+   "turno1": {
+    "comparecimento": 1842,
+    "validos": 1746,
+    "brancos": 32,
+    "nulos": 64,
+    "abstencoes": 397,
+    "votos": {
+     "leonardo-alves-de-araujo": 1,
+     "romeu-zema-neto": 10,
+     "luiz-inacio-lula-da-silva": 779,
+     "augusto-jorge-cury": 70,
+     "renan-antonio-ferreira-dos-santos": 68,
+     "ronaldo-ramos-caiado": 38,
+     "flavio-nantes-bolsonaro": 770,
+     "samara-martins-da-silva-feitosa": 6,
+     "rui-costa-pimenta": 1,
+     "edmilson-silva-costa": 2,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 1886,
+    "validos": 1797,
+    "brancos": 27,
+    "nulos": 62,
+    "abstencoes": 353,
+    "votos": {
+     "flavio-nantes-bolsonaro": 878,
+     "luiz-inacio-lula-da-silva": 919
+    }
+   }
+  },
+  {
+   "id": "13-1260",
+   "zona": 13,
+   "codigo": "1260",
+   "nome": "EMEF. PROF. JOSÉ ROBERTO DE PÁDUA CAMARGO",
+   "endereco": "RUA NOVE DE JULHO 4000",
+   "bairro": "JARDIM DOM PEDRO I",
+   "bairroId": "jardim-dom-pedro-i",
+   "cep": "14802300",
+   "latitude": -21.7631739,
+   "longitude": -48.1820631,
+   "eleitorado": 2079,
+   "qtdSecoes": 6,
+   "turno1": {
+    "comparecimento": 1613,
+    "validos": 1542,
+    "brancos": 21,
+    "nulos": 50,
+    "abstencoes": 466,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "romeu-zema-neto": 13,
+     "luiz-inacio-lula-da-silva": 637,
+     "augusto-jorge-cury": 66,
+     "renan-antonio-ferreira-dos-santos": 43,
+     "ronaldo-ramos-caiado": 40,
+     "flavio-nantes-bolsonaro": 740
+    }
+   },
+   "turno2": {
+    "comparecimento": 1694,
+    "validos": 1623,
+    "brancos": 22,
+    "nulos": 49,
+    "abstencoes": 385,
+    "votos": {
+     "flavio-nantes-bolsonaro": 831,
+     "luiz-inacio-lula-da-silva": 792
+    }
+   }
+  },
+  {
+   "id": "385-1376",
+   "zona": 385,
+   "codigo": "1376",
+   "nome": "CURSO E COLÉGIO INTERATIVO",
+   "endereco": "AVENIDA ARQUITETO WALTER LOGATTI, 894",
+   "bairro": "JARDIM HIGIENOPOLIS",
+   "bairroId": "jardim-higienopolis",
+   "cep": "14807248",
+   "latitude": -21.8068985,
+   "longitude": -48.1616095,
+   "eleitorado": 1837,
+   "qtdSecoes": 6,
+   "turno1": {
+    "comparecimento": 1497,
+    "validos": 1438,
+    "brancos": 16,
+    "nulos": 43,
+    "abstencoes": 340,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "luiz-inacio-lula-da-silva": 530,
+     "augusto-jorge-cury": 45,
+     "renan-antonio-ferreira-dos-santos": 58,
+     "ronaldo-ramos-caiado": 35,
+     "flavio-nantes-bolsonaro": 753,
+     "romeu-zema-neto": 12,
+     "hertz-da-conceicao-dias": 2,
+     "wilson-grassi-junior": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 1555,
+    "validos": 1502,
+    "brancos": 10,
+    "nulos": 43,
+    "abstencoes": 282,
+    "votos": {
+     "flavio-nantes-bolsonaro": 841,
+     "luiz-inacio-lula-da-silva": 661
+    }
+   }
+  },
+  {
+   "id": "13-1481",
+   "zona": 13,
+   "codigo": "1481",
+   "nome": "FACULDADE DE CIÊNCIAS E LETRAS DA UNESP",
+   "endereco": "RODOVIA ARARAQUARA JAÚ, KM. 1",
+   "bairro": "CAMPUS VILLE",
+   "bairroId": "campus-ville",
+   "cep": "14800901",
+   "latitude": -21.8128816,
+   "longitude": -48.2000459,
+   "eleitorado": 1829,
+   "qtdSecoes": 8,
+   "turno1": {
+    "comparecimento": 1519,
+    "validos": 1437,
+    "brancos": 31,
+    "nulos": 51,
+    "abstencoes": 310,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "romeu-zema-neto": 15,
+     "luiz-inacio-lula-da-silva": 708,
+     "augusto-jorge-cury": 45,
+     "renan-antonio-ferreira-dos-santos": 45,
+     "flavio-nantes-bolsonaro": 582,
+     "ronaldo-ramos-caiado": 34,
+     "clariana-zacarkim-barao": 1,
+     "hertz-da-conceicao-dias": 5
+    }
+   },
+   "turno2": {
+    "comparecimento": 1563,
+    "validos": 1499,
+    "brancos": 25,
+    "nulos": 39,
+    "abstencoes": 266,
+    "votos": {
+     "luiz-inacio-lula-da-silva": 831,
+     "flavio-nantes-bolsonaro": 668
+    }
+   }
+  },
+  {
+   "id": "13-1570",
+   "zona": 13,
+   "codigo": "1570",
+   "nome": "E E  JOAO MANOEL DO AMARAL",
+   "endereco": "AV.  LA SALLE, S/N",
+   "bairro": "JARDIM PRIMAVERA",
+   "bairroId": "jardim-primavera",
+   "cep": "14802384",
+   "latitude": -21.7751443,
+   "longitude": -48.1727398,
+   "eleitorado": 1827,
+   "qtdSecoes": 11,
+   "turno1": {
+    "comparecimento": 1459,
+    "validos": 1399,
+    "brancos": 23,
+    "nulos": 37,
+    "abstencoes": 368,
+    "votos": {
+     "leonardo-alves-de-araujo": 1,
+     "renan-antonio-ferreira-dos-santos": 62,
+     "luiz-inacio-lula-da-silva": 519,
+     "augusto-jorge-cury": 42,
+     "ronaldo-ramos-caiado": 37,
+     "flavio-nantes-bolsonaro": 725,
+     "samara-martins-da-silva-feitosa": 4,
+     "hertz-da-conceicao-dias": 1,
+     "romeu-zema-neto": 7,
+     "wilson-grassi-junior": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 1503,
+    "validos": 1446,
+    "brancos": 13,
+    "nulos": 44,
+    "abstencoes": 324,
+    "votos": {
+     "flavio-nantes-bolsonaro": 804,
+     "luiz-inacio-lula-da-silva": 642
+    }
+   }
+  },
+  {
+   "id": "385-1490",
+   "zona": 385,
+   "codigo": "1490",
+   "nome": "EMEF ALTAMIRA AMORIM MANTESE",
+   "endereco": "AV ALZIRO ZARUR, 71 SETOR III",
+   "bairro": "JARDIM ROBERTO SELMI DEI",
+   "bairroId": "jardim-roberto-selmi-dei",
+   "cep": "14806344",
+   "latitude": -21.73290849,
+   "longitude": -48.15338883,
+   "eleitorado": 1634,
+   "qtdSecoes": 6,
+   "turno1": {
+    "comparecimento": 1114,
+    "validos": 1032,
+    "brancos": 32,
+    "nulos": 50,
+    "abstencoes": 520,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 4,
+     "luiz-inacio-lula-da-silva": 509,
+     "augusto-jorge-cury": 32,
+     "hertz-da-conceicao-dias": 6,
+     "renan-antonio-ferreira-dos-santos": 56,
+     "flavio-nantes-bolsonaro": 410,
+     "ronaldo-ramos-caiado": 15
+    }
+   },
+   "turno2": {
+    "comparecimento": 1159,
+    "validos": 1104,
+    "brancos": 19,
+    "nulos": 36,
+    "abstencoes": 475,
+    "votos": {
+     "flavio-nantes-bolsonaro": 464,
+     "luiz-inacio-lula-da-silva": 640
+    }
+   }
+  },
+  {
+   "id": "13-1058",
+   "zona": 13,
+   "codigo": "1058",
+   "nome": "EE. PEDRO JOSÉ NETO",
+   "endereco": "PRAÇA DR. ANTONIO PICARONI, SEM NÚMERO",
+   "bairro": "CENTRO",
+   "bairroId": "centro",
+   "cep": "14801319",
+   "latitude": -21.7870199,
+   "longitude": -48.1788303,
+   "eleitorado": 1618,
+   "qtdSecoes": 10,
+   "turno1": {
+    "comparecimento": 1291,
+    "validos": 1252,
+    "brancos": 12,
+    "nulos": 27,
+    "abstencoes": 327,
+    "votos": {
+     "rui-costa-pimenta": 2,
+     "renan-antonio-ferreira-dos-santos": 42,
+     "augusto-jorge-cury": 27,
+     "romeu-zema-neto": 12,
+     "luiz-inacio-lula-da-silva": 491,
+     "ronaldo-ramos-caiado": 41,
+     "flavio-nantes-bolsonaro": 635,
+     "hertz-da-conceicao-dias": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 1330,
+    "validos": 1300,
+    "brancos": 8,
+    "nulos": 22,
+    "abstencoes": 288,
+    "votos": {
+     "flavio-nantes-bolsonaro": 721,
+     "luiz-inacio-lula-da-silva": 579
+    }
+   }
+  },
+  {
+   "id": "385-1279",
+   "zona": 385,
+   "codigo": "1279",
+   "nome": "CEC FUNDECITRUS",
+   "endereco": "AVENIDA OCTÁVIO MICELLI, 249",
+   "bairro": "VILA MELHADO",
+   "bairroId": "vila-melhado",
+   "cep": "14807046",
+   "latitude": -21.8094131,
+   "longitude": -48.1630343,
+   "eleitorado": 1521,
+   "qtdSecoes": 5,
+   "turno1": {
+    "comparecimento": 1208,
+    "validos": 1151,
+    "brancos": 19,
+    "nulos": 38,
+    "abstencoes": 313,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 1,
+     "romeu-zema-neto": 15,
+     "luiz-inacio-lula-da-silva": 495,
+     "augusto-jorge-cury": 43,
+     "renan-antonio-ferreira-dos-santos": 32,
+     "ronaldo-ramos-caiado": 19,
+     "flavio-nantes-bolsonaro": 546
+    }
+   },
+   "turno2": {
+    "comparecimento": 1257,
+    "validos": 1213,
+    "brancos": 8,
+    "nulos": 36,
+    "abstencoes": 264,
+    "votos": {
+     "luiz-inacio-lula-da-silva": 609,
+     "flavio-nantes-bolsonaro": 604
+    }
+   }
+  },
+  {
+   "id": "13-1589",
+   "zona": 13,
+   "codigo": "1589",
+   "nome": "EE  PROF.  AUGUSTO DA SILVA CESAR",
+   "endereco": "R . EXPEDICIONARIOS DO BRASIL, 277",
+   "bairro": "CENTRO",
+   "bairroId": "centro",
+   "cep": "14800230",
+   "latitude": -21.8050804,
+   "longitude": -48.1776846,
+   "eleitorado": 1404,
+   "qtdSecoes": 9,
+   "turno1": {
+    "comparecimento": 1162,
+    "validos": 1115,
+    "brancos": 16,
+    "nulos": 31,
+    "abstencoes": 242,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 1,
+     "luiz-inacio-lula-da-silva": 519,
+     "augusto-jorge-cury": 45,
+     "hertz-da-conceicao-dias": 1,
+     "renan-antonio-ferreira-dos-santos": 39,
+     "ronaldo-ramos-caiado": 25,
+     "flavio-nantes-bolsonaro": 482,
+     "romeu-zema-neto": 3
+    }
+   },
+   "turno2": {
+    "comparecimento": 1199,
+    "validos": 1150,
+    "brancos": 13,
+    "nulos": 36,
+    "abstencoes": 205,
+    "votos": {
+     "flavio-nantes-bolsonaro": 521,
+     "luiz-inacio-lula-da-silva": 629
+    }
+   }
+  },
+  {
+   "id": "13-1554",
+   "zona": 13,
+   "codigo": "1554",
+   "nome": "SABSA - SOC. AMIGOS DO BAIRRO SANTA ANGELINA",
+   "endereco": "AV. JOÃO LUPO, 155",
+   "bairro": "JARDIM BIAGIONI",
+   "bairroId": "jardim-biagioni",
+   "cep": "14802110",
+   "latitude": -21.7700917,
+   "longitude": -48.186025,
+   "eleitorado": 1347,
+   "qtdSecoes": 4,
+   "turno1": {
+    "comparecimento": 1097,
+    "validos": 1042,
+    "brancos": 22,
+    "nulos": 33,
+    "abstencoes": 250,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "rui-costa-pimenta": 1,
+     "romeu-zema-neto": 10,
+     "luiz-inacio-lula-da-silva": 379,
+     "augusto-jorge-cury": 39,
+     "renan-antonio-ferreira-dos-santos": 33,
+     "ronaldo-ramos-caiado": 24,
+     "flavio-nantes-bolsonaro": 553,
+     "wilson-grassi-junior": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 1124,
+    "validos": 1076,
+    "brancos": 19,
+    "nulos": 29,
+    "abstencoes": 223,
+    "votos": {
+     "flavio-nantes-bolsonaro": 596,
+     "luiz-inacio-lula-da-silva": 480
+    }
+   }
+  },
+  {
+   "id": "385-1325",
+   "zona": 385,
+   "codigo": "1325",
+   "nome": "CER ROSA RIBEIRO STRINGHETTI",
+   "endereco": "RUA JURUPEMA, 387",
+   "bairro": "JARDIM AMÉRICA",
+   "bairroId": "jardim-america",
+   "cep": "14811254",
+   "latitude": -21.7793744,
+   "longitude": -48.1430753,
+   "eleitorado": 1262,
+   "qtdSecoes": 4,
+   "turno1": {
+    "comparecimento": 1030,
+    "validos": 956,
+    "brancos": 32,
+    "nulos": 42,
+    "abstencoes": 232,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "renan-antonio-ferreira-dos-santos": 28,
+     "romeu-zema-neto": 6,
+     "luiz-inacio-lula-da-silva": 437,
+     "augusto-jorge-cury": 32,
+     "ronaldo-ramos-caiado": 20,
+     "flavio-nantes-bolsonaro": 427,
+     "clariana-zacarkim-barao": 1,
+     "leonardo-alves-de-araujo": 2,
+     "hertz-da-conceicao-dias": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 1061,
+    "validos": 1013,
+    "brancos": 14,
+    "nulos": 34,
+    "abstencoes": 201,
+    "votos": {
+     "flavio-nantes-bolsonaro": 466,
+     "luiz-inacio-lula-da-silva": 547
+    }
+   }
+  },
+  {
+   "id": "385-1341",
+   "zona": 385,
+   "codigo": "1341",
+   "nome": "CEC ALESCIO GONÇALVES DOS SANTOS",
+   "endereco": "AV. DOMINGOS FRANCISCO DE PAULA, 21",
+   "bairro": "JARDIM PINHEIROS",
+   "bairroId": "jardim-pinheiros",
+   "cep": "14811400",
+   "latitude": -21.7667986,
+   "longitude": -48.1348791,
+   "eleitorado": 1205,
+   "qtdSecoes": 4,
+   "turno1": {
+    "comparecimento": 841,
+    "validos": 783,
+    "brancos": 21,
+    "nulos": 37,
+    "abstencoes": 364,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 1,
+     "luiz-inacio-lula-da-silva": 363,
+     "augusto-jorge-cury": 22,
+     "renan-antonio-ferreira-dos-santos": 33,
+     "ronaldo-ramos-caiado": 19,
+     "flavio-nantes-bolsonaro": 345
+    }
+   },
+   "turno2": {
+    "comparecimento": 861,
+    "validos": 821,
+    "brancos": 8,
+    "nulos": 32,
+    "abstencoes": 344,
+    "votos": {
+     "flavio-nantes-bolsonaro": 390,
+     "luiz-inacio-lula-da-silva": 431
+    }
+   }
+  },
+  {
+   "id": "385-1368",
+   "zona": 385,
+   "codigo": "1368",
+   "nome": "CER MARIA RENATA LUPO BO",
+   "endereco": "AVENIDA JOSÉ ANTÔNIO A. FILPI,  780",
+   "bairro": "DR. TANCREDO DE ALMEIDA NEVES (CECAP)",
+   "bairroId": "dr-tancredo-de-almeida-neves-cecap",
+   "cep": "14808210",
+   "latitude": -21.832249,
+   "longitude": -48.1475773,
+   "eleitorado": 1204,
+   "qtdSecoes": 4,
+   "turno1": {
+    "comparecimento": 945,
+    "validos": 863,
+    "brancos": 34,
+    "nulos": 48,
+    "abstencoes": 259,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "luiz-inacio-lula-da-silva": 409,
+     "augusto-jorge-cury": 32,
+     "renan-antonio-ferreira-dos-santos": 17,
+     "ronaldo-ramos-caiado": 25,
+     "flavio-nantes-bolsonaro": 369,
+     "clariana-zacarkim-barao": 1,
+     "romeu-zema-neto": 3,
+     "hertz-da-conceicao-dias": 3,
+     "edmilson-silva-costa": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 995,
+    "validos": 940,
+    "brancos": 18,
+    "nulos": 37,
+    "abstencoes": 209,
+    "votos": {
+     "flavio-nantes-bolsonaro": 414,
+     "luiz-inacio-lula-da-silva": 526
+    }
+   }
+  },
+  {
+   "id": "385-1333",
+   "zona": 385,
+   "codigo": "1333",
+   "nome": "CER ELOÁ DO VALLE QUADROS",
+   "endereco": "RUA DOM PEDRO I, 1.362",
+   "bairro": "VILA XAVIER",
+   "bairroId": "vila-xavier",
+   "cep": "14810108",
+   "latitude": -21.7841226,
+   "longitude": -48.1644505,
+   "eleitorado": 1083,
+   "qtdSecoes": 4,
+   "turno1": {
+    "comparecimento": 871,
+    "validos": 827,
+    "brancos": 19,
+    "nulos": 25,
+    "abstencoes": 212,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "renan-antonio-ferreira-dos-santos": 32,
+     "augusto-jorge-cury": 31,
+     "luiz-inacio-lula-da-silva": 350,
+     "ronaldo-ramos-caiado": 20,
+     "flavio-nantes-bolsonaro": 386,
+     "rui-costa-pimenta": 1,
+     "hertz-da-conceicao-dias": 1,
+     "romeu-zema-neto": 3,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 885,
+    "validos": 862,
+    "brancos": 9,
+    "nulos": 14,
+    "abstencoes": 198,
+    "votos": {
+     "flavio-nantes-bolsonaro": 421,
+     "luiz-inacio-lula-da-silva": 441
+    }
+   }
+  },
+  {
+   "id": "13-1511",
+   "zona": 13,
+   "codigo": "1511",
+   "nome": "COLÉGIO LICEU MONTEIRO LOBATO",
+   "endereco": "RUA PROFESSORA ADÉLIA IZIQUE, 420",
+   "bairro": "CENTRO",
+   "bairroId": "centro",
+   "cep": "14801380",
+   "latitude": -21.785061,
+   "longitude": -48.1867223,
+   "eleitorado": 981,
+   "qtdSecoes": 3,
+   "turno1": {
+    "comparecimento": 788,
+    "validos": 757,
+    "brancos": 14,
+    "nulos": 17,
+    "abstencoes": 193,
+    "votos": {
+     "romeu-zema-neto": 6,
+     "luiz-inacio-lula-da-silva": 342,
+     "augusto-jorge-cury": 29,
+     "hertz-da-conceicao-dias": 1,
+     "renan-antonio-ferreira-dos-santos": 37,
+     "ronaldo-ramos-caiado": 21,
+     "flavio-nantes-bolsonaro": 321
+    }
+   },
+   "turno2": {
+    "comparecimento": 798,
+    "validos": 765,
+    "brancos": 12,
+    "nulos": 21,
+    "abstencoes": 183,
+    "votos": {
+     "luiz-inacio-lula-da-silva": 391,
+     "flavio-nantes-bolsonaro": 374
+    }
+   }
+  },
+  {
+   "id": "385-1422",
+   "zona": 385,
+   "codigo": "1422",
+   "nome": "CER JOSÉ PIZANI",
+   "endereco": "RUA DOMINGOS PAULO REAL, 347",
+   "bairro": "JARDIM RESIDENCIAL ITALIA",
+   "bairroId": "jardim-residencial-italia",
+   "cep": "14807300",
+   "latitude": -21.7995912,
+   "longitude": -48.1491009,
+   "eleitorado": 972,
+   "qtdSecoes": 3,
+   "turno1": {
+    "comparecimento": 768,
+    "validos": 716,
+    "brancos": 12,
+    "nulos": 40,
+    "abstencoes": 204,
+    "votos": {
+     "leonardo-alves-de-araujo": 1,
+     "samara-martins-da-silva-feitosa": 2,
+     "luiz-inacio-lula-da-silva": 362,
+     "augusto-jorge-cury": 24,
+     "renan-antonio-ferreira-dos-santos": 22,
+     "ronaldo-ramos-caiado": 11,
+     "flavio-nantes-bolsonaro": 290,
+     "clariana-zacarkim-barao": 1,
+     "romeu-zema-neto": 3
+    }
+   },
+   "turno2": {
+    "comparecimento": 794,
+    "validos": 754,
+    "brancos": 2,
+    "nulos": 38,
+    "abstencoes": 178,
+    "votos": {
+     "luiz-inacio-lula-da-silva": 429,
+     "flavio-nantes-bolsonaro": 325
+    }
+   }
+  },
+  {
+   "id": "385-1430",
+   "zona": 385,
+   "codigo": "1430",
+   "nome": "CER HONORINA COMELLI LIA",
+   "endereco": "AV LUIZ DOSUALDO, 170",
+   "bairro": "JARDIM IMPERADOR",
+   "bairroId": "jardim-imperador",
+   "cep": "14806191",
+   "latitude": -21.753676,
+   "longitude": -48.1608694,
+   "eleitorado": 951,
+   "qtdSecoes": 3,
+   "turno1": {
+    "comparecimento": 802,
+    "validos": 763,
+    "brancos": 12,
+    "nulos": 27,
+    "abstencoes": 149,
+    "votos": {
+     "romeu-zema-neto": 5,
+     "luiz-inacio-lula-da-silva": 303,
+     "augusto-jorge-cury": 21,
+     "renan-antonio-ferreira-dos-santos": 23,
+     "ronaldo-ramos-caiado": 24,
+     "flavio-nantes-bolsonaro": 387
+    }
+   },
+   "turno2": {
+    "comparecimento": 815,
+    "validos": 779,
+    "brancos": 13,
+    "nulos": 23,
+    "abstencoes": 136,
+    "votos": {
+     "flavio-nantes-bolsonaro": 422,
+     "luiz-inacio-lula-da-silva": 357
+    }
+   }
+  },
+  {
+   "id": "385-1414",
+   "zona": 385,
+   "codigo": "1414",
+   "nome": "CER DONA COTINHA DE BARROS",
+   "endereco": "RUA DOS ESTADOS, 1061",
+   "bairro": "JARDIM BRASIL",
+   "bairroId": "jardim-brasil",
+   "cep": "14811073",
+   "latitude": -21.7879063,
+   "longitude": -48.1547839,
+   "eleitorado": 948,
+   "qtdSecoes": 3,
+   "turno1": {
+    "comparecimento": 770,
+    "validos": 716,
+    "brancos": 19,
+    "nulos": 35,
+    "abstencoes": 178,
+    "votos": {
+     "romeu-zema-neto": 7,
+     "luiz-inacio-lula-da-silva": 309,
+     "wilson-grassi-junior": 1,
+     "augusto-jorge-cury": 19,
+     "renan-antonio-ferreira-dos-santos": 24,
+     "ronaldo-ramos-caiado": 24,
+     "flavio-nantes-bolsonaro": 329,
+     "hertz-da-conceicao-dias": 2,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 777,
+    "validos": 739,
+    "brancos": 14,
+    "nulos": 24,
+    "abstencoes": 171,
+    "votos": {
+     "flavio-nantes-bolsonaro": 379,
+     "luiz-inacio-lula-da-silva": 360
+    }
+   }
+  },
+  {
+   "id": "13-1040",
+   "zona": 13,
+   "codigo": "1040",
+   "nome": "FACULDADE DE CIENCIAS FARMACÊUTICAS E ODONTOLÓGICAS",
+   "endereco": "RUA HUMAITÁ, 1680",
+   "bairro": "CENTRO",
+   "bairroId": "centro",
+   "cep": "14801385",
+   "latitude": -21.7935266,
+   "longitude": -48.1817618,
+   "eleitorado": 918,
+   "qtdSecoes": 4,
+   "turno1": {
+    "comparecimento": 815,
+    "validos": 796,
+    "brancos": 4,
+    "nulos": 15,
+    "abstencoes": 103,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 1,
+     "luiz-inacio-lula-da-silva": 362,
+     "renan-antonio-ferreira-dos-santos": 26,
+     "augusto-jorge-cury": 17,
+     "ronaldo-ramos-caiado": 20,
+     "flavio-nantes-bolsonaro": 369,
+     "hertz-da-conceicao-dias": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 816,
+    "validos": 798,
+    "brancos": 8,
+    "nulos": 10,
+    "abstencoes": 102,
+    "votos": {
+     "flavio-nantes-bolsonaro": 399,
+     "luiz-inacio-lula-da-silva": 399
+    }
+   }
+  },
+  {
+   "id": "385-1449",
+   "zona": 385,
+   "codigo": "1449",
+   "nome": "EMEF VEREADOR EDMILSON DE NOLA SÁ",
+   "endereco": "AV. LEONARDO GOMES",
+   "bairro": "PARQUE RESIDENCIAL VALLE VERDE",
+   "bairroId": "parque-residencial-valle-verde",
+   "cep": "14809284",
+   "latitude": -21.7240308,
+   "longitude": -48.1582298,
+   "eleitorado": 905,
+   "qtdSecoes": 3,
+   "turno1": {
+    "comparecimento": 538,
+    "validos": 486,
+    "brancos": 29,
+    "nulos": 23,
+    "abstencoes": 367,
+    "votos": {
+     "luiz-inacio-lula-da-silva": 286,
+     "renan-antonio-ferreira-dos-santos": 26,
+     "ronaldo-ramos-caiado": 7,
+     "flavio-nantes-bolsonaro": 157,
+     "augusto-jorge-cury": 7,
+     "romeu-zema-neto": 2,
+     "hertz-da-conceicao-dias": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 550,
+    "validos": 525,
+    "brancos": 14,
+    "nulos": 11,
+    "abstencoes": 355,
+    "votos": {
+     "flavio-nantes-bolsonaro": 156,
+     "luiz-inacio-lula-da-silva": 369
+    }
+   }
+  },
+  {
+   "id": "13-1503",
+   "zona": 13,
+   "codigo": "1503",
+   "nome": "ESCOLA ESTADUAL PROFESSOR URIAS BRAGA COSTA",
+   "endereco": "AV EDMUNDO LUPO 256",
+   "bairro": "JARDIM MORUMBI",
+   "bairroId": "jardim-morumbi",
+   "cep": "14801080",
+   "latitude": -21.7954336,
+   "longitude": -48.1924473,
+   "eleitorado": 704,
+   "qtdSecoes": 3,
+   "turno1": {
+    "comparecimento": 606,
+    "validos": 586,
+    "brancos": 11,
+    "nulos": 9,
+    "abstencoes": 98,
+    "votos": {
+     "rui-costa-pimenta": 1,
+     "romeu-zema-neto": 3,
+     "luiz-inacio-lula-da-silva": 257,
+     "augusto-jorge-cury": 20,
+     "hertz-da-conceicao-dias": 2,
+     "renan-antonio-ferreira-dos-santos": 17,
+     "ronaldo-ramos-caiado": 13,
+     "flavio-nantes-bolsonaro": 272,
+     "edmilson-silva-costa": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 603,
+    "validos": 591,
+    "brancos": 6,
+    "nulos": 6,
+    "abstencoes": 101,
+    "votos": {
+     "flavio-nantes-bolsonaro": 294,
+     "luiz-inacio-lula-da-silva": 297
+    }
+   }
+  },
+  {
+   "id": "385-1465",
+   "zona": 385,
+   "codigo": "1465",
+   "nome": "CER MARIA JOSE PAHIN DA PORCIUNCULA",
+   "endereco": "RUA LOURENÇO ROLFSEN, 230",
+   "bairro": "PARQUE RESIDENCIAL IGUATEMI",
+   "bairroId": "parque-residencial-iguatemi",
+   "cep": "14808288",
+   "latitude": -21.8315148,
+   "longitude": -48.1417746,
+   "eleitorado": 623,
+   "qtdSecoes": 2,
+   "turno1": {
+    "comparecimento": 396,
+    "validos": 377,
+    "brancos": 9,
+    "nulos": 10,
+    "abstencoes": 227,
+    "votos": {
+     "luiz-inacio-lula-da-silva": 170,
+     "augusto-jorge-cury": 10,
+     "hertz-da-conceicao-dias": 2,
+     "renan-antonio-ferreira-dos-santos": 20,
+     "ronaldo-ramos-caiado": 3,
+     "flavio-nantes-bolsonaro": 172
+    }
+   },
+   "turno2": {
+    "comparecimento": 424,
+    "validos": 409,
+    "brancos": 5,
+    "nulos": 10,
+    "abstencoes": 199,
+    "votos": {
+     "flavio-nantes-bolsonaro": 184,
+     "luiz-inacio-lula-da-silva": 225
+    }
+   }
+  },
+  {
+   "id": "13-1490",
+   "zona": 13,
+   "codigo": "1490",
+   "nome": "EMEF PROFESSOR HERMÍNIO PAGOTTO",
+   "endereco": "RUA 2, S/N",
+   "bairro": "ASSENTAMENTO BELA VISTA",
+   "bairroId": "assentamento-bela-vista",
+   "cep": "14801970",
+   "latitude": -21.9168153,
+   "longitude": -48.1966891,
+   "eleitorado": 483,
+   "qtdSecoes": 2,
+   "turno1": {
+    "comparecimento": 381,
+    "validos": 353,
+    "brancos": 15,
+    "nulos": 13,
+    "abstencoes": 102,
+    "votos": {
+     "renan-antonio-ferreira-dos-santos": 10,
+     "augusto-jorge-cury": 3,
+     "luiz-inacio-lula-da-silva": 159,
+     "ronaldo-ramos-caiado": 4,
+     "flavio-nantes-bolsonaro": 177
+    }
+   },
+   "turno2": {
+    "comparecimento": 373,
+    "validos": 357,
+    "brancos": 10,
+    "nulos": 6,
+    "abstencoes": 110,
+    "votos": {
+     "flavio-nantes-bolsonaro": 175,
+     "luiz-inacio-lula-da-silva": 182
+    }
+   }
+  },
+  {
+   "id": "385-1481",
+   "zona": 385,
+   "codigo": "1481",
+   "nome": "EE SERGIO PEDRO SPERANZA",
+   "endereco": "AVENIDA PROFESSOR STANLEY RÓBSON CERQUEIRA, 130",
+   "bairro": "PARQUE SAO PAULO",
+   "bairroId": "parque-sao-paulo",
+   "cep": "14811460",
+   "latitude": -21.78302564,
+   "longitude": -48.13481141,
+   "eleitorado": 464,
+   "qtdSecoes": 2,
+   "turno1": {
+    "comparecimento": 312,
+    "validos": 289,
+    "brancos": 17,
+    "nulos": 6,
+    "abstencoes": 152,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 1,
+     "luiz-inacio-lula-da-silva": 160,
+     "augusto-jorge-cury": 11,
+     "renan-antonio-ferreira-dos-santos": 13,
+     "flavio-nantes-bolsonaro": 101,
+     "romeu-zema-neto": 1,
+     "ronaldo-ramos-caiado": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 319,
+    "validos": 310,
+    "brancos": 4,
+    "nulos": 5,
+    "abstencoes": 145,
+    "votos": {
+     "luiz-inacio-lula-da-silva": 200,
+     "flavio-nantes-bolsonaro": 110
+    }
+   }
+  },
+  {
+   "id": "13-1163",
+   "zona": 13,
+   "codigo": "1163",
+   "nome": "E.M. EUGÊNIO TROVATTI",
+   "endereco": "RUA DR. NILO RODRIGUES, SEM NÚMERO",
+   "bairro": "DISTRITO DE BUENO DE ANDRADA",
+   "bairroId": "distrito-de-bueno-de-andrada",
+   "cep": "14812000",
+   "latitude": -21.6701466,
+   "longitude": -48.248493,
+   "eleitorado": 444,
+   "qtdSecoes": 2,
+   "turno1": {
+    "comparecimento": 360,
+    "validos": 334,
+    "brancos": 8,
+    "nulos": 18,
+    "abstencoes": 84,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 1,
+     "renan-antonio-ferreira-dos-santos": 7,
+     "augusto-jorge-cury": 8,
+     "luiz-inacio-lula-da-silva": 175,
+     "ronaldo-ramos-caiado": 1,
+     "flavio-nantes-bolsonaro": 142
+    }
+   },
+   "turno2": {
+    "comparecimento": 356,
+    "validos": 337,
+    "brancos": 5,
+    "nulos": 14,
+    "abstencoes": 88,
+    "votos": {
+     "flavio-nantes-bolsonaro": 150,
+     "luiz-inacio-lula-da-silva": 187
+    }
+   }
+  },
+  {
+   "id": "385-1392",
+   "zona": 385,
+   "codigo": "1392",
+   "nome": "UDEFA - UNIÃO DOS DEFICIENTES FÍSICOS DE ARARAQUARA",
+   "endereco": "AV. PAULO DA SILVEIRA FERRAZ, N 627",
+   "bairro": "VILA XAVIER",
+   "bairroId": "vila-xavier",
+   "cep": "14810210",
+   "latitude": -21.7833562,
+   "longitude": -48.1657059,
+   "eleitorado": 306,
+   "qtdSecoes": 1,
+   "turno1": {
+    "comparecimento": 217,
+    "validos": 209,
+    "brancos": 2,
+    "nulos": 6,
+    "abstencoes": 89,
+    "votos": {
+     "renan-antonio-ferreira-dos-santos": 1,
+     "augusto-jorge-cury": 5,
+     "luiz-inacio-lula-da-silva": 97,
+     "ronaldo-ramos-caiado": 6,
+     "flavio-nantes-bolsonaro": 100
+    }
+   },
+   "turno2": {
+    "comparecimento": 225,
+    "validos": 221,
+    "brancos": 1,
+    "nulos": 3,
+    "abstencoes": 81,
+    "votos": {
+     "flavio-nantes-bolsonaro": 99,
+     "luiz-inacio-lula-da-silva": 122
+    }
+   }
+  },
+  {
+   "id": "13-1562",
+   "zona": 13,
+   "codigo": "1562",
+   "nome": "CER MARIA DE LOURDES DA SILVA PRADA - IRMÃ MAURINA",
+   "endereco": "FAZENDA MONTE ALEGRE VI, LOTE 55",
+   "bairro": "ASSENTAMENTO MONTE ALEGRE II",
+   "bairroId": "assentamento-monte-alegre-ii",
+   "cep": "14805197",
+   "latitude": -21.6091471,
+   "longitude": -48.2440163,
+   "eleitorado": 134,
+   "qtdSecoes": 1,
+   "turno1": {
+    "comparecimento": 109,
+    "validos": 105,
+    "brancos": 3,
+    "nulos": 1,
+    "abstencoes": 25,
+    "votos": {
+     "augusto-jorge-cury": 5,
+     "romeu-zema-neto": 1,
+     "luiz-inacio-lula-da-silva": 44,
+     "ronaldo-ramos-caiado": 1,
+     "flavio-nantes-bolsonaro": 54
+    }
+   },
+   "turno2": {
+    "comparecimento": 112,
+    "validos": 110,
+    "brancos": 1,
+    "nulos": 1,
+    "abstencoes": 22,
+    "votos": {
+     "flavio-nantes-bolsonaro": 52,
+     "luiz-inacio-lula-da-silva": 58
+    }
+   }
+  },
+  {
+   "id": "385-1317",
+   "zona": 385,
+   "codigo": "1317",
+   "nome": "PENITENCIÁRIA DE ARARAQUARA",
+   "endereco": "AVENIDA FRANCISCO VAZ FILHO, N 4055",
+   "bairro": "JARDIM PINHEIROS",
+   "bairroId": "jardim-pinheiros",
+   "cep": "14810900",
+   "latitude": null,
+   "longitude": null,
+   "eleitorado": 0,
+   "qtdSecoes": 1,
+   "turno1": {
+    "comparecimento": 96,
+    "validos": 88,
+    "brancos": 5,
+    "nulos": 3,
+    "abstencoes": -96,
+    "votos": {
+     "luiz-inacio-lula-da-silva": 63,
+     "augusto-jorge-cury": 2,
+     "ronaldo-ramos-caiado": 3,
+     "flavio-nantes-bolsonaro": 19,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 76,
+    "validos": 71,
+    "brancos": 2,
+    "nulos": 3,
+    "abstencoes": -76,
+    "votos": {
+     "flavio-nantes-bolsonaro": 14,
+     "luiz-inacio-lula-da-silva": 57
+    }
+   }
+  }
+ ],
+ "bairros": [
+  {
+   "id": "centro",
+   "nome": "CENTRO",
+   "eleitorado": 22286,
+   "qtdSecoes": 111,
+   "qtdSecoesApuradas": 111,
+   "turno1": {
+    "comparecimento": 17996,
+    "validos": 17306,
+    "brancos": 226,
+    "nulos": 464,
+    "abstencoes": 4290,
+    "votos": {
+     "leonardo-alves-de-araujo": 1,
+     "romeu-zema-neto": 93,
+     "luiz-inacio-lula-da-silva": 7183,
+     "augusto-jorge-cury": 582,
+     "renan-antonio-ferreira-dos-santos": 553,
+     "ronaldo-ramos-caiado": 447,
+     "flavio-nantes-bolsonaro": 8386,
+     "samara-martins-da-silva-feitosa": 27,
+     "rui-costa-pimenta": 7,
+     "hertz-da-conceicao-dias": 12,
+     "edmilson-silva-costa": 7,
+     "clariana-zacarkim-barao": 6,
+     "wilson-grassi-junior": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 18475,
+    "validos": 17860,
+    "brancos": 182,
+    "nulos": 433,
+    "abstencoes": 3811,
+    "votos": {
+     "flavio-nantes-bolsonaro": 9270,
+     "luiz-inacio-lula-da-silva": 8590
+    }
+   }
+  },
+  {
+   "id": "vila-xavier",
+   "nome": "VILA XAVIER",
+   "eleitorado": 12579,
+   "qtdSecoes": 50,
+   "qtdSecoesApuradas": 50,
+   "turno1": {
+    "comparecimento": 9860,
+    "validos": 9361,
+    "brancos": 200,
+    "nulos": 299,
+    "abstencoes": 2719,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 16,
+     "romeu-zema-neto": 46,
+     "luiz-inacio-lula-da-silva": 4052,
+     "augusto-jorge-cury": 296,
+     "renan-antonio-ferreira-dos-santos": 312,
+     "ronaldo-ramos-caiado": 198,
+     "flavio-nantes-bolsonaro": 4420,
+     "hertz-da-conceicao-dias": 9,
+     "rui-costa-pimenta": 4,
+     "wilson-grassi-junior": 3,
+     "edmilson-silva-costa": 4,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 10204,
+    "validos": 9866,
+    "brancos": 102,
+    "nulos": 236,
+    "abstencoes": 2375,
+    "votos": {
+     "flavio-nantes-bolsonaro": 4881,
+     "luiz-inacio-lula-da-silva": 4985
+    }
+   }
+  },
+  {
+   "id": "jardim-nova-araraquara",
+   "nome": "JARDIM NOVA ARARAQUARA",
+   "eleitorado": 8948,
+   "qtdSecoes": 26,
+   "qtdSecoesApuradas": 26,
+   "turno1": {
+    "comparecimento": 7006,
+    "validos": 6473,
+    "brancos": 208,
+    "nulos": 325,
+    "abstencoes": 1942,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 5,
+     "romeu-zema-neto": 23,
+     "luiz-inacio-lula-da-silva": 2992,
+     "augusto-jorge-cury": 214,
+     "renan-antonio-ferreira-dos-santos": 263,
+     "ronaldo-ramos-caiado": 140,
+     "flavio-nantes-bolsonaro": 2820,
+     "hertz-da-conceicao-dias": 9,
+     "leonardo-alves-de-araujo": 1,
+     "rui-costa-pimenta": 1,
+     "edmilson-silva-costa": 2,
+     "wilson-grassi-junior": 1,
+     "clariana-zacarkim-barao": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 7196,
+    "validos": 6799,
+    "brancos": 133,
+    "nulos": 264,
+    "abstencoes": 1752,
+    "votos": {
+     "flavio-nantes-bolsonaro": 3149,
+     "luiz-inacio-lula-da-silva": 3650
+    }
+   }
+  },
+  {
+   "id": "jardim-roberto-selmi-dei",
+   "nome": "JARDIM ROBERTO SELMI DEI",
+   "eleitorado": 6047,
+   "qtdSecoes": 20,
+   "qtdSecoesApuradas": 19,
+   "turno1": {
+    "comparecimento": 4540,
+    "validos": 4222,
+    "brancos": 126,
+    "nulos": 192,
+    "abstencoes": 1507,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 5,
+     "luiz-inacio-lula-da-silva": 2075,
+     "augusto-jorge-cury": 116,
+     "hertz-da-conceicao-dias": 6,
+     "renan-antonio-ferreira-dos-santos": 131,
+     "flavio-nantes-bolsonaro": 1796,
+     "ronaldo-ramos-caiado": 77,
+     "rui-costa-pimenta": 1,
+     "romeu-zema-neto": 13,
+     "clariana-zacarkim-barao": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 4715,
+    "validos": 4506,
+    "brancos": 67,
+    "nulos": 142,
+    "abstencoes": 1332,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1981,
+     "luiz-inacio-lula-da-silva": 2525
+    }
+   }
+  },
+  {
+   "id": "jardim-silvania",
+   "nome": "JARDIM SILVANIA",
+   "eleitorado": 5033,
+   "qtdSecoes": 18,
+   "qtdSecoesApuradas": 18,
+   "turno1": {
+    "comparecimento": 3891,
+    "validos": 3678,
+    "brancos": 67,
+    "nulos": 146,
+    "abstencoes": 1142,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 6,
+     "renan-antonio-ferreira-dos-santos": 99,
+     "luiz-inacio-lula-da-silva": 1569,
+     "augusto-jorge-cury": 124,
+     "ronaldo-ramos-caiado": 87,
+     "flavio-nantes-bolsonaro": 1779,
+     "romeu-zema-neto": 10,
+     "leonardo-alves-de-araujo": 1,
+     "clariana-zacarkim-barao": 1,
+     "edmilson-silva-costa": 1,
+     "hertz-da-conceicao-dias": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 4039,
+    "validos": 3862,
+    "brancos": 49,
+    "nulos": 128,
+    "abstencoes": 994,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1931,
+     "luiz-inacio-lula-da-silva": 1931
+    }
+   }
+  },
+  {
+   "id": "jardim-floridiana",
+   "nome": "JARDIM FLORIDIANA",
+   "eleitorado": 4943,
+   "qtdSecoes": 16,
+   "qtdSecoesApuradas": 16,
+   "turno1": {
+    "comparecimento": 3866,
+    "validos": 3684,
+    "brancos": 59,
+    "nulos": 123,
+    "abstencoes": 1077,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 5,
+     "renan-antonio-ferreira-dos-santos": 130,
+     "romeu-zema-neto": 16,
+     "luiz-inacio-lula-da-silva": 1496,
+     "augusto-jorge-cury": 171,
+     "ronaldo-ramos-caiado": 65,
+     "flavio-nantes-bolsonaro": 1793,
+     "edmilson-silva-costa": 1,
+     "clariana-zacarkim-barao": 2,
+     "hertz-da-conceicao-dias": 4,
+     "rui-costa-pimenta": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3980,
+    "validos": 3811,
+    "brancos": 42,
+    "nulos": 127,
+    "abstencoes": 963,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1991,
+     "luiz-inacio-lula-da-silva": 1820
+    }
+   }
+  },
+  {
+   "id": "jardim-residencial-italia",
+   "nome": "JARDIM RESIDENCIAL ITALIA",
+   "eleitorado": 4882,
+   "qtdSecoes": 16,
+   "qtdSecoesApuradas": 16,
+   "turno1": {
+    "comparecimento": 3789,
+    "validos": 3480,
+    "brancos": 89,
+    "nulos": 220,
+    "abstencoes": 1093,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 5,
+     "renan-antonio-ferreira-dos-santos": 115,
+     "luiz-inacio-lula-da-silva": 1698,
+     "augusto-jorge-cury": 107,
+     "ronaldo-ramos-caiado": 64,
+     "flavio-nantes-bolsonaro": 1475,
+     "romeu-zema-neto": 8,
+     "leonardo-alves-de-araujo": 3,
+     "clariana-zacarkim-barao": 2,
+     "edmilson-silva-costa": 2,
+     "hertz-da-conceicao-dias": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3943,
+    "validos": 3740,
+    "brancos": 51,
+    "nulos": 152,
+    "abstencoes": 939,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1624,
+     "luiz-inacio-lula-da-silva": 2116
+    }
+   }
+  },
+  {
+   "id": "jardim-america",
+   "nome": "JARDIM AMÉRICA",
+   "eleitorado": 4862,
+   "qtdSecoes": 15,
+   "qtdSecoesApuradas": 15,
+   "turno1": {
+    "comparecimento": 3802,
+    "validos": 3506,
+    "brancos": 120,
+    "nulos": 176,
+    "abstencoes": 1060,
+    "votos": {
+     "leonardo-alves-de-araujo": 4,
+     "luiz-inacio-lula-da-silva": 1625,
+     "augusto-jorge-cury": 111,
+     "renan-antonio-ferreira-dos-santos": 93,
+     "ronaldo-ramos-caiado": 73,
+     "flavio-nantes-bolsonaro": 1570,
+     "samara-martins-da-silva-feitosa": 6,
+     "romeu-zema-neto": 17,
+     "clariana-zacarkim-barao": 2,
+     "hertz-da-conceicao-dias": 3,
+     "wilson-grassi-junior": 1,
+     "edmilson-silva-costa": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3947,
+    "validos": 3746,
+    "brancos": 62,
+    "nulos": 139,
+    "abstencoes": 915,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1726,
+     "luiz-inacio-lula-da-silva": 2020
+    }
+   }
+  },
+  {
+   "id": "jardim-residencial-paraiso",
+   "nome": "JARDIM RESIDENCIAL PARAISO",
+   "eleitorado": 4819,
+   "qtdSecoes": 15,
+   "qtdSecoesApuradas": 15,
+   "turno1": {
+    "comparecimento": 3820,
+    "validos": 3600,
+    "brancos": 86,
+    "nulos": 134,
+    "abstencoes": 999,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "romeu-zema-neto": 23,
+     "luiz-inacio-lula-da-silva": 1523,
+     "augusto-jorge-cury": 152,
+     "renan-antonio-ferreira-dos-santos": 103,
+     "ronaldo-ramos-caiado": 83,
+     "flavio-nantes-bolsonaro": 1707,
+     "hertz-da-conceicao-dias": 2,
+     "clariana-zacarkim-barao": 4
+    }
+   },
+   "turno2": {
+    "comparecimento": 3948,
+    "validos": 3790,
+    "brancos": 44,
+    "nulos": 114,
+    "abstencoes": 871,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1875,
+     "luiz-inacio-lula-da-silva": 1915
+    }
+   }
+  },
+  {
+   "id": "jardim-pinheiros",
+   "nome": "JARDIM PINHEIROS",
+   "eleitorado": 4777,
+   "qtdSecoes": 17,
+   "qtdSecoesApuradas": 17,
+   "turno1": {
+    "comparecimento": 3838,
+    "validos": 3571,
+    "brancos": 103,
+    "nulos": 164,
+    "abstencoes": 939,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 1,
+     "luiz-inacio-lula-da-silva": 1690,
+     "augusto-jorge-cury": 101,
+     "renan-antonio-ferreira-dos-santos": 110,
+     "ronaldo-ramos-caiado": 85,
+     "flavio-nantes-bolsonaro": 1570,
+     "rui-costa-pimenta": 1,
+     "edmilson-silva-costa": 1,
+     "romeu-zema-neto": 8,
+     "hertz-da-conceicao-dias": 2,
+     "clariana-zacarkim-barao": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 3938,
+    "validos": 3740,
+    "brancos": 51,
+    "nulos": 147,
+    "abstencoes": 839,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1729,
+     "luiz-inacio-lula-da-silva": 2011
+    }
+   }
+  },
+  {
+   "id": "jardim-roberto-selmi-dei-iii",
+   "nome": "JARDIM ROBERTO SELMI DEI III",
+   "eleitorado": 4740,
+   "qtdSecoes": 16,
+   "qtdSecoesApuradas": 16,
+   "turno1": {
+    "comparecimento": 3338,
+    "validos": 3088,
+    "brancos": 109,
+    "nulos": 141,
+    "abstencoes": 1402,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "romeu-zema-neto": 4,
+     "luiz-inacio-lula-da-silva": 1775,
+     "augusto-jorge-cury": 97,
+     "renan-antonio-ferreira-dos-santos": 59,
+     "ronaldo-ramos-caiado": 50,
+     "flavio-nantes-bolsonaro": 1094,
+     "hertz-da-conceicao-dias": 2,
+     "clariana-zacarkim-barao": 1,
+     "edmilson-silva-costa": 2,
+     "wilson-grassi-junior": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3522,
+    "validos": 3395,
+    "brancos": 47,
+    "nulos": 80,
+    "abstencoes": 1218,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1192,
+     "luiz-inacio-lula-da-silva": 2203
+    }
+   }
+  },
+  {
+   "id": "parque-sao-paulo",
+   "nome": "PARQUE SAO PAULO",
+   "eleitorado": 4568,
+   "qtdSecoes": 15,
+   "qtdSecoesApuradas": 15,
+   "turno1": {
+    "comparecimento": 3431,
+    "validos": 3150,
+    "brancos": 130,
+    "nulos": 151,
+    "abstencoes": 1137,
+    "votos": {
+     "leonardo-alves-de-araujo": 1,
+     "renan-antonio-ferreira-dos-santos": 103,
+     "luiz-inacio-lula-da-silva": 1626,
+     "augusto-jorge-cury": 93,
+     "ronaldo-ramos-caiado": 59,
+     "flavio-nantes-bolsonaro": 1252,
+     "samara-martins-da-silva-feitosa": 3,
+     "romeu-zema-neto": 9,
+     "edmilson-silva-costa": 3,
+     "hertz-da-conceicao-dias": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3547,
+    "validos": 3388,
+    "brancos": 60,
+    "nulos": 99,
+    "abstencoes": 1021,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1375,
+     "luiz-inacio-lula-da-silva": 2013
+    }
+   }
+  },
+  {
+   "id": "parque-residencial-iguatemi",
+   "nome": "PARQUE RESIDENCIAL IGUATEMI",
+   "eleitorado": 4337,
+   "qtdSecoes": 14,
+   "qtdSecoesApuradas": 14,
+   "turno1": {
+    "comparecimento": 3357,
+    "validos": 3110,
+    "brancos": 101,
+    "nulos": 146,
+    "abstencoes": 980,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "luiz-inacio-lula-da-silva": 1524,
+     "romeu-zema-neto": 9,
+     "augusto-jorge-cury": 105,
+     "renan-antonio-ferreira-dos-santos": 85,
+     "edmilson-silva-costa": 2,
+     "ronaldo-ramos-caiado": 64,
+     "flavio-nantes-bolsonaro": 1314,
+     "hertz-da-conceicao-dias": 4,
+     "wilson-grassi-junior": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3472,
+    "validos": 3313,
+    "brancos": 53,
+    "nulos": 106,
+    "abstencoes": 865,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1432,
+     "luiz-inacio-lula-da-silva": 1881
+    }
+   }
+  },
+  {
+   "id": "jardim-indaia",
+   "nome": "JARDIM INDAIA",
+   "eleitorado": 4202,
+   "qtdSecoes": 13,
+   "qtdSecoesApuradas": 13,
+   "turno1": {
+    "comparecimento": 3080,
+    "validos": 2891,
+    "brancos": 85,
+    "nulos": 104,
+    "abstencoes": 1122,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 4,
+     "renan-antonio-ferreira-dos-santos": 102,
+     "luiz-inacio-lula-da-silva": 1523,
+     "augusto-jorge-cury": 77,
+     "ronaldo-ramos-caiado": 69,
+     "flavio-nantes-bolsonaro": 1109,
+     "romeu-zema-neto": 4,
+     "hertz-da-conceicao-dias": 1,
+     "wilson-grassi-junior": 1,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3268,
+    "validos": 3135,
+    "brancos": 48,
+    "nulos": 85,
+    "abstencoes": 934,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1243,
+     "luiz-inacio-lula-da-silva": 1892
+    }
+   }
+  },
+  {
+   "id": "jardim-universal",
+   "nome": "JARDIM UNIVERSAL",
+   "eleitorado": 4123,
+   "qtdSecoes": 12,
+   "qtdSecoesApuradas": 12,
+   "turno1": {
+    "comparecimento": 3317,
+    "validos": 3138,
+    "brancos": 66,
+    "nulos": 113,
+    "abstencoes": 806,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "luiz-inacio-lula-da-silva": 1303,
+     "augusto-jorge-cury": 133,
+     "renan-antonio-ferreira-dos-santos": 128,
+     "ronaldo-ramos-caiado": 53,
+     "flavio-nantes-bolsonaro": 1494,
+     "rui-costa-pimenta": 2,
+     "romeu-zema-neto": 14,
+     "hertz-da-conceicao-dias": 4,
+     "clariana-zacarkim-barao": 3,
+     "leonardo-alves-de-araujo": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3385,
+    "validos": 3234,
+    "brancos": 39,
+    "nulos": 112,
+    "abstencoes": 738,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1635,
+     "luiz-inacio-lula-da-silva": 1599
+    }
+   }
+  },
+  {
+   "id": "vila-melhado",
+   "nome": "VILA MELHADO",
+   "eleitorado": 4053,
+   "qtdSecoes": 13,
+   "qtdSecoesApuradas": 13,
+   "turno1": {
+    "comparecimento": 3238,
+    "validos": 3070,
+    "brancos": 63,
+    "nulos": 105,
+    "abstencoes": 815,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "luiz-inacio-lula-da-silva": 1390,
+     "renan-antonio-ferreira-dos-santos": 94,
+     "augusto-jorge-cury": 101,
+     "ronaldo-ramos-caiado": 56,
+     "flavio-nantes-bolsonaro": 1401,
+     "romeu-zema-neto": 22,
+     "hertz-da-conceicao-dias": 2,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3345,
+    "validos": 3220,
+    "brancos": 33,
+    "nulos": 92,
+    "abstencoes": 708,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1532,
+     "luiz-inacio-lula-da-silva": 1688
+    }
+   }
+  },
+  {
+   "id": "jardim-cruzeiro-do-sul-i-e-ii",
+   "nome": "JARDIM CRUZEIRO DO SUL I E II",
+   "eleitorado": 3883,
+   "qtdSecoes": 12,
+   "qtdSecoesApuradas": 12,
+   "turno1": {
+    "comparecimento": 2995,
+    "validos": 2750,
+    "brancos": 93,
+    "nulos": 152,
+    "abstencoes": 888,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 6,
+     "rui-costa-pimenta": 1,
+     "luiz-inacio-lula-da-silva": 1426,
+     "augusto-jorge-cury": 74,
+     "renan-antonio-ferreira-dos-santos": 73,
+     "ronaldo-ramos-caiado": 37,
+     "flavio-nantes-bolsonaro": 1119,
+     "romeu-zema-neto": 8,
+     "hertz-da-conceicao-dias": 3,
+     "edmilson-silva-costa": 1,
+     "leonardo-alves-de-araujo": 1,
+     "wilson-grassi-junior": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 3160,
+    "validos": 3001,
+    "brancos": 42,
+    "nulos": 117,
+    "abstencoes": 723,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1235,
+     "luiz-inacio-lula-da-silva": 1766
+    }
+   }
+  },
+  {
+   "id": "jardim-maria-luiza",
+   "nome": "JARDIM MARIA LUIZA",
+   "eleitorado": 3794,
+   "qtdSecoes": 11,
+   "qtdSecoesApuradas": 11,
+   "turno1": {
+    "comparecimento": 2963,
+    "validos": 2788,
+    "brancos": 68,
+    "nulos": 107,
+    "abstencoes": 831,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 1,
+     "luiz-inacio-lula-da-silva": 1155,
+     "augusto-jorge-cury": 85,
+     "renan-antonio-ferreira-dos-santos": 97,
+     "ronaldo-ramos-caiado": 51,
+     "flavio-nantes-bolsonaro": 1378,
+     "rui-costa-pimenta": 1,
+     "romeu-zema-neto": 15,
+     "hertz-da-conceicao-dias": 2,
+     "clariana-zacarkim-barao": 3
+    }
+   },
+   "turno2": {
+    "comparecimento": 3010,
+    "validos": 2888,
+    "brancos": 31,
+    "nulos": 91,
+    "abstencoes": 784,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1479,
+     "luiz-inacio-lula-da-silva": 1409
+    }
+   }
+  },
+  {
+   "id": "vila-jose-bonifacio",
+   "nome": "VILA JOSE BONIFACIO",
+   "eleitorado": 3571,
+   "qtdSecoes": 12,
+   "qtdSecoesApuradas": 12,
+   "turno1": {
+    "comparecimento": 2886,
+    "validos": 2729,
+    "brancos": 50,
+    "nulos": 107,
+    "abstencoes": 685,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 6,
+     "romeu-zema-neto": 15,
+     "luiz-inacio-lula-da-silva": 1071,
+     "augusto-jorge-cury": 87,
+     "renan-antonio-ferreira-dos-santos": 83,
+     "ronaldo-ramos-caiado": 56,
+     "flavio-nantes-bolsonaro": 1407,
+     "clariana-zacarkim-barao": 2,
+     "hertz-da-conceicao-dias": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 2987,
+    "validos": 2867,
+    "brancos": 34,
+    "nulos": 86,
+    "abstencoes": 584,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1555,
+     "luiz-inacio-lula-da-silva": 1312
+    }
+   }
+  },
+  {
+   "id": "jardim-altos-do-cecap-i-e-ii",
+   "nome": "JARDIM ALTOS DO CECAP I E II",
+   "eleitorado": 3521,
+   "qtdSecoes": 11,
+   "qtdSecoesApuradas": 11,
+   "turno1": {
+    "comparecimento": 2757,
+    "validos": 2579,
+    "brancos": 84,
+    "nulos": 94,
+    "abstencoes": 764,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 4,
+     "luiz-inacio-lula-da-silva": 1128,
+     "augusto-jorge-cury": 72,
+     "renan-antonio-ferreira-dos-santos": 83,
+     "ronaldo-ramos-caiado": 48,
+     "flavio-nantes-bolsonaro": 1234,
+     "clariana-zacarkim-barao": 1,
+     "romeu-zema-neto": 5,
+     "hertz-da-conceicao-dias": 4
+    }
+   },
+   "turno2": {
+    "comparecimento": 2872,
+    "validos": 2753,
+    "brancos": 43,
+    "nulos": 76,
+    "abstencoes": 649,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1363,
+     "luiz-inacio-lula-da-silva": 1390
+    }
+   }
+  },
+  {
+   "id": "jardim-paulistano",
+   "nome": "JARDIM PAULISTANO",
+   "eleitorado": 3457,
+   "qtdSecoes": 11,
+   "qtdSecoesApuradas": 11,
+   "turno1": {
+    "comparecimento": 2752,
+    "validos": 2614,
+    "brancos": 46,
+    "nulos": 92,
+    "abstencoes": 705,
+    "votos": {
+     "romeu-zema-neto": 10,
+     "luiz-inacio-lula-da-silva": 1118,
+     "augusto-jorge-cury": 91,
+     "renan-antonio-ferreira-dos-santos": 70,
+     "ronaldo-ramos-caiado": 44,
+     "flavio-nantes-bolsonaro": 1278,
+     "wilson-grassi-junior": 1,
+     "clariana-zacarkim-barao": 1,
+     "edmilson-silva-costa": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2864,
+    "validos": 2769,
+    "brancos": 20,
+    "nulos": 75,
+    "abstencoes": 593,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1415,
+     "luiz-inacio-lula-da-silva": 1354
+    }
+   }
+  },
+  {
+   "id": "vila-harmonia",
+   "nome": "VILA HARMONIA",
+   "eleitorado": 3453,
+   "qtdSecoes": 10,
+   "qtdSecoesApuradas": 10,
+   "turno1": {
+    "comparecimento": 2828,
+    "validos": 2715,
+    "brancos": 41,
+    "nulos": 72,
+    "abstencoes": 625,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 5,
+     "rui-costa-pimenta": 3,
+     "romeu-zema-neto": 23,
+     "luiz-inacio-lula-da-silva": 955,
+     "augusto-jorge-cury": 107,
+     "renan-antonio-ferreira-dos-santos": 105,
+     "ronaldo-ramos-caiado": 63,
+     "flavio-nantes-bolsonaro": 1450,
+     "wilson-grassi-junior": 1,
+     "clariana-zacarkim-barao": 2,
+     "edmilson-silva-costa": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2925,
+    "validos": 2820,
+    "brancos": 33,
+    "nulos": 72,
+    "abstencoes": 528,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1600,
+     "luiz-inacio-lula-da-silva": 1220
+    }
+   }
+  },
+  {
+   "id": "jardim-eliana",
+   "nome": "JARDIM ELIANA",
+   "eleitorado": 3276,
+   "qtdSecoes": 10,
+   "qtdSecoesApuradas": 10,
+   "turno1": {
+    "comparecimento": 2647,
+    "validos": 2513,
+    "brancos": 50,
+    "nulos": 84,
+    "abstencoes": 629,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "romeu-zema-neto": 10,
+     "luiz-inacio-lula-da-silva": 1034,
+     "augusto-jorge-cury": 92,
+     "renan-antonio-ferreira-dos-santos": 85,
+     "ronaldo-ramos-caiado": 52,
+     "flavio-nantes-bolsonaro": 1233,
+     "edmilson-silva-costa": 1,
+     "rui-costa-pimenta": 1,
+     "wilson-grassi-junior": 2,
+     "hertz-da-conceicao-dias": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2707,
+    "validos": 2604,
+    "brancos": 27,
+    "nulos": 76,
+    "abstencoes": 569,
+    "votos": {
+     "luiz-inacio-lula-da-silva": 1270,
+     "flavio-nantes-bolsonaro": 1334
+    }
+   }
+  },
+  {
+   "id": "jardim-das-estacoes",
+   "nome": "JARDIM DAS ESTAÇÕES",
+   "eleitorado": 3247,
+   "qtdSecoes": 10,
+   "qtdSecoesApuradas": 10,
+   "turno1": {
+    "comparecimento": 2519,
+    "validos": 2341,
+    "brancos": 62,
+    "nulos": 116,
+    "abstencoes": 728,
+    "votos": {
+     "leonardo-alves-de-araujo": 1,
+     "romeu-zema-neto": 8,
+     "luiz-inacio-lula-da-silva": 1047,
+     "augusto-jorge-cury": 81,
+     "renan-antonio-ferreira-dos-santos": 80,
+     "ronaldo-ramos-caiado": 46,
+     "flavio-nantes-bolsonaro": 1072,
+     "samara-martins-da-silva-feitosa": 2,
+     "hertz-da-conceicao-dias": 2,
+     "rui-costa-pimenta": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 2613,
+    "validos": 2492,
+    "brancos": 34,
+    "nulos": 87,
+    "abstencoes": 634,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1202,
+     "luiz-inacio-lula-da-silva": 1290
+    }
+   }
+  },
+  {
+   "id": "vila-progresso",
+   "nome": "VILA PROGRESSO",
+   "eleitorado": 3169,
+   "qtdSecoes": 12,
+   "qtdSecoesApuradas": 12,
+   "turno1": {
+    "comparecimento": 2408,
+    "validos": 2268,
+    "brancos": 46,
+    "nulos": 94,
+    "abstencoes": 761,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 8,
+     "romeu-zema-neto": 12,
+     "luiz-inacio-lula-da-silva": 1008,
+     "augusto-jorge-cury": 73,
+     "renan-antonio-ferreira-dos-santos": 49,
+     "ronaldo-ramos-caiado": 51,
+     "flavio-nantes-bolsonaro": 1058,
+     "wilson-grassi-junior": 1,
+     "hertz-da-conceicao-dias": 2,
+     "clariana-zacarkim-barao": 2,
+     "edmilson-silva-costa": 4
+    }
+   },
+   "turno2": {
+    "comparecimento": 2515,
+    "validos": 2419,
+    "brancos": 31,
+    "nulos": 65,
+    "abstencoes": 654,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1176,
+     "luiz-inacio-lula-da-silva": 1243
+    }
+   }
+  },
+  {
+   "id": "jardim-adalberto-frederico-de-oliveira-roxo-i",
+   "nome": "JARDIM ADALBERTO FREDERICO DE OLIVEIRA ROXO I",
+   "eleitorado": 3013,
+   "qtdSecoes": 10,
+   "qtdSecoesApuradas": 10,
+   "turno1": {
+    "comparecimento": 2228,
+    "validos": 2052,
+    "brancos": 88,
+    "nulos": 88,
+    "abstencoes": 785,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "luiz-inacio-lula-da-silva": 1072,
+     "augusto-jorge-cury": 61,
+     "renan-antonio-ferreira-dos-santos": 52,
+     "ronaldo-ramos-caiado": 31,
+     "flavio-nantes-bolsonaro": 821,
+     "romeu-zema-neto": 11,
+     "rui-costa-pimenta": 1,
+     "edmilson-silva-costa": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2289,
+    "validos": 2188,
+    "brancos": 34,
+    "nulos": 67,
+    "abstencoes": 724,
+    "votos": {
+     "flavio-nantes-bolsonaro": 881,
+     "luiz-inacio-lula-da-silva": 1307
+    }
+   }
+  },
+  {
+   "id": "vila-sedenho",
+   "nome": "VILA SEDENHO",
+   "eleitorado": 2767,
+   "qtdSecoes": 8,
+   "qtdSecoesApuradas": 8,
+   "turno1": {
+    "comparecimento": 2301,
+    "validos": 2210,
+    "brancos": 41,
+    "nulos": 50,
+    "abstencoes": 466,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "hertz-da-conceicao-dias": 1,
+     "renan-antonio-ferreira-dos-santos": 86,
+     "augusto-jorge-cury": 83,
+     "romeu-zema-neto": 17,
+     "luiz-inacio-lula-da-silva": 818,
+     "ronaldo-ramos-caiado": 45,
+     "flavio-nantes-bolsonaro": 1157,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2375,
+    "validos": 2274,
+    "brancos": 30,
+    "nulos": 71,
+    "abstencoes": 392,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1262,
+     "luiz-inacio-lula-da-silva": 1012
+    }
+   }
+  },
+  {
+   "id": "vila-santana",
+   "nome": "VILA SANTANA",
+   "eleitorado": 2711,
+   "qtdSecoes": 12,
+   "qtdSecoesApuradas": 12,
+   "turno1": {
+    "comparecimento": 2134,
+    "validos": 2014,
+    "brancos": 47,
+    "nulos": 73,
+    "abstencoes": 577,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "luiz-inacio-lula-da-silva": 897,
+     "augusto-jorge-cury": 69,
+     "renan-antonio-ferreira-dos-santos": 56,
+     "ronaldo-ramos-caiado": 43,
+     "flavio-nantes-bolsonaro": 933,
+     "romeu-zema-neto": 7,
+     "hertz-da-conceicao-dias": 3,
+     "clariana-zacarkim-barao": 2,
+     "wilson-grassi-junior": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2210,
+    "validos": 2115,
+    "brancos": 31,
+    "nulos": 64,
+    "abstencoes": 501,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1027,
+     "luiz-inacio-lula-da-silva": 1088
+    }
+   }
+  },
+  {
+   "id": "jardim-adalgisa",
+   "nome": "JARDIM ADALGISA",
+   "eleitorado": 2693,
+   "qtdSecoes": 8,
+   "qtdSecoesApuradas": 8,
+   "turno1": {
+    "comparecimento": 2202,
+    "validos": 2078,
+    "brancos": 46,
+    "nulos": 78,
+    "abstencoes": 491,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "romeu-zema-neto": 7,
+     "luiz-inacio-lula-da-silva": 851,
+     "augusto-jorge-cury": 84,
+     "renan-antonio-ferreira-dos-santos": 61,
+     "ronaldo-ramos-caiado": 40,
+     "flavio-nantes-bolsonaro": 1031,
+     "rui-costa-pimenta": 1,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2262,
+    "validos": 2179,
+    "brancos": 29,
+    "nulos": 54,
+    "abstencoes": 431,
+    "votos": {
+     "flavio-nantes-bolsonaro": 1148,
+     "luiz-inacio-lula-da-silva": 1031
+    }
+   }
+  },
+  {
+   "id": "jardim-residencial-silvestre",
+   "nome": "JARDIM RESIDENCIAL SILVESTRE",
+   "eleitorado": 2556,
+   "qtdSecoes": 8,
+   "qtdSecoesApuradas": 8,
+   "turno1": {
+    "comparecimento": 2016,
+    "validos": 1876,
+    "brancos": 54,
+    "nulos": 86,
+    "abstencoes": 540,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "luiz-inacio-lula-da-silva": 1048,
+     "augusto-jorge-cury": 54,
+     "renan-antonio-ferreira-dos-santos": 58,
+     "ronaldo-ramos-caiado": 29,
+     "flavio-nantes-bolsonaro": 672,
+     "romeu-zema-neto": 12,
+     "hertz-da-conceicao-dias": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 2070,
+    "validos": 1972,
+    "brancos": 35,
+    "nulos": 63,
+    "abstencoes": 486,
+    "votos": {
+     "flavio-nantes-bolsonaro": 728,
+     "luiz-inacio-lula-da-silva": 1244
+    }
+   }
+  },
+  {
+   "id": "jardim-santa-clara",
+   "nome": "JARDIM SANTA CLARA",
+   "eleitorado": 2517,
+   "qtdSecoes": 8,
+   "qtdSecoesApuradas": 8,
+   "turno1": {
+    "comparecimento": 1960,
+    "validos": 1832,
+    "brancos": 54,
+    "nulos": 74,
+    "abstencoes": 557,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 4,
+     "romeu-zema-neto": 8,
+     "luiz-inacio-lula-da-silva": 814,
+     "augusto-jorge-cury": 70,
+     "hertz-da-conceicao-dias": 1,
+     "renan-antonio-ferreira-dos-santos": 45,
+     "ronaldo-ramos-caiado": 23,
+     "flavio-nantes-bolsonaro": 861,
+     "clariana-zacarkim-barao": 3,
+     "rui-costa-pimenta": 1,
+     "edmilson-silva-costa": 2
+    }
+   },
+   "turno2": {
+    "comparecimento": 1982,
+    "validos": 1899,
+    "brancos": 33,
+    "nulos": 50,
+    "abstencoes": 535,
+    "votos": {
+     "flavio-nantes-bolsonaro": 912,
+     "luiz-inacio-lula-da-silva": 987
+    }
+   }
+  },
+  {
+   "id": "parque-das-hortencias",
+   "nome": "PARQUE DAS HORTENCIAS",
+   "eleitorado": 2371,
+   "qtdSecoes": 8,
+   "qtdSecoesApuradas": 8,
+   "turno1": {
+    "comparecimento": 1732,
+    "validos": 1586,
+    "brancos": 82,
+    "nulos": 64,
+    "abstencoes": 639,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "romeu-zema-neto": 5,
+     "luiz-inacio-lula-da-silva": 980,
+     "augusto-jorge-cury": 28,
+     "renan-antonio-ferreira-dos-santos": 35,
+     "edmilson-silva-costa": 1,
+     "ronaldo-ramos-caiado": 24,
+     "flavio-nantes-bolsonaro": 508,
+     "hertz-da-conceicao-dias": 3
+    }
+   },
+   "turno2": {
+    "comparecimento": 1826,
+    "validos": 1748,
+    "brancos": 37,
+    "nulos": 41,
+    "abstencoes": 545,
+    "votos": {
+     "flavio-nantes-bolsonaro": 553,
+     "luiz-inacio-lula-da-silva": 1195
+    }
+   }
+  },
+  {
+   "id": "jardim-dom-pedro-i",
+   "nome": "JARDIM DOM PEDRO I",
+   "eleitorado": 2079,
+   "qtdSecoes": 6,
+   "qtdSecoesApuradas": 6,
+   "turno1": {
+    "comparecimento": 1613,
+    "validos": 1542,
+    "brancos": 21,
+    "nulos": 50,
+    "abstencoes": 466,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "romeu-zema-neto": 13,
+     "luiz-inacio-lula-da-silva": 637,
+     "augusto-jorge-cury": 66,
+     "renan-antonio-ferreira-dos-santos": 43,
+     "ronaldo-ramos-caiado": 40,
+     "flavio-nantes-bolsonaro": 740
+    }
+   },
+   "turno2": {
+    "comparecimento": 1694,
+    "validos": 1623,
+    "brancos": 22,
+    "nulos": 49,
+    "abstencoes": 385,
+    "votos": {
+     "flavio-nantes-bolsonaro": 831,
+     "luiz-inacio-lula-da-silva": 792
+    }
+   }
+  },
+  {
+   "id": "jardim-higienopolis",
+   "nome": "JARDIM HIGIENOPOLIS",
+   "eleitorado": 1837,
+   "qtdSecoes": 6,
+   "qtdSecoesApuradas": 6,
+   "turno1": {
+    "comparecimento": 1497,
+    "validos": 1438,
+    "brancos": 16,
+    "nulos": 43,
+    "abstencoes": 340,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "luiz-inacio-lula-da-silva": 530,
+     "augusto-jorge-cury": 45,
+     "renan-antonio-ferreira-dos-santos": 58,
+     "ronaldo-ramos-caiado": 35,
+     "flavio-nantes-bolsonaro": 753,
+     "romeu-zema-neto": 12,
+     "hertz-da-conceicao-dias": 2,
+     "wilson-grassi-junior": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 1555,
+    "validos": 1502,
+    "brancos": 10,
+    "nulos": 43,
+    "abstencoes": 282,
+    "votos": {
+     "flavio-nantes-bolsonaro": 841,
+     "luiz-inacio-lula-da-silva": 661
+    }
+   }
+  },
+  {
+   "id": "campus-ville",
+   "nome": "CAMPUS VILLE",
+   "eleitorado": 1829,
+   "qtdSecoes": 8,
+   "qtdSecoesApuradas": 8,
+   "turno1": {
+    "comparecimento": 1519,
+    "validos": 1437,
+    "brancos": 31,
+    "nulos": 51,
+    "abstencoes": 310,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "romeu-zema-neto": 15,
+     "luiz-inacio-lula-da-silva": 708,
+     "augusto-jorge-cury": 45,
+     "renan-antonio-ferreira-dos-santos": 45,
+     "flavio-nantes-bolsonaro": 582,
+     "ronaldo-ramos-caiado": 34,
+     "clariana-zacarkim-barao": 1,
+     "hertz-da-conceicao-dias": 5
+    }
+   },
+   "turno2": {
+    "comparecimento": 1563,
+    "validos": 1499,
+    "brancos": 25,
+    "nulos": 39,
+    "abstencoes": 266,
+    "votos": {
+     "luiz-inacio-lula-da-silva": 831,
+     "flavio-nantes-bolsonaro": 668
+    }
+   }
+  },
+  {
+   "id": "jardim-primavera",
+   "nome": "JARDIM PRIMAVERA",
+   "eleitorado": 1827,
+   "qtdSecoes": 11,
+   "qtdSecoesApuradas": 11,
+   "turno1": {
+    "comparecimento": 1459,
+    "validos": 1399,
+    "brancos": 23,
+    "nulos": 37,
+    "abstencoes": 368,
+    "votos": {
+     "leonardo-alves-de-araujo": 1,
+     "renan-antonio-ferreira-dos-santos": 62,
+     "luiz-inacio-lula-da-silva": 519,
+     "augusto-jorge-cury": 42,
+     "ronaldo-ramos-caiado": 37,
+     "flavio-nantes-bolsonaro": 725,
+     "samara-martins-da-silva-feitosa": 4,
+     "hertz-da-conceicao-dias": 1,
+     "romeu-zema-neto": 7,
+     "wilson-grassi-junior": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 1503,
+    "validos": 1446,
+    "brancos": 13,
+    "nulos": 44,
+    "abstencoes": 324,
+    "votos": {
+     "flavio-nantes-bolsonaro": 804,
+     "luiz-inacio-lula-da-silva": 642
+    }
+   }
+  },
+  {
+   "id": "jardim-biagioni",
+   "nome": "JARDIM BIAGIONI",
+   "eleitorado": 1347,
+   "qtdSecoes": 4,
+   "qtdSecoesApuradas": 4,
+   "turno1": {
+    "comparecimento": 1097,
+    "validos": 1042,
+    "brancos": 22,
+    "nulos": 33,
+    "abstencoes": 250,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 2,
+     "rui-costa-pimenta": 1,
+     "romeu-zema-neto": 10,
+     "luiz-inacio-lula-da-silva": 379,
+     "augusto-jorge-cury": 39,
+     "renan-antonio-ferreira-dos-santos": 33,
+     "ronaldo-ramos-caiado": 24,
+     "flavio-nantes-bolsonaro": 553,
+     "wilson-grassi-junior": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 1124,
+    "validos": 1076,
+    "brancos": 19,
+    "nulos": 29,
+    "abstencoes": 223,
+    "votos": {
+     "flavio-nantes-bolsonaro": 596,
+     "luiz-inacio-lula-da-silva": 480
+    }
+   }
+  },
+  {
+   "id": "dr-tancredo-de-almeida-neves-cecap",
+   "nome": "DR. TANCREDO DE ALMEIDA NEVES (CECAP)",
+   "eleitorado": 1204,
+   "qtdSecoes": 4,
+   "qtdSecoesApuradas": 4,
+   "turno1": {
+    "comparecimento": 945,
+    "validos": 863,
+    "brancos": 34,
+    "nulos": 48,
+    "abstencoes": 259,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 3,
+     "luiz-inacio-lula-da-silva": 409,
+     "augusto-jorge-cury": 32,
+     "renan-antonio-ferreira-dos-santos": 17,
+     "ronaldo-ramos-caiado": 25,
+     "flavio-nantes-bolsonaro": 369,
+     "clariana-zacarkim-barao": 1,
+     "romeu-zema-neto": 3,
+     "hertz-da-conceicao-dias": 3,
+     "edmilson-silva-costa": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 995,
+    "validos": 940,
+    "brancos": 18,
+    "nulos": 37,
+    "abstencoes": 209,
+    "votos": {
+     "flavio-nantes-bolsonaro": 414,
+     "luiz-inacio-lula-da-silva": 526
+    }
+   }
+  },
+  {
+   "id": "jardim-imperador",
+   "nome": "JARDIM IMPERADOR",
+   "eleitorado": 951,
+   "qtdSecoes": 3,
+   "qtdSecoesApuradas": 3,
+   "turno1": {
+    "comparecimento": 802,
+    "validos": 763,
+    "brancos": 12,
+    "nulos": 27,
+    "abstencoes": 149,
+    "votos": {
+     "romeu-zema-neto": 5,
+     "luiz-inacio-lula-da-silva": 303,
+     "augusto-jorge-cury": 21,
+     "renan-antonio-ferreira-dos-santos": 23,
+     "ronaldo-ramos-caiado": 24,
+     "flavio-nantes-bolsonaro": 387
+    }
+   },
+   "turno2": {
+    "comparecimento": 815,
+    "validos": 779,
+    "brancos": 13,
+    "nulos": 23,
+    "abstencoes": 136,
+    "votos": {
+     "flavio-nantes-bolsonaro": 422,
+     "luiz-inacio-lula-da-silva": 357
+    }
+   }
+  },
+  {
+   "id": "jardim-brasil",
+   "nome": "JARDIM BRASIL",
+   "eleitorado": 948,
+   "qtdSecoes": 3,
+   "qtdSecoesApuradas": 3,
+   "turno1": {
+    "comparecimento": 770,
+    "validos": 716,
+    "brancos": 19,
+    "nulos": 35,
+    "abstencoes": 178,
+    "votos": {
+     "romeu-zema-neto": 7,
+     "luiz-inacio-lula-da-silva": 309,
+     "wilson-grassi-junior": 1,
+     "augusto-jorge-cury": 19,
+     "renan-antonio-ferreira-dos-santos": 24,
+     "ronaldo-ramos-caiado": 24,
+     "flavio-nantes-bolsonaro": 329,
+     "hertz-da-conceicao-dias": 2,
+     "clariana-zacarkim-barao": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 777,
+    "validos": 739,
+    "brancos": 14,
+    "nulos": 24,
+    "abstencoes": 171,
+    "votos": {
+     "flavio-nantes-bolsonaro": 379,
+     "luiz-inacio-lula-da-silva": 360
+    }
+   }
+  },
+  {
+   "id": "parque-residencial-valle-verde",
+   "nome": "PARQUE RESIDENCIAL VALLE VERDE",
+   "eleitorado": 905,
+   "qtdSecoes": 3,
+   "qtdSecoesApuradas": 3,
+   "turno1": {
+    "comparecimento": 538,
+    "validos": 486,
+    "brancos": 29,
+    "nulos": 23,
+    "abstencoes": 367,
+    "votos": {
+     "luiz-inacio-lula-da-silva": 286,
+     "renan-antonio-ferreira-dos-santos": 26,
+     "ronaldo-ramos-caiado": 7,
+     "flavio-nantes-bolsonaro": 157,
+     "augusto-jorge-cury": 7,
+     "romeu-zema-neto": 2,
+     "hertz-da-conceicao-dias": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 550,
+    "validos": 525,
+    "brancos": 14,
+    "nulos": 11,
+    "abstencoes": 355,
+    "votos": {
+     "flavio-nantes-bolsonaro": 156,
+     "luiz-inacio-lula-da-silva": 369
+    }
+   }
+  },
+  {
+   "id": "jardim-morumbi",
+   "nome": "JARDIM MORUMBI",
+   "eleitorado": 704,
+   "qtdSecoes": 3,
+   "qtdSecoesApuradas": 2,
+   "turno1": {
+    "comparecimento": 606,
+    "validos": 586,
+    "brancos": 11,
+    "nulos": 9,
+    "abstencoes": 98,
+    "votos": {
+     "rui-costa-pimenta": 1,
+     "romeu-zema-neto": 3,
+     "luiz-inacio-lula-da-silva": 257,
+     "augusto-jorge-cury": 20,
+     "hertz-da-conceicao-dias": 2,
+     "renan-antonio-ferreira-dos-santos": 17,
+     "ronaldo-ramos-caiado": 13,
+     "flavio-nantes-bolsonaro": 272,
+     "edmilson-silva-costa": 1
+    }
+   },
+   "turno2": {
+    "comparecimento": 603,
+    "validos": 591,
+    "brancos": 6,
+    "nulos": 6,
+    "abstencoes": 101,
+    "votos": {
+     "flavio-nantes-bolsonaro": 294,
+     "luiz-inacio-lula-da-silva": 297
+    }
+   }
+  },
+  {
+   "id": "assentamento-bela-vista",
+   "nome": "ASSENTAMENTO BELA VISTA",
+   "eleitorado": 483,
+   "qtdSecoes": 2,
+   "qtdSecoesApuradas": 2,
+   "turno1": {
+    "comparecimento": 381,
+    "validos": 353,
+    "brancos": 15,
+    "nulos": 13,
+    "abstencoes": 102,
+    "votos": {
+     "renan-antonio-ferreira-dos-santos": 10,
+     "augusto-jorge-cury": 3,
+     "luiz-inacio-lula-da-silva": 159,
+     "ronaldo-ramos-caiado": 4,
+     "flavio-nantes-bolsonaro": 177
+    }
+   },
+   "turno2": {
+    "comparecimento": 373,
+    "validos": 357,
+    "brancos": 10,
+    "nulos": 6,
+    "abstencoes": 110,
+    "votos": {
+     "flavio-nantes-bolsonaro": 175,
+     "luiz-inacio-lula-da-silva": 182
+    }
+   }
+  },
+  {
+   "id": "distrito-de-bueno-de-andrada",
+   "nome": "DISTRITO DE BUENO DE ANDRADA",
+   "eleitorado": 444,
+   "qtdSecoes": 2,
+   "qtdSecoesApuradas": 2,
+   "turno1": {
+    "comparecimento": 360,
+    "validos": 334,
+    "brancos": 8,
+    "nulos": 18,
+    "abstencoes": 84,
+    "votos": {
+     "samara-martins-da-silva-feitosa": 1,
+     "renan-antonio-ferreira-dos-santos": 7,
+     "augusto-jorge-cury": 8,
+     "luiz-inacio-lula-da-silva": 175,
+     "ronaldo-ramos-caiado": 1,
+     "flavio-nantes-bolsonaro": 142
+    }
+   },
+   "turno2": {
+    "comparecimento": 356,
+    "validos": 337,
+    "brancos": 5,
+    "nulos": 14,
+    "abstencoes": 88,
+    "votos": {
+     "flavio-nantes-bolsonaro": 150,
+     "luiz-inacio-lula-da-silva": 187
+    }
+   }
+  },
+  {
+   "id": "assentamento-monte-alegre-ii",
+   "nome": "ASSENTAMENTO MONTE ALEGRE II",
+   "eleitorado": 134,
+   "qtdSecoes": 1,
+   "qtdSecoesApuradas": 1,
+   "turno1": {
+    "comparecimento": 109,
+    "validos": 105,
+    "brancos": 3,
+    "nulos": 1,
+    "abstencoes": 25,
+    "votos": {
+     "augusto-jorge-cury": 5,
+     "romeu-zema-neto": 1,
+     "luiz-inacio-lula-da-silva": 44,
+     "ronaldo-ramos-caiado": 1,
+     "flavio-nantes-bolsonaro": 54
+    }
+   },
+   "turno2": {
+    "comparecimento": 112,
+    "validos": 110,
+    "brancos": 1,
+    "nulos": 1,
+    "abstencoes": 22,
+    "votos": {
+     "flavio-nantes-bolsonaro": 52,
+     "luiz-inacio-lula-da-silva": 58
+    }
+   }
+  }
+ ]
+}

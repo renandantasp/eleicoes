@@ -1,0 +1,14 @@
+:root{
+  --ag-ease:cubic-bezier(.2,0,.38,.9);        /* produtivo */
+  --ag-ease-expressive:cubic-bezier(.4,.14,.3,1);
+  --ag-dur-fast:110ms;      /* hover, pressed */
+  --ag-dur-moderate:240ms;  /* troca de aba, segmentado */
+  --ag-dur-slow:600ms;      /* barras, posição de círculo */
+  --ag-dur-color:700ms;     /* cor dos círculos ao trocar turno/métrica */
+  --ag-wave-step:1.8ms;     /* atraso por px de distância do centro (onda) */
+  --ag-hint-ms:1400ms;      /* overlay "Ctrl + roda" */
+  --ag-dot-dim-opacity:.22;
+}
+@media (prefers-reduced-motion:reduce){
+  :root{--ag-dur-moderate:0ms;--ag-dur-slow:0ms;--ag-dur-color:0ms;--ag-wave-step:0ms;}
+}

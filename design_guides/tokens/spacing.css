@@ -1,0 +1,20 @@
+:root{
+  --ag-space-01:2px;--ag-space-02:4px;--ag-space-03:8px;--ag-space-04:12px;--ag-space-05:16px;
+  --ag-space-06:20px;--ag-space-07:24px;--ag-space-08:32px;--ag-space-09:40px;--ag-space-10:48px;
+  --ag-radius:0;                 /* Grade não arredonda. Exceção: círculos do mapa e bolinhas de chapa. */
+  --ag-hairline:1px;             /* divisória entre células: gap:1px sobre fundo --ag-border */
+  --ag-tab-indicator:3px;
+  --ag-row-h:34px;               /* linha da tabela/listas virtualizadas — manter igual à constante JS */
+  --ag-table-max-h:360px;
+  --ag-rail-w:220px;
+  --ag-panel-w:380px;
+  --ag-legend-label-w:130px;
+  --ag-legend-swatch-h:28px;
+  --ag-bar-h:6px;                /* barra de candidato */
+  --ag-inline-bar-h:12px;        /* barra dentro da tabela */
+  --ag-split-h:22px;             /* barra do voto a dois */
+  --ag-dot-r-min:3.5px;
+  --ag-dot-r-max:17.5px;
+  --ag-z-map-controls:5;--ag-z-tooltip:9;--ag-z-overlay:10;
+  --ag-bp-stack:1080px;--ag-bp-mobile:640px; /* referência; use em @media */
+}

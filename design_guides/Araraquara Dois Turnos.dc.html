@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Public+Sans:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ecebe7;font-family:system-ui,sans-serif;font-variant-numeric:tabular-nums}
+a{color:inherit}a:hover{opacity:.75}
+button{font:inherit;color:inherit;cursor:pointer}
+.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}.dv-opts{display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 12px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.6)}.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);overflow:hidden}.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}.dv-next{margin:22px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.5)}
+</style>
+</helmet>
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">Grade em dark mode — evolução de <a class="dv-oid" href="#1a">1a</a></span></div>
+<p style="margin:-8px 0 28px;max-width:860px;font:13px/1.55 system-ui,sans-serif;color:rgba(0,0,0,.6)">As faixas de cor dos dados são idênticas nos dois temas (a legenda continua comparável). Só mudam neutros, camadas e as cores de chapa quando usadas como texto: Lula #f08a8c, Flávio #8fb0e6. O design system e o guia de implementação estão em readme.md e guidelines/IMPLEMENTACAO.md.</p>
+<div class="dv-opts">
+<!-- ===================== 2A GRADE DARK ===================== -->
+<div class="dv-opt" id="2a">
+<div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>Grade · dark — mesmos tokens semânticos, camadas #161616 → #262626, cores de chapa clareadas só para texto</div>
+<div class="dv-card" style="width:1280px;background:#161616;font-family:'IBM Plex Sans',sans-serif;color:#f4f4f4;border-radius:0">
+<div style="display:grid;grid-template-columns:280px 1fr 1fr 1fr;gap:1px;background:#393939;border-bottom:1px solid #393939">
+<div style="background:#262626;padding:20px 24px;display:flex;flex-direction:column;gap:6px"><span style="font:500 11px 'IBM Plex Mono',monospace;color:#a8a8a8;letter-spacing:.04em">SISTEMA 2A · DARK</span><span style="font:300 28px/1.1 'IBM Plex Sans';">Grade</span><span style="font-size:13px;line-height:1.45;color:#c6c6c6">Densidade de painel técnico. Tudo é célula; o dado nunca flutua sem a sua fonte.</span></div>
+<div style="background:#262626;padding:20px 24px;display:flex;flex-direction:column;gap:6px"><span style="font:500 11px 'IBM Plex Mono';color:#a8a8a8">TIPO</span><span style="font:300 32px/1 'IBM Plex Sans'">52,1%</span><span style="font:600 14px 'IBM Plex Sans'">Plex Sans 300 / 400 / 600</span><span style="font:400 12px 'IBM Plex Mono';color:#c6c6c6">Plex Mono · fontes, unidades</span></div>
+<div style="background:#262626;padding:20px 24px;display:flex;flex-direction:column;gap:10px"><span style="font:500 11px 'IBM Plex Mono';color:#a8a8a8">COR</span><div style="display:flex;gap:4px"><div style="width:36px;height:36px;background:#d92b3a"></div><div style="width:36px;height:36px;background:#1f4e9c"></div><div style="width:36px;height:36px;background:#2e8d58"></div><div style="width:36px;height:36px;background:#e29a34"></div><div style="width:36px;height:36px;background:#1c807e"></div><div style="width:36px;height:36px;background:#7322a8"></div><div style="width:36px;height:36px;background:#f4f4f4"></div><div style="width:36px;height:36px;background:#393939"></div></div><span style="font:400 12px 'IBM Plex Mono';color:#c6c6c6">chapas · neutras · destaque · cinzas Carbon</span></div>
+<div style="background:#262626;padding:20px 24px;display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.45;color:#e0e0e0"><span style="font:500 11px 'IBM Plex Mono';color:#a8a8a8">PRINCÍPIOS</span><span>Raio 0 · divisória de 1 px no lugar de sombra</span><span>Métrica como lista de rádio vertical, sempre visível</span><span>Etiqueta <span style="font:500 11px 'IBM Plex Mono';background:#393939;padding:1px 5px">TSE</span> ao lado de todo número</span></div>
+</div>
+<div style="background:#000;color:#f4f4f4;padding:9px 32px;border-bottom:1px solid #393939;display:flex;gap:20px;align-items:center;font:400 12px 'IBM Plex Mono',monospace"><span style="display:flex;align-items:center;gap:8px"><span style="width:8px;height:8px;border-radius:50%;background:#42be65"></span>Dados oficiais do TSE e do IBGE</span><span style="color:#a8a8a8">1º turno 04/10/2026</span><span style="color:#a8a8a8">2º turno 25/10/2026</span><span style="color:#a8a8a8">nada estimado ou interpolado</span><a href="#sobre-a2" style="margin-left:auto;color:#78a9ff;text-decoration:none">3 ressalvas ↓</a></div>
+<div style="background:#262626;padding:32px 32px 0;display:flex;flex-direction:column;gap:12px">
+<span style="font:500 12px 'IBM Plex Mono';color:#a8a8a8;letter-spacing:.04em">ELEIÇÃO PRESIDENCIAL 2026 · ARARAQUARA – SP · IBGE 3503208</span>
+<h1 style="margin:0;font:300 44px/1.1 'IBM Plex Sans'">Araraquara em dois turnos</h1>
+<p style="margin:0;max-width:880px;font-size:18px;line-height:1.5;color:#e0e0e0;text-wrap:pretty">169.890 eleitores em 45 bairros e 67 locais de votação. No 2º turno a cidade ficou com <strong style="color:#f08a8c">Lula</strong>, com 52,1% dos votos válidos — depois de <strong style="color:#8fb0e6">Flávio Bolsonaro</strong> ter liderado o 1º turno com 45,8%.</p>
+<div style="display:flex;margin-top:12px">
+<sc-for list="{{ A2.tabs }}" as="t" hint-placeholder-count="4"><button onClick="{{ t.onClick }}" aria-current="{{ t.on }}" style="background:transparent;border:0;border-bottom:3px solid {{ t.bd }};padding:12px 24px 12px 0;margin-right:24px;text-align:left;display:flex;flex-direction:column;gap:2px;opacity:{{ t.dim }}"><span style="font:600 15px 'IBM Plex Sans';color:{{ t.fg }}">{{ t.l }}</span><span style="font:400 11px 'IBM Plex Mono';color:#a8a8a8">{{ t.sub }}</span></button></sc-for>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:220px 680px 1fr;gap:1px;background:#393939;border-top:1px solid #393939">
+<div style="background:#262626;padding:24px 0;display:flex;flex-direction:column;gap:2px">
+<span style="font:500 11px 'IBM Plex Mono';color:#a8a8a8;padding:0 20px 10px">COR DOS CÍRCULOS</span>
+<sc-for list="{{ A2.metrics }}" as="m" hint-placeholder-count="5"><button onClick="{{ m.onClick }}" aria-pressed="{{ m.on }}" style="border:0;background:{{ m.bg }};color:{{ m.fg }};text-align:left;padding:12px 20px;display:flex;flex-direction:column;gap:2px"><span style="font:500 14px/1.3 'IBM Plex Sans'">{{ m.l }}</span><span style="font:400 11px 'IBM Plex Mono';opacity:.7">{{ m.u }}</span></button></sc-for>
+<div style="margin:20px 20px 0;padding-top:16px;border-top:1px solid #393939;font-size:12px;line-height:1.5;color:#c6c6c6"><span style="font:500 11px 'IBM Plex Mono';color:#f1c21b;background:#3d2e00;padding:1px 5px">RESSALVA</span><p style="margin:8px 0 0">Cada círculo é um <strong>local de votação</strong>. O bairro é o do local, não o da residência do eleitor.</p></div>
+</div>
+<div style="background:#262626;padding:20px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px"><div style="display:flex;flex-direction:column;gap:2px"><span style="font:600 16px 'IBM Plex Sans'">{{ A2.title }}</span><span style="font-size:13px;color:#c6c6c6">{{ A2.subtitle }}</span></div></div>
+<div onWheel="{{ A2.onWheel }}" style="position:relative;width:640px;height:640px;overflow:hidden;background-color:#1c1c1c;background-image:linear-gradient(#262626 1px,transparent 1px),linear-gradient(90deg,#262626 1px,transparent 1px);background-size:40px 40px">
+<span style="position:absolute;left:12px;top:12px;font:400 10px 'IBM Plex Mono';color:#8d8d8d">tiles OSM dessaturados</span>
+<sc-if value="{{ A2.mun.show }}"><div style="position:absolute;left:{{ A2.mun.x }}px;top:{{ A2.mun.y }}px;width:{{ A2.mun.w }}px;height:{{ A2.mun.h }}px;border:1.5px dashed #8d8d8d;background:rgba(0,0,0,.015)"></div><div style="position:absolute;left:{{ A2.core.x }}px;top:{{ A2.core.y }}px;width:{{ A2.core.w }}px;height:{{ A2.core.h }}px;border:1px dashed #6f6f6f"></div></sc-if>
+<sc-for list="{{ A2.dots }}" as="d" hint-placeholder-count="0"><div onMouseEnter="{{ d.onEnter }}" onMouseLeave="{{ d.onLeave }}" onClick="{{ d.onClick }}" style="position:absolute;left:{{ d.x }}px;top:{{ d.y }}px;width:{{ d.d }}px;height:{{ d.d }}px;box-sizing:border-box;border-radius:50%;background:{{ d.color }};opacity:{{ d.op }};border:{{ d.bw }}px solid {{ d.bc }};z-index:{{ d.z }};cursor:pointer;transition:background-color .7s ease,opacity .3s,left .6s,top .6s,width .6s,height .6s;transition-delay:{{ d.delay }}ms"></div></sc-for>
+<sc-if value="{{ A2.tip.show }}"><div style="position:absolute;left:{{ A2.tip.x }}px;top:{{ A2.tip.y }}px;z-index:9;width:220px;background:#f4f4f4;color:#161616;padding:10px 12px;display:flex;flex-direction:column;gap:3px;pointer-events:none"><span style="font:600 13px 'IBM Plex Sans'">{{ A2.tip.title }}</span><span style="font:300 22px 'IBM Plex Sans'">{{ A2.tip.val }}</span><span style="font:400 11px 'IBM Plex Mono';color:#525252">{{ A2.tip.sub }}</span></div></sc-if>
+<div style="position:absolute;right:12px;top:12px;display:flex;background:#262626;border:1px solid #6f6f6f;z-index:5"><sc-for list="{{ A2.views }}" as="v" hint-placeholder-count="2"><button onClick="{{ v.onClick }}" aria-pressed="{{ v.on }}" style="border:0;padding:8px 12px;font:500 12px 'IBM Plex Sans';background:{{ v.bg }};color:{{ v.fg }}">{{ v.l }}</button></sc-for></div>
+<div style="position:absolute;left:12px;bottom:12px;display:flex;align-items:flex-end;gap:10px;background:rgba(22,22,22,.92);padding:8px 10px;z-index:5"><div style="display:flex;align-items:flex-end;gap:4px"><div style="width:8px;height:8px;border-radius:50%;border:1px solid #c6c6c6"></div><div style="width:16px;height:16px;border-radius:50%;border:1px solid #c6c6c6"></div><div style="width:28px;height:28px;border-radius:50%;border:1px solid #c6c6c6"></div></div><span style="font:400 11px 'IBM Plex Mono';color:#c6c6c6">área = eleitorado do local</span></div>
+<sc-if value="{{ A2.hasSel }}"><button onClick="{{ A2.clear }}" style="position:absolute;right:12px;bottom:12px;z-index:5;border:0;background:#f4f4f4;color:#161616;padding:8px 14px;font:500 12px 'IBM Plex Sans'">Limpar seleção ×</button></sc-if>
+<sc-if value="{{ A2.ruralNote }}"><span style="position:absolute;right:12px;top:52px;font:400 10px 'IBM Plex Mono';color:#a8a8a8;z-index:5">3 locais rurais fora do quadro · 1.061 eleitores</span></sc-if>
+<sc-if value="{{ A2.hint }}"><div style="position:absolute;inset:0;background:rgba(22,22,22,.7);display:flex;align-items:center;justify-content:center;color:#fff;font:500 16px 'IBM Plex Sans';z-index:10">Use Ctrl + roda para dar zoom</div></sc-if>
+</div>
+<div style="margin-top:16px;display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="font:600 13px 'IBM Plex Sans'">{{ A2.metric.l }}</span><span style="font:500 11px 'IBM Plex Mono';background:#393939;padding:2px 6px">{{ A2.metric.u }}</span></div>
+<sc-for list="{{ A2.legend }}" as="row" hint-placeholder-count="2"><div style="display:grid;grid-template-columns:130px repeat(5,1fr);gap:2px;align-items:start"><span style="font-size:12px;line-height:1.3;color:#e0e0e0;padding-top:6px">{{ row.arrow }} {{ row.label }}</span><sc-for list="{{ row.cells }}" as="c" hint-placeholder-count="5"><div style="display:flex;flex-direction:column;gap:3px;opacity:{{ c.op }}"><div style="height:28px;background:{{ c.color }};color:{{ c.ink }};display:flex;align-items:center;justify-content:center;font:500 12px 'IBM Plex Mono';transition:background-color .5s">{{ c.count }}</div><span style="font:400 10.5px 'IBM Plex Mono';color:#c6c6c6">{{ c.range }}</span></div></sc-for></div></sc-for>
+<span style="font:400 11px 'IBM Plex Mono';color:#a8a8a8">número no quadrado = bairros na faixa · <span style="background:#393939;padding:1px 5px">TSE</span> {{ A2.src }}</span>
+</div>
+</div>
+<div style="background:#262626;padding:24px;display:flex;flex-direction:column;gap:20px;font-size:14px">
+<sc-if value="{{ A2.p.has }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font:500 11px 'IBM Plex Mono';color:#a8a8a8">BAIRRO SELECIONADO</span><span style="font:400 26px/1.15 'IBM Plex Sans';text-wrap:pretty">{{ A2.p.name }}</span><span style="font-size:13px;color:#c6c6c6">{{ A2.p.meta }}</span></div>
+<div style="display:flex;align-items:center;gap:10px"><span style="background:{{ A2.p.wc }};color:#fff;padding:6px 10px;font:600 13px 'IBM Plex Sans'">{{ A2.p.winner }} venceu o 2º turno</span><span style="font:500 13px 'IBM Plex Mono'">{{ A2.p.margin }}</span></div>
+<sc-if value="{{ A2.p.flip }}"><div style="background:#3d2e00;color:#f1c21b;padding:10px 12px;font-size:13px;line-height:1.4">{{ A2.p.flip }}</div></sc-if>
+</sc-if>
+<sc-if value="{{ A2.p.empty }}"><div style="display:flex;flex-direction:column;gap:10px"><span style="font:500 11px 'IBM Plex Mono';color:#a8a8a8">COMO EXPLORAR</span><span style="font:400 22px/1.2 'IBM Plex Sans'">Clique num círculo para abrir o bairro</span><ol style="margin:0;padding-left:18px;color:#e0e0e0;line-height:1.6;font-size:13px"><li>Linhas da tabela abaixo também selecionam.</li><li>Alterne Núcleo urbano / Município inteiro no mapa.</li><li>A seleção continua ao trocar de turno.</li></ol><span style="font-size:13px;color:#c6c6c6">O maior bairro é o Centro: 10 locais e 22.286 eleitores, muitos vindos de outras partes da cidade.</span></div></sc-if>
+<div style="display:flex;flex-direction:column;gap:10px;padding-top:16px;border-top:1px solid #393939">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:600 13px 'IBM Plex Sans'">Voto a dois</span><span style="font:500 11px 'IBM Plex Mono';color:#a8a8a8">Lula ÷ (Lula + Flávio)</span></div>
+<sc-for list="{{ A2.p.v2 }}" as="r" hint-placeholder-count="2"><div style="display:flex;flex-direction:column;gap:4px"><span style="font:400 11px 'IBM Plex Mono';color:#c6c6c6">{{ r.l }}</span><div style="position:relative;height:22px;display:flex;background:#1f4e9c"><div style="width:{{ r.lw }};background:#d92b3a;transition:width .8s ease"></div><div style="position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:#f4f4f4"></div><span style="position:absolute;left:6px;top:3px;color:#fff;font:500 12px 'IBM Plex Mono'">{{ r.lt }}</span><span style="position:absolute;right:6px;top:3px;color:#fff;font:500 12px 'IBM Plex Mono'">{{ r.ft }}</span></div></div></sc-for>
+<span style="font:500 13px 'IBM Plex Sans'">{{ A2.p.shift }}</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;padding-top:16px;border-top:1px solid #393939"><span style="font:600 13px 'IBM Plex Sans'">{{ A2.p.blockTitle }}</span>
+<sc-for list="{{ A2.p.cands }}" as="c" hint-placeholder-count="3"><div style="display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:baseline"><span style="font-size:13px">{{ c.n }}</span><span style="font:500 13px 'IBM Plex Mono'">{{ c.pt }}</span><div style="grid-column:1/3;height:6px;background:#393939"><div style="height:6px;width:{{ c.w }};background:{{ c.c }};transition:width .8s"></div></div></div></sc-for>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#393939;margin-top:6px"><sc-for list="{{ A2.p.minis }}" as="m" hint-placeholder-count="4"><div style="background:#161616;padding:8px 10px;display:flex;flex-direction:column;gap:2px"><span style="font-size:11px;color:#c6c6c6">{{ m.l }}</span><span style="font:500 15px 'IBM Plex Mono'">{{ m.v }}</span></div></sc-for></div>
+</div>
+<sc-if value="{{ A2.p.has }}"><div style="display:flex;flex-direction:column;gap:0;padding-top:16px;border-top:1px solid #393939"><span style="font:600 13px 'IBM Plex Sans';margin-bottom:8px">{{ A2.p.nl }} locais de votação</span><div style="max-height:220px;overflow:auto;display:flex;flex-direction:column;gap:1px;background:#393939"><sc-for list="{{ A2.p.locais }}" as="l" hint-placeholder-count="2"><button onClick="{{ l.onClick }}" style="border:0;text-align:left;background:{{ l.bg }};padding:8px 10px;display:grid;grid-template-columns:1fr auto;gap:2px 8px"><span style="font:500 13px 'IBM Plex Sans'">{{ l.name }}</span><span style="font:600 12px 'IBM Plex Sans';color:{{ l.wc }}">{{ l.win }}</span><span style="font-size:11px;color:#a8a8a8;grid-column:1/3">{{ l.addr }} · {{ l.meta }}</span></button></sc-for></div></div></sc-if>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:1px;background:#393939;border-top:1px solid #393939;border-bottom:1px solid #393939">
+<sc-for list="{{ A2.cards }}" as="c" hint-placeholder-count="4"><div style="background:#262626;padding:18px 20px;display:flex;flex-direction:column;gap:4px"><span style="font-size:12px;color:#c6c6c6">{{ c.l }}</span><span style="font:300 26px/1.15 'IBM Plex Sans';color:{{ c.c }}">{{ c.v }}</span><span style="font:400 11px 'IBM Plex Mono';color:#a8a8a8;line-height:1.4">{{ c.s }}</span></div></sc-for>
+</div>
+<div style="background:#262626;padding:24px 32px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px"><span style="font:600 16px 'IBM Plex Sans'">Os 45 bairros · {{ A2.metric.l }}</span><button onClick="{{ A2.toggleSort }}" style="border:1px solid #6f6f6f;background:#262626;padding:6px 12px;font:500 12px 'IBM Plex Sans'">{{ A2.sortLabel }}</button></div>
+<div style="display:grid;grid-template-columns:40px minmax(0,1.6fr) 90px minmax(0,1.6fr) 80px 80px 70px 90px;gap:12px;padding:8px 0;border-bottom:1px solid #f4f4f4;font:500 11px 'IBM Plex Mono';color:#c6c6c6"><span>#</span><span>BAIRRO</span><span style="text-align:right">ELEITORES</span><span>{{ A2.metric.l }}</span><span style="text-align:right">{{ A2.c1h }}</span><span style="text-align:right">{{ A2.c2h }}</span><span style="text-align:right">LOCAIS</span><span>2º TURNO</span></div>
+<div style="max-height:360px;overflow:auto">
+<sc-for list="{{ A2.rows }}" as="r" hint-placeholder-count="8"><div onClick="{{ r.onClick }}" style="display:grid;grid-template-columns:40px minmax(0,1.6fr) 90px minmax(0,1.6fr) 80px 80px 70px 90px;gap:12px;padding:7px 0;border-bottom:1px solid #393939;align-items:center;font-size:13px;background:{{ r.bg }};cursor:pointer"><span style="font:400 11px 'IBM Plex Mono';color:#8d8d8d">{{ r.rank }}</span><span style="font-weight:{{ r.fw }};overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="{{ r.name }}">{{ r.name }}</span><span style="text-align:right;font-family:'IBM Plex Mono';font-size:12px;color:#c6c6c6">{{ r.el }}</span><div style="display:flex;align-items:center;gap:8px"><div style="position:relative;flex:1;height:12px;background:#161616"><div style="position:absolute;left:{{ r.left }};width:{{ r.w }};top:0;bottom:0;background:{{ r.color }};transition:all .6s"></div></div><span style="font:500 12px 'IBM Plex Mono';width:76px;text-align:right">{{ r.val }}</span></div><span style="text-align:right;font-family:'IBM Plex Mono';font-size:12px;color:#c6c6c6">{{ r.c1 }}</span><span style="text-align:right;font-family:'IBM Plex Mono';font-size:12px;color:#c6c6c6">{{ r.c2 }}</span><span style="text-align:right;font-family:'IBM Plex Mono';font-size:12px;color:#8d8d8d">{{ r.nl }}</span><span style="font-weight:600;font-size:12px;color:{{ r.wc }}">{{ r.win }}{{ r.flipMark }}</span></div></sc-for>
+</div>
+</div>
+<div id="sobre-a2" style="background:#161616;padding:28px 32px;display:flex;flex-direction:column;gap:16px;border-top:1px solid #393939">
+<span style="font:600 16px 'IBM Plex Sans'">Sobre os dados</span>
+<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#393939">
+<div style="background:#262626;padding:14px 16px;display:flex;flex-direction:column;gap:6px;font-size:12.5px;line-height:1.45;color:#e0e0e0"><span style="font:500 10.5px 'IBM Plex Mono';color:#6fdc8c;background:#044317;padding:1px 5px;align-self:flex-start">OFICIAL</span><strong>Apuração</strong>TSE votacao_secao_2026_BR, QT_VOTOS por NR_VOTAVEL. Totais fecham por seção, local e bairro.</div>
+<div style="background:#262626;padding:14px 16px;display:flex;flex-direction:column;gap:6px;font-size:12.5px;line-height:1.45;color:#e0e0e0"><span style="font:500 10.5px 'IBM Plex Mono';color:#6fdc8c;background:#044317;padding:1px 5px;align-self:flex-start">OFICIAL</span><strong>Bairro, endereço e coordenadas</strong>TSE eleitorado_local_votacao_2026: NM_BAIRRO, NR_LATITUDE/LONGITUDE. Contorno: IBGE malha 2022.</div>
+<div style="background:#262626;padding:14px 16px;display:flex;flex-direction:column;gap:6px;font-size:12.5px;line-height:1.45;color:#e0e0e0"><span style="font:500 10.5px 'IBM Plex Mono';color:#f1c21b;background:#3d2e00;padding:1px 5px;align-self:flex-start">RESSALVA</span><strong>Percentual entre turnos engana</strong>De 13 chapas para 2, os finalistas sobem sem ganhar ninguém. Por isso, voto a dois.</div>
+<div style="background:#262626;padding:14px 16px;display:flex;flex-direction:column;gap:6px;font-size:12.5px;line-height:1.45;color:#e0e0e0"><span style="font:500 10.5px 'IBM Plex Mono';color:#f1c21b;background:#3d2e00;padding:1px 5px;align-self:flex-start">LACUNAS</span><strong>Fora do mapa</strong>Penitenciária: sem coordenada, 1 seção, 0 eleitores. 2 seções agregadas (52 eleitores) votam na principal.</div>
+</div>
+<div style="display:grid;grid-template-columns:60px minmax(0,2fr) 140px 90px 90px;gap:12px;font-size:12.5px;background:#262626;padding:12px 16px"><span style="font:500 11px 'IBM Plex Mono';color:#a8a8a8">Nº</span><span style="font:500 11px 'IBM Plex Mono';color:#a8a8a8">NOME NO TSE</span><span style="font:500 11px 'IBM Plex Mono';color:#a8a8a8">RÓTULO</span><span style="font:500 11px 'IBM Plex Mono';color:#a8a8a8;text-align:right">1º TURNO</span><span style="font:500 11px 'IBM Plex Mono';color:#a8a8a8;text-align:right">2º TURNO</span><span style="font-family:'IBM Plex Mono'">22</span><span>FLÁVIO NANTES BOLSONARO</span><span style="color:#8fb0e6;font-weight:600">Flávio Bolsonaro</span><span style="text-align:right;font-family:'IBM Plex Mono'">45,82%</span><span style="text-align:right;font-family:'IBM Plex Mono'">47,92%</span><span style="font-family:'IBM Plex Mono'">13</span><span>LUIZ INÁCIO LULA DA SILVA</span><span style="color:#f08a8c;font-weight:600">Lula</span><span style="text-align:right;font-family:'IBM Plex Mono'">44,82%</span><span style="text-align:right;font-family:'IBM Plex Mono'">52,08%</span><span style="font-family:'IBM Plex Mono';color:#a8a8a8">—</span><span style="color:#c6c6c6">+ 11 chapas (nome civil completo)</span><span style="color:#c6c6c6">nome completo</span><span style="text-align:right;font-family:'IBM Plex Mono'">9,36%</span><span style="text-align:right;font-family:'IBM Plex Mono'">—</span></div>
+</div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Tente: "seletor claro/escuro dentro do <a class="dv-oid" href="#2a">2a</a>" · "desenhar a aba Brasil no <a class="dv-oid" href="#2a">2a</a>" · "versão mobile do <a class="dv-oid" href="#1a">1a</a>"</p>
+</section>
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Três sistemas para "Araraquara em dois turnos" — mesma lógica, mesmos invariantes, linguagens diferentes</span></div>
+<p style="margin:-8px 0 28px;max-width:860px;font:13px/1.55 system-ui,sans-serif;color:rgba(0,0,0,.6)">Todas as telas são interativas: troque de turno, de métrica e de enquadramento; clique em círculos, linhas da tabela ou locais. Totais da cidade são os do guia; valores por bairro e local são ilustrativos (gerados) e as posições não são as coordenadas reais. Mudanças de usabilidade aplicadas: gráfico de 45 barras fundido na tabela (barra inline), voto a dois como componente visual fixo no painel, procedência ligada à métrica ativa, círculos menores com transparência e onda de transição ao trocar de turno.</p>
+<div class="dv-opts">
+
+<!-- ===================== 1A GRADE ===================== -->
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Grade — parte do Carbon: grade de 1 px, cantos retos, Plex, procedência em etiqueta mono junto do número</div>
+<div class="dv-card" style="width:1280px;background:#f4f4f4;font-family:'IBM Plex Sans',sans-serif;color:#161616;border-radius:0">
+<div style="display:grid;grid-template-columns:280px 1fr 1fr 1fr;gap:1px;background:#e0e0e0;border-bottom:1px solid #e0e0e0">
+<div style="background:#fff;padding:20px 24px;display:flex;flex-direction:column;gap:6px"><span style="font:500 11px 'IBM Plex Mono',monospace;color:#6f6f6f;letter-spacing:.04em">SISTEMA 1A</span><span style="font:300 28px/1.1 'IBM Plex Sans';">Grade</span><span style="font-size:13px;line-height:1.45;color:#525252">Densidade de painel técnico. Tudo é célula; o dado nunca flutua sem a sua fonte.</span></div>
+<div style="background:#fff;padding:20px 24px;display:flex;flex-direction:column;gap:6px"><span style="font:500 11px 'IBM Plex Mono';color:#6f6f6f">TIPO</span><span style="font:300 32px/1 'IBM Plex Sans'">52,1%</span><span style="font:600 14px 'IBM Plex Sans'">Plex Sans 300 / 400 / 600</span><span style="font:400 12px 'IBM Plex Mono';color:#525252">Plex Mono · fontes, unidades</span></div>
+<div style="background:#fff;padding:20px 24px;display:flex;flex-direction:column;gap:10px"><span style="font:500 11px 'IBM Plex Mono';color:#6f6f6f">COR</span><div style="display:flex;gap:4px"><div style="width:36px;height:36px;background:#d92b3a"></div><div style="width:36px;height:36px;background:#1f4e9c"></div><div style="width:36px;height:36px;background:#2e8d58"></div><div style="width:36px;height:36px;background:#e29a34"></div><div style="width:36px;height:36px;background:#1c807e"></div><div style="width:36px;height:36px;background:#7322a8"></div><div style="width:36px;height:36px;background:#161616"></div><div style="width:36px;height:36px;background:#e0e0e0"></div></div><span style="font:400 12px 'IBM Plex Mono';color:#525252">chapas · neutras · destaque · cinzas Carbon</span></div>
+<div style="background:#fff;padding:20px 24px;display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.45;color:#393939"><span style="font:500 11px 'IBM Plex Mono';color:#6f6f6f">PRINCÍPIOS</span><span>Raio 0 · divisória de 1 px no lugar de sombra</span><span>Métrica como lista de rádio vertical, sempre visível</span><span>Etiqueta <span style="font:500 11px 'IBM Plex Mono';background:#e0e0e0;padding:1px 5px">TSE</span> ao lado de todo número</span></div>
+</div>
+<div style="background:#161616;color:#f4f4f4;padding:9px 32px;display:flex;gap:20px;align-items:center;font:400 12px 'IBM Plex Mono',monospace"><span style="display:flex;align-items:center;gap:8px"><span style="width:8px;height:8px;border-radius:50%;background:#42be65"></span>Dados oficiais do TSE e do IBGE</span><span style="color:#a8a8a8">1º turno 04/10/2026</span><span style="color:#a8a8a8">2º turno 25/10/2026</span><span style="color:#a8a8a8">nada estimado ou interpolado</span><a href="#sobre-a" style="margin-left:auto;color:#78a9ff;text-decoration:none">3 ressalvas ↓</a></div>
+<div style="background:#fff;padding:32px 32px 0;display:flex;flex-direction:column;gap:12px">
+<span style="font:500 12px 'IBM Plex Mono';color:#6f6f6f;letter-spacing:.04em">ELEIÇÃO PRESIDENCIAL 2026 · ARARAQUARA – SP · IBGE 3503208</span>
+<h1 style="margin:0;font:300 44px/1.1 'IBM Plex Sans'">Araraquara em dois turnos</h1>
+<p style="margin:0;max-width:880px;font-size:18px;line-height:1.5;color:#393939;text-wrap:pretty">169.890 eleitores em 45 bairros e 67 locais de votação. No 2º turno a cidade ficou com <strong style="color:#d92b3a">Lula</strong>, com 52,1% dos votos válidos — depois de <strong style="color:#1f4e9c">Flávio Bolsonaro</strong> ter liderado o 1º turno com 45,8%.</p>
+<div style="display:flex;margin-top:12px">
+<sc-for list="{{ A.tabs }}" as="t" hint-placeholder-count="4"><button onClick="{{ t.onClick }}" aria-current="{{ t.on }}" style="background:transparent;border:0;border-bottom:3px solid {{ t.bd }};padding:12px 24px 12px 0;margin-right:24px;text-align:left;display:flex;flex-direction:column;gap:2px;opacity:{{ t.dim }}"><span style="font:600 15px 'IBM Plex Sans';color:{{ t.fg }}">{{ t.l }}</span><span style="font:400 11px 'IBM Plex Mono';color:#6f6f6f">{{ t.sub }}</span></button></sc-for>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:220px 680px 1fr;gap:1px;background:#e0e0e0;border-top:1px solid #e0e0e0">
+<div style="background:#fff;padding:24px 0;display:flex;flex-direction:column;gap:2px">
+<span style="font:500 11px 'IBM Plex Mono';color:#6f6f6f;padding:0 20px 10px">COR DOS CÍRCULOS</span>
+<sc-for list="{{ A.metrics }}" as="m" hint-placeholder-count="5"><button onClick="{{ m.onClick }}" aria-pressed="{{ m.on }}" style="border:0;background:{{ m.bg }};color:{{ m.fg }};text-align:left;padding:12px 20px;display:flex;flex-direction:column;gap:2px"><span style="font:500 14px/1.3 'IBM Plex Sans'">{{ m.l }}</span><span style="font:400 11px 'IBM Plex Mono';opacity:.7">{{ m.u }}</span></button></sc-for>
+<div style="margin:20px 20px 0;padding-top:16px;border-top:1px solid #e0e0e0;font-size:12px;line-height:1.5;color:#525252"><span style="font:500 11px 'IBM Plex Mono';color:#8e6a00;background:#fcf4d6;padding:1px 5px">RESSALVA</span><p style="margin:8px 0 0">Cada círculo é um <strong>local de votação</strong>. O bairro é o do local, não o da residência do eleitor.</p></div>
+</div>
+<div style="background:#fff;padding:20px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px"><div style="display:flex;flex-direction:column;gap:2px"><span style="font:600 16px 'IBM Plex Sans'">{{ A.title }}</span><span style="font-size:13px;color:#525252">{{ A.subtitle }}</span></div></div>
+<div onWheel="{{ A.onWheel }}" style="position:relative;width:640px;height:640px;overflow:hidden;background-color:#f2f2f0;background-image:linear-gradient(#e6e6e3 1px,transparent 1px),linear-gradient(90deg,#e6e6e3 1px,transparent 1px);background-size:40px 40px">
+<span style="position:absolute;left:12px;top:12px;font:400 10px 'IBM Plex Mono';color:#8d8d8d">tiles OSM dessaturados</span>
+<sc-if value="{{ A.mun.show }}"><div style="position:absolute;left:{{ A.mun.x }}px;top:{{ A.mun.y }}px;width:{{ A.mun.w }}px;height:{{ A.mun.h }}px;border:1.5px dashed #8d8d8d;background:rgba(0,0,0,.015)"></div><div style="position:absolute;left:{{ A.core.x }}px;top:{{ A.core.y }}px;width:{{ A.core.w }}px;height:{{ A.core.h }}px;border:1px dashed #c6c6c6"></div></sc-if>
+<sc-for list="{{ A.dots }}" as="d" hint-placeholder-count="0"><div onMouseEnter="{{ d.onEnter }}" onMouseLeave="{{ d.onLeave }}" onClick="{{ d.onClick }}" style="position:absolute;left:{{ d.x }}px;top:{{ d.y }}px;width:{{ d.d }}px;height:{{ d.d }}px;box-sizing:border-box;border-radius:50%;background:{{ d.color }};opacity:{{ d.op }};border:{{ d.bw }}px solid {{ d.bc }};z-index:{{ d.z }};cursor:pointer;transition:background-color .7s ease,opacity .3s,left .6s,top .6s,width .6s,height .6s;transition-delay:{{ d.delay }}ms"></div></sc-for>
+<sc-if value="{{ A.tip.show }}"><div style="position:absolute;left:{{ A.tip.x }}px;top:{{ A.tip.y }}px;z-index:9;width:220px;background:#161616;color:#f4f4f4;padding:10px 12px;display:flex;flex-direction:column;gap:3px;pointer-events:none"><span style="font:600 13px 'IBM Plex Sans'">{{ A.tip.title }}</span><span style="font:300 22px 'IBM Plex Sans'">{{ A.tip.val }}</span><span style="font:400 11px 'IBM Plex Mono';color:#c6c6c6">{{ A.tip.sub }}</span></div></sc-if>
+<div style="position:absolute;right:12px;top:12px;display:flex;background:#fff;border:1px solid #c6c6c6;z-index:5"><sc-for list="{{ A.views }}" as="v" hint-placeholder-count="2"><button onClick="{{ v.onClick }}" aria-pressed="{{ v.on }}" style="border:0;padding:8px 12px;font:500 12px 'IBM Plex Sans';background:{{ v.bg }};color:{{ v.fg }}">{{ v.l }}</button></sc-for></div>
+<div style="position:absolute;left:12px;bottom:12px;display:flex;align-items:flex-end;gap:10px;background:rgba(255,255,255,.92);padding:8px 10px;z-index:5"><div style="display:flex;align-items:flex-end;gap:4px"><div style="width:8px;height:8px;border-radius:50%;border:1px solid #525252"></div><div style="width:16px;height:16px;border-radius:50%;border:1px solid #525252"></div><div style="width:28px;height:28px;border-radius:50%;border:1px solid #525252"></div></div><span style="font:400 11px 'IBM Plex Mono';color:#525252">área = eleitorado do local</span></div>
+<sc-if value="{{ A.hasSel }}"><button onClick="{{ A.clear }}" style="position:absolute;right:12px;bottom:12px;z-index:5;border:0;background:#161616;color:#fff;padding:8px 14px;font:500 12px 'IBM Plex Sans'">Limpar seleção ×</button></sc-if>
+<sc-if value="{{ A.ruralNote }}"><span style="position:absolute;right:12px;top:52px;font:400 10px 'IBM Plex Mono';color:#6f6f6f;z-index:5">3 locais rurais fora do quadro · 1.061 eleitores</span></sc-if>
+<sc-if value="{{ A.hint }}"><div style="position:absolute;inset:0;background:rgba(22,22,22,.7);display:flex;align-items:center;justify-content:center;color:#fff;font:500 16px 'IBM Plex Sans';z-index:10">Use Ctrl + roda para dar zoom</div></sc-if>
+</div>
+<div style="margin-top:16px;display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="font:600 13px 'IBM Plex Sans'">{{ A.metric.l }}</span><span style="font:500 11px 'IBM Plex Mono';background:#e0e0e0;padding:2px 6px">{{ A.metric.u }}</span></div>
+<sc-for list="{{ A.legend }}" as="row" hint-placeholder-count="2"><div style="display:grid;grid-template-columns:130px repeat(5,1fr);gap:2px;align-items:start"><span style="font-size:12px;line-height:1.3;color:#393939;padding-top:6px">{{ row.arrow }} {{ row.label }}</span><sc-for list="{{ row.cells }}" as="c" hint-placeholder-count="5"><div style="display:flex;flex-direction:column;gap:3px;opacity:{{ c.op }}"><div style="height:28px;background:{{ c.color }};color:{{ c.ink }};display:flex;align-items:center;justify-content:center;font:500 12px 'IBM Plex Mono';transition:background-color .5s">{{ c.count }}</div><span style="font:400 10.5px 'IBM Plex Mono';color:#525252">{{ c.range }}</span></div></sc-for></div></sc-for>
+<span style="font:400 11px 'IBM Plex Mono';color:#6f6f6f">número no quadrado = bairros na faixa · <span style="background:#e0e0e0;padding:1px 5px">TSE</span> {{ A.src }}</span>
+</div>
+</div>
+<div style="background:#fff;padding:24px;display:flex;flex-direction:column;gap:20px;font-size:14px">
+<sc-if value="{{ A.p.has }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font:500 11px 'IBM Plex Mono';color:#6f6f6f">BAIRRO SELECIONADO</span><span style="font:400 26px/1.15 'IBM Plex Sans';text-wrap:pretty">{{ A.p.name }}</span><span style="font-size:13px;color:#525252">{{ A.p.meta }}</span></div>
+<div style="display:flex;align-items:center;gap:10px"><span style="background:{{ A.p.wc }};color:#fff;padding:6px 10px;font:600 13px 'IBM Plex Sans'">{{ A.p.winner }} venceu o 2º turno</span><span style="font:500 13px 'IBM Plex Mono'">{{ A.p.margin }}</span></div>
+<sc-if value="{{ A.p.flip }}"><div style="background:#fcf4d6;color:#684e00;padding:10px 12px;font-size:13px;line-height:1.4">{{ A.p.flip }}</div></sc-if>
+</sc-if>
+<sc-if value="{{ A.p.empty }}"><div style="display:flex;flex-direction:column;gap:10px"><span style="font:500 11px 'IBM Plex Mono';color:#6f6f6f">COMO EXPLORAR</span><span style="font:400 22px/1.2 'IBM Plex Sans'">Clique num círculo para abrir o bairro</span><ol style="margin:0;padding-left:18px;color:#393939;line-height:1.6;font-size:13px"><li>Linhas da tabela abaixo também selecionam.</li><li>Alterne Núcleo urbano / Município inteiro no mapa.</li><li>A seleção continua ao trocar de turno.</li></ol><span style="font-size:13px;color:#525252">O maior bairro é o Centro: 10 locais e 22.286 eleitores, muitos vindos de outras partes da cidade.</span></div></sc-if>
+<div style="display:flex;flex-direction:column;gap:10px;padding-top:16px;border-top:1px solid #e0e0e0">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:600 13px 'IBM Plex Sans'">Voto a dois</span><span style="font:500 11px 'IBM Plex Mono';color:#6f6f6f">Lula ÷ (Lula + Flávio)</span></div>
+<sc-for list="{{ A.p.v2 }}" as="r" hint-placeholder-count="2"><div style="display:flex;flex-direction:column;gap:4px"><span style="font:400 11px 'IBM Plex Mono';color:#525252">{{ r.l }}</span><div style="position:relative;height:22px;display:flex;background:#1f4e9c"><div style="width:{{ r.lw }};background:#d92b3a;transition:width .8s ease"></div><div style="position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:#161616"></div><span style="position:absolute;left:6px;top:3px;color:#fff;font:500 12px 'IBM Plex Mono'">{{ r.lt }}</span><span style="position:absolute;right:6px;top:3px;color:#fff;font:500 12px 'IBM Plex Mono'">{{ r.ft }}</span></div></div></sc-for>
+<span style="font:500 13px 'IBM Plex Sans'">{{ A.p.shift }}</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;padding-top:16px;border-top:1px solid #e0e0e0"><span style="font:600 13px 'IBM Plex Sans'">{{ A.p.blockTitle }}</span>
+<sc-for list="{{ A.p.cands }}" as="c" hint-placeholder-count="3"><div style="display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:baseline"><span style="font-size:13px">{{ c.n }}</span><span style="font:500 13px 'IBM Plex Mono'">{{ c.pt }}</span><div style="grid-column:1/3;height:6px;background:#e0e0e0"><div style="height:6px;width:{{ c.w }};background:{{ c.c }};transition:width .8s"></div></div></div></sc-for>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#e0e0e0;margin-top:6px"><sc-for list="{{ A.p.minis }}" as="m" hint-placeholder-count="4"><div style="background:#f4f4f4;padding:8px 10px;display:flex;flex-direction:column;gap:2px"><span style="font-size:11px;color:#525252">{{ m.l }}</span><span style="font:500 15px 'IBM Plex Mono'">{{ m.v }}</span></div></sc-for></div>
+</div>
+<sc-if value="{{ A.p.has }}"><div style="display:flex;flex-direction:column;gap:0;padding-top:16px;border-top:1px solid #e0e0e0"><span style="font:600 13px 'IBM Plex Sans';margin-bottom:8px">{{ A.p.nl }} locais de votação</span><div style="max-height:220px;overflow:auto;display:flex;flex-direction:column;gap:1px;background:#e0e0e0"><sc-for list="{{ A.p.locais }}" as="l" hint-placeholder-count="2"><button onClick="{{ l.onClick }}" style="border:0;text-align:left;background:{{ l.bg }};padding:8px 10px;display:grid;grid-template-columns:1fr auto;gap:2px 8px"><span style="font:500 13px 'IBM Plex Sans'">{{ l.name }}</span><span style="font:600 12px 'IBM Plex Sans';color:{{ l.wc }}">{{ l.win }}</span><span style="font-size:11px;color:#6f6f6f;grid-column:1/3">{{ l.addr }} · {{ l.meta }}</span></button></sc-for></div></div></sc-if>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:1px;background:#e0e0e0;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0">
+<sc-for list="{{ A.cards }}" as="c" hint-placeholder-count="4"><div style="background:#fff;padding:18px 20px;display:flex;flex-direction:column;gap:4px"><span style="font-size:12px;color:#525252">{{ c.l }}</span><span style="font:300 26px/1.15 'IBM Plex Sans';color:{{ c.c }}">{{ c.v }}</span><span style="font:400 11px 'IBM Plex Mono';color:#6f6f6f;line-height:1.4">{{ c.s }}</span></div></sc-for>
+</div>
+<div style="background:#fff;padding:24px 32px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px"><span style="font:600 16px 'IBM Plex Sans'">Os 45 bairros · {{ A.metric.l }}</span><button onClick="{{ A.toggleSort }}" style="border:1px solid #c6c6c6;background:#fff;padding:6px 12px;font:500 12px 'IBM Plex Sans'">{{ A.sortLabel }}</button></div>
+<div style="display:grid;grid-template-columns:40px minmax(0,1.6fr) 90px minmax(0,1.6fr) 80px 80px 70px 90px;gap:12px;padding:8px 0;border-bottom:1px solid #161616;font:500 11px 'IBM Plex Mono';color:#525252"><span>#</span><span>BAIRRO</span><span style="text-align:right">ELEITORES</span><span>{{ A.metric.l }}</span><span style="text-align:right">{{ A.c1h }}</span><span style="text-align:right">{{ A.c2h }}</span><span style="text-align:right">LOCAIS</span><span>2º TURNO</span></div>
+<div style="max-height:360px;overflow:auto">
+<sc-for list="{{ A.rows }}" as="r" hint-placeholder-count="8"><div onClick="{{ r.onClick }}" style="display:grid;grid-template-columns:40px minmax(0,1.6fr) 90px minmax(0,1.6fr) 80px 80px 70px 90px;gap:12px;padding:7px 0;border-bottom:1px solid #e0e0e0;align-items:center;font-size:13px;background:{{ r.bg }};cursor:pointer"><span style="font:400 11px 'IBM Plex Mono';color:#8d8d8d">{{ r.rank }}</span><span style="font-weight:{{ r.fw }};overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="{{ r.name }}">{{ r.name }}</span><span style="text-align:right;font-family:'IBM Plex Mono';font-size:12px;color:#525252">{{ r.el }}</span><div style="display:flex;align-items:center;gap:8px"><div style="position:relative;flex:1;height:12px;background:#f4f4f4"><div style="position:absolute;left:{{ r.left }};width:{{ r.w }};top:0;bottom:0;background:{{ r.color }};transition:all .6s"></div></div><span style="font:500 12px 'IBM Plex Mono';width:76px;text-align:right">{{ r.val }}</span></div><span style="text-align:right;font-family:'IBM Plex Mono';font-size:12px;color:#525252">{{ r.c1 }}</span><span style="text-align:right;font-family:'IBM Plex Mono';font-size:12px;color:#525252">{{ r.c2 }}</span><span style="text-align:right;font-family:'IBM Plex Mono';font-size:12px;color:#8d8d8d">{{ r.nl }}</span><span style="font-weight:600;font-size:12px;color:{{ r.wc }}">{{ r.win }}{{ r.flipMark }}</span></div></sc-for>
+</div>
+</div>
+<div id="sobre-a" style="background:#f4f4f4;padding:28px 32px;display:flex;flex-direction:column;gap:16px;border-top:1px solid #e0e0e0">
+<span style="font:600 16px 'IBM Plex Sans'">Sobre os dados</span>
+<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#e0e0e0">
+<div style="background:#fff;padding:14px 16px;display:flex;flex-direction:column;gap:6px;font-size:12.5px;line-height:1.45;color:#393939"><span style="font:500 10.5px 'IBM Plex Mono';color:#0e6027;background:#defbe6;padding:1px 5px;align-self:flex-start">OFICIAL</span><strong>Apuração</strong>TSE votacao_secao_2026_BR, QT_VOTOS por NR_VOTAVEL. Totais fecham por seção, local e bairro.</div>
+<div style="background:#fff;padding:14px 16px;display:flex;flex-direction:column;gap:6px;font-size:12.5px;line-height:1.45;color:#393939"><span style="font:500 10.5px 'IBM Plex Mono';color:#0e6027;background:#defbe6;padding:1px 5px;align-self:flex-start">OFICIAL</span><strong>Bairro, endereço e coordenadas</strong>TSE eleitorado_local_votacao_2026: NM_BAIRRO, NR_LATITUDE/LONGITUDE. Contorno: IBGE malha 2022.</div>
+<div style="background:#fff;padding:14px 16px;display:flex;flex-direction:column;gap:6px;font-size:12.5px;line-height:1.45;color:#393939"><span style="font:500 10.5px 'IBM Plex Mono';color:#8e6a00;background:#fcf4d6;padding:1px 5px;align-self:flex-start">RESSALVA</span><strong>Percentual entre turnos engana</strong>De 13 chapas para 2, os finalistas sobem sem ganhar ninguém. Por isso, voto a dois.</div>
+<div style="background:#fff;padding:14px 16px;display:flex;flex-direction:column;gap:6px;font-size:12.5px;line-height:1.45;color:#393939"><span style="font:500 10.5px 'IBM Plex Mono';color:#8e6a00;background:#fcf4d6;padding:1px 5px;align-self:flex-start">LACUNAS</span><strong>Fora do mapa</strong>Penitenciária: sem coordenada, 1 seção, 0 eleitores. 2 seções agregadas (52 eleitores) votam na principal.</div>
+</div>
+<div style="display:grid;grid-template-columns:60px minmax(0,2fr) 140px 90px 90px;gap:12px;font-size:12.5px;background:#fff;padding:12px 16px"><span style="font:500 11px 'IBM Plex Mono';color:#6f6f6f">Nº</span><span style="font:500 11px 'IBM Plex Mono';color:#6f6f6f">NOME NO TSE</span><span style="font:500 11px 'IBM Plex Mono';color:#6f6f6f">RÓTULO</span><span style="font:500 11px 'IBM Plex Mono';color:#6f6f6f;text-align:right">1º TURNO</span><span style="font:500 11px 'IBM Plex Mono';color:#6f6f6f;text-align:right">2º TURNO</span><span style="font-family:'IBM Plex Mono'">22</span><span>FLÁVIO NANTES BOLSONARO</span><span style="color:#1f4e9c;font-weight:600">Flávio Bolsonaro</span><span style="text-align:right;font-family:'IBM Plex Mono'">45,82%</span><span style="text-align:right;font-family:'IBM Plex Mono'">47,92%</span><span style="font-family:'IBM Plex Mono'">13</span><span>LUIZ INÁCIO LULA DA SILVA</span><span style="color:#d92b3a;font-weight:600">Lula</span><span style="text-align:right;font-family:'IBM Plex Mono'">44,82%</span><span style="text-align:right;font-family:'IBM Plex Mono'">52,08%</span><span style="font-family:'IBM Plex Mono';color:#6f6f6f">—</span><span style="color:#525252">+ 11 chapas (nome civil completo)</span><span style="color:#525252">nome completo</span><span style="text-align:right;font-family:'IBM Plex Mono'">9,36%</span><span style="text-align:right;font-family:'IBM Plex Mono'">—</span></div>
+</div>
+</div>
+</div>
+
+<!-- ===================== 1B CADERNO ===================== -->
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Caderno — editorial: a virada é a manchete, a navegação é uma linha do tempo, a procedência vive na margem como nota</div>
+<div class="dv-card" style="width:1280px;background:#f7f5f1;font-family:'Public Sans',sans-serif;color:#1c1c21;border-radius:10px">
+<div style="display:grid;grid-template-columns:280px 1fr 1fr 1fr;gap:16px;padding:20px 40px;border-bottom:1px solid #e3dfd7;background:#fff">
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font:600 11px 'Public Sans';color:#63636d;letter-spacing:.08em">SISTEMA 1B</span><span style="font:600 30px/1.1 'Source Serif 4',serif">Caderno</span><span style="font-size:13px;line-height:1.45;color:#63636d">Leitura de reportagem. Frase primeiro, número depois, fonte na margem.</span></div>
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font:600 11px 'Public Sans';color:#63636d;letter-spacing:.08em">TIPO</span><span style="font:400 30px/1 'Source Serif 4'">A virada</span><span style="font:600 14px 'Public Sans'">Source Serif 4 · Public Sans</span><span style="font-size:12px;color:#63636d">números tabulares em Public Sans</span></div>
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font:600 11px 'Public Sans';color:#63636d;letter-spacing:.08em">COR</span><div style="display:flex;gap:6px"><div style="width:34px;height:34px;border-radius:50%;background:#d92b3a"></div><div style="width:34px;height:34px;border-radius:50%;background:#1f4e9c"></div><div style="width:34px;height:34px;border-radius:50%;background:#2e8d58"></div><div style="width:34px;height:34px;border-radius:50%;background:#e29a34"></div><div style="width:34px;height:34px;border-radius:50%;background:#1c807e"></div><div style="width:34px;height:34px;border-radius:50%;background:#f7f5f1;border:1px solid #e3dfd7"></div><div style="width:34px;height:34px;border-radius:50%;background:#1c1c21"></div></div><span style="font-size:12px;color:#63636d">papel #f7f5f1 · tinta #1c1c21 · raio 10</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.45;color:#3a3a40"><span style="font:600 11px 'Public Sans';color:#63636d;letter-spacing:.08em">PRINCÍPIOS</span><span>Turnos em ordem cronológica: 1º → diferença → 2º</span><span>"Ver a virada" anima o mapa de 04 para 25/10</span><span>Ressalvas numeradas, sempre abertas na margem</span></div>
+</div>
+<div style="padding:36px 40px 0;display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:48px;align-items:end">
+<div style="display:flex;flex-direction:column;gap:14px">
+<span style="font:600 12px 'Public Sans';letter-spacing:.08em;color:#63636d">ELEIÇÃO PRESIDENCIAL 2026 · ARARAQUARA – SP</span>
+<h1 style="margin:0;font:400 54px/1.05 'Source Serif 4',serif;letter-spacing:-.01em;text-wrap:balance"><span style="color:#1f4e9c">Flávio</span> liderou o 1º turno. <span style="color:#d92b3a">Lula</span> venceu o 2º.</h1>
+<p style="margin:0;font:400 18px/1.55 'Source Serif 4';color:#3a3a40;max-width:700px;text-wrap:pretty">169.890 eleitores em 45 bairros e 67 locais de votação. No 2º turno a cidade ficou com <strong style="color:#d92b3a">Lula</strong>, com 52,1% dos votos válidos — depois de <strong style="color:#1f4e9c">Flávio Bolsonaro</strong> ter liderado o 1º turno com 45,8%.<sup style="font:600 11px 'Public Sans';color:#7322a8">1</sup></p>
+<div style="display:flex;gap:8px;align-items:center;font-size:12px;color:#1a7f4b"><span style="width:8px;height:8px;border-radius:50%;background:#1a7f4b"></span><span>Dados oficiais do TSE e do IBGE · nada estimado · 04/10 e 25/10/2026</span></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#fff;border:1px solid #e3dfd7;border-radius:10px;padding:18px 20px">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="font:600 12px 'Public Sans';letter-spacing:.06em;color:#63636d">LINHA DO TEMPO</span><button onClick="{{ B.play }}" style="border:0;background:#1c1c21;color:#f7f5f1;border-radius:999px;padding:8px 14px;font:600 13px 'Public Sans'">▶ Ver a virada</button></div>
+<div style="position:relative;display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px">
+<div style="position:absolute;left:16%;right:16%;top:13px;height:2px;background:#e3dfd7"></div>
+<sc-for list="{{ B.tabs }}" as="t" hint-placeholder-count="3"><button onClick="{{ t.onClick }}" aria-current="{{ t.on }}" style="position:relative;border:0;background:transparent;display:flex;flex-direction:column;align-items:center;gap:6px;padding:0"><span style="width:24px;height:24px;border-radius:50%;background:{{ t.bg }};border:2px solid {{ t.bd }};box-sizing:border-box;transition:all .3s"></span><span style="font:600 14px 'Public Sans';color:{{ t.fg }}">{{ t.l }}</span><span style="font-size:12px;color:#63636d">{{ t.sub }}</span></button></sc-for>
+</div>
+<a href="#1b" style="font-size:13px;color:#7322a8;text-decoration:none;border-top:1px solid #e3dfd7;padding-top:10px">E o Brasil? Araraquara entre 5.715 municípios →</a>
+</div>
+</div>
+<div style="padding:28px 40px 0;display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+<span style="font-size:13px;color:#63636d;margin-right:6px">Pintar por</span>
+<sc-for list="{{ B.metrics }}" as="m" hint-placeholder-count="5"><button onClick="{{ m.onClick }}" aria-pressed="{{ m.on }}" style="border:1px solid {{ m.bd }};background:{{ m.bg }};color:{{ m.fg }};border-radius:999px;padding:8px 14px;font:500 13px 'Public Sans';transition:all .2s">{{ m.l }}</button></sc-for>
+</div>
+<div style="padding:20px 40px 0;display:grid;grid-template-columns:680px minmax(0,1fr);gap:28px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:14px">
+<div onWheel="{{ B.onWheel }}" style="position:relative;width:680px;height:620px;overflow:hidden;border-radius:10px;background:#efebe3;border:1px solid #e3dfd7">
+<div style="position:absolute;left:16px;top:14px;display:flex;flex-direction:column;gap:2px;z-index:5;max-width:380px"><span style="font:600 18px 'Source Serif 4'">{{ B.title }}</span><span style="font-size:12px;color:#63636d">{{ B.subtitle }}</span></div>
+<span style="position:absolute;left:16px;bottom:58px;font:400 10px ui-monospace,monospace;color:#a29d92">tiles OSM em tom papel</span>
+<sc-if value="{{ B.mun.show }}"><div style="position:absolute;left:{{ B.mun.x }}px;top:{{ B.mun.y }}px;width:{{ B.mun.w }}px;height:{{ B.mun.h }}px;border:1.5px dashed #a29d92;border-radius:24px"></div><div style="position:absolute;left:{{ B.core.x }}px;top:{{ B.core.y }}px;width:{{ B.core.w }}px;height:{{ B.core.h }}px;border:1px dashed #cfc8bb;border-radius:8px"></div></sc-if>
+<sc-for list="{{ B.dots }}" as="d" hint-placeholder-count="0"><div onMouseEnter="{{ d.onEnter }}" onMouseLeave="{{ d.onLeave }}" onClick="{{ d.onClick }}" style="position:absolute;left:{{ d.x }}px;top:{{ d.y }}px;width:{{ d.d }}px;height:{{ d.d }}px;box-sizing:border-box;border-radius:50%;background:{{ d.color }};opacity:{{ d.op }};border:{{ d.bw }}px solid {{ d.bc }};z-index:{{ d.z }};cursor:pointer;box-shadow:0 1px 2px rgba(28,28,33,.18);transition:background-color .8s ease,opacity .3s,left .6s,top .6s,width .6s,height .6s;transition-delay:{{ d.delay }}ms"></div></sc-for>
+<sc-if value="{{ B.tip.show }}"><div style="position:absolute;left:{{ B.tip.x }}px;top:{{ B.tip.y }}px;z-index:9;width:220px;background:#fff;border:1px solid #e3dfd7;border-radius:10px;box-shadow:0 6px 20px rgba(28,28,33,.12);padding:10px 12px;display:flex;flex-direction:column;gap:3px;pointer-events:none"><span style="font:600 13px 'Public Sans'">{{ B.tip.title }}</span><span style="font:600 22px 'Source Serif 4'">{{ B.tip.val }}</span><span style="font-size:11px;color:#63636d">{{ B.tip.sub }}</span></div></sc-if>
+<div style="position:absolute;right:14px;top:14px;display:flex;gap:2px;background:#fff;border:1px solid #e3dfd7;border-radius:999px;padding:3px;z-index:5"><sc-for list="{{ B.views }}" as="v" hint-placeholder-count="2"><button onClick="{{ v.onClick }}" aria-pressed="{{ v.on }}" style="border:0;border-radius:999px;padding:6px 12px;font:500 12px 'Public Sans';background:{{ v.bg }};color:{{ v.fg }}">{{ v.l }}</button></sc-for></div>
+<div style="position:absolute;left:14px;bottom:14px;display:flex;align-items:flex-end;gap:10px;background:rgba(255,255,255,.9);border-radius:8px;padding:8px 10px;z-index:5"><div style="display:flex;align-items:flex-end;gap:4px"><div style="width:8px;height:8px;border-radius:50%;border:1px solid #63636d"></div><div style="width:16px;height:16px;border-radius:50%;border:1px solid #63636d"></div><div style="width:28px;height:28px;border-radius:50%;border:1px solid #63636d"></div></div><span style="font-size:11px;color:#63636d">área = eleitorado do local</span></div>
+<sc-if value="{{ B.hasSel }}"><button onClick="{{ B.clear }}" style="position:absolute;right:14px;bottom:14px;z-index:5;border:0;border-radius:999px;background:#1c1c21;color:#fff;padding:8px 14px;font:600 12px 'Public Sans'">Limpar seleção ×</button></sc-if>
+<sc-if value="{{ B.hint }}"><div style="position:absolute;inset:0;background:rgba(28,28,33,.66);display:flex;align-items:center;justify-content:center;color:#fff;font:600 16px 'Public Sans';z-index:10">Use Ctrl + roda para dar zoom</div></sc-if>
+</div>
+<div style="background:#fff;border:1px solid #e3dfd7;border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="font:600 13px 'Public Sans'">{{ B.metric.l }}</span><span style="font:600 11px 'Public Sans';background:#f7f5f1;border:1px solid #e3dfd7;border-radius:999px;padding:2px 8px;color:#63636d">{{ B.metric.u }}</span></div>
+<sc-for list="{{ B.legend }}" as="row" hint-placeholder-count="2"><div style="display:grid;grid-template-columns:150px repeat(5,1fr);gap:4px;align-items:start"><span style="font-size:12px;line-height:1.3;color:#3a3a40;padding-top:7px">{{ row.arrow }} {{ row.label }}</span><sc-for list="{{ row.cells }}" as="c" hint-placeholder-count="5"><div style="display:flex;flex-direction:column;gap:3px;opacity:{{ c.op }}"><div style="height:28px;border-radius:6px;background:{{ c.color }};color:{{ c.ink }};display:flex;align-items:center;justify-content:center;font:600 12px 'Public Sans';transition:background-color .5s">{{ c.count }}</div><span style="font-size:10.5px;color:#63636d;text-align:center">{{ c.range }}</span></div></sc-for></div></sc-for>
+</div>
+</div>
+<div style="background:#fff;border:1px solid #e3dfd7;border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:18px;position:sticky;top:0">
+<sc-if value="{{ B.p.empty }}"><div style="display:flex;flex-direction:column;gap:10px"><span style="font:400 26px/1.2 'Source Serif 4'">Escolha um lugar da cidade.</span><span style="font-size:14px;line-height:1.55;color:#3a3a40">Cada círculo é um local de votação — uma escola, um centro comunitário. Clique num deles para abrir o bairro inteiro; a tabela abaixo também abre. A escolha acompanha você pelos turnos.</span><span style="font-size:13px;color:#63636d;line-height:1.5">Comece pelo Centro: 10 locais, 22.286 eleitores — o maior peso da cidade.</span></div></sc-if>
+<sc-if value="{{ B.p.has }}" hint-placeholder-val="{{ false }}"><div style="display:flex;flex-direction:column;gap:8px"><span style="font:400 28px/1.15 'Source Serif 4';text-wrap:pretty">{{ B.p.name }}</span><span style="font-size:13px;color:#63636d">{{ B.p.meta }}</span><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="background:{{ B.p.wc }};color:#fff;border-radius:999px;padding:5px 12px;font:600 13px 'Public Sans'">{{ B.p.winner }} no 2º turno</span><span style="font-size:13px;font-weight:600">{{ B.p.margin }}</span></div><sc-if value="{{ B.p.flip }}"><div style="background:#fdf3d0;border-radius:8px;color:#6b4e00;padding:10px 12px;font-size:13px;line-height:1.45">{{ B.p.flip }}</div></sc-if></div></sc-if>
+<div style="display:flex;flex-direction:column;gap:10px">
+<span style="font:600 18px 'Source Serif 4'">{{ B.p.shift }}</span>
+<sc-for list="{{ B.p.v2 }}" as="r" hint-placeholder-count="2"><div style="display:grid;grid-template-columns:70px 1fr;gap:10px;align-items:center"><span style="font-size:12px;color:#63636d">{{ r.short }}</span><div style="position:relative;height:26px;border-radius:13px;overflow:hidden;display:flex;background:#1f4e9c"><div style="width:{{ r.lw }};background:#d92b3a;transition:width 1s cubic-bezier(.2,.8,.2,1)"></div><div style="position:absolute;left:50%;top:0;bottom:0;width:2px;background:#fff"></div><span style="position:absolute;left:10px;top:5px;color:#fff;font:600 12px 'Public Sans'">Lula {{ r.lt }}</span><span style="position:absolute;right:10px;top:5px;color:#fff;font:600 12px 'Public Sans'">{{ r.ft }} Flávio</span></div></div></sc-for>
+<span style="font-size:12px;line-height:1.5;color:#63636d">Voto a dois: a fatia de cada finalista só entre os dois. Tira o efeito das 11 chapas eliminadas.<sup style="font-weight:600;color:#7322a8">2</sup></span>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;border-top:1px solid #e3dfd7;padding-top:16px"><span style="font:600 13px 'Public Sans'">{{ B.p.blockTitle }}</span>
+<sc-for list="{{ B.p.cands }}" as="c" hint-placeholder-count="3"><div style="display:grid;grid-template-columns:10px 1fr auto;gap:8px;align-items:center"><span style="width:10px;height:10px;border-radius:50%;background:{{ c.c }}"></span><span style="font-size:13px">{{ c.n }}</span><span style="font-size:13px;font-weight:600">{{ c.pt }}</span><div style="grid-column:2/4;height:6px;border-radius:3px;background:#f0ece4"><div style="height:6px;border-radius:3px;width:{{ c.w }};background:{{ c.c }};transition:width .8s"></div></div></div></sc-for>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px"><sc-for list="{{ B.p.minis }}" as="m" hint-placeholder-count="4"><div style="background:#f7f5f1;border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:2px"><span style="font-size:11px;color:#63636d">{{ m.l }}</span><span style="font-size:15px;font-weight:600">{{ m.v }}</span></div></sc-for></div>
+</div>
+<sc-if value="{{ B.p.has }}"><div style="display:flex;flex-direction:column;gap:6px;border-top:1px solid #e3dfd7;padding-top:16px"><span style="font:600 13px 'Public Sans'">{{ B.p.nl }} locais neste bairro</span><div style="max-height:180px;overflow:auto;display:flex;flex-direction:column;gap:4px"><sc-for list="{{ B.p.locais }}" as="l" hint-placeholder-count="2"><button onClick="{{ l.onClick }}" style="border:0;border-radius:8px;text-align:left;background:{{ l.bg }};padding:8px 10px;display:grid;grid-template-columns:1fr auto;gap:2px 8px"><span style="font:600 13px 'Public Sans'">{{ l.name }}</span><span style="font:600 12px 'Public Sans';color:{{ l.wc }}">{{ l.win }}</span><span style="font-size:11px;color:#63636d;grid-column:1/3">{{ l.addr }} · {{ l.meta }}</span></button></sc-for></div></div></sc-if>
+</div>
+</div>
+<div style="padding:28px 40px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:12px">
+<sc-for list="{{ B.cards }}" as="c" hint-placeholder-count="4"><div style="background:#fff;border:1px solid #e3dfd7;border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:4px"><span style="font-size:12px;color:#63636d">{{ c.l }}</span><span style="font:600 26px/1.15 'Source Serif 4';color:{{ c.c }}">{{ c.v }}</span><span style="font-size:12px;color:#63636d;line-height:1.4">{{ c.s }}</span></div></sc-for>
+</div>
+<div style="padding:32px 40px 40px;display:grid;grid-template-columns:260px minmax(0,1fr);gap:36px">
+<aside style="display:flex;flex-direction:column;gap:16px;font-size:13px;line-height:1.5;color:#3a3a40">
+<span style="font:600 12px 'Public Sans';letter-spacing:.08em;color:#63636d">NOTAS DE PROCEDÊNCIA</span>
+<p style="margin:0"><sup style="font-weight:700;color:#7322a8">1</sup> Votos: TSE, votação por seção. Bairro, endereço e coordenadas: TSE, eleitorado por local. Contorno: IBGE 2022.</p>
+<p style="margin:0"><sup style="font-weight:700;color:#7322a8">2</sup> Comparar percentual de válidos entre turnos engana: de 13 chapas para 2, os dois finalistas sobem sem ganhar ninguém.</p>
+<p style="margin:0"><sup style="font-weight:700;color:#7322a8">3</sup> O bairro é o do <strong>local de votação</strong>, não o da residência. O Centro recebe eleitores de toda a cidade.</p>
+<p style="margin:0"><sup style="font-weight:700;color:#7322a8">4</sup> Penitenciária sem coordenada (1 seção, 0 eleitores) não aparece no mapa. 2 seções agregadas votam na principal.</p>
+<p style="margin:0;color:#63636d">Lula = LUIZ INÁCIO LULA DA SILVA · Flávio Bolsonaro = FLÁVIO NANTES BOLSONARO. Tabela completa das 13 chapas em "Sobre os dados".</p>
+</aside>
+<div style="background:#fff;border:1px solid #e3dfd7;border-radius:10px;padding:20px 22px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px"><span style="font:600 22px 'Source Serif 4'">Os 45 bairros, por {{ B.metric.l }}</span><button onClick="{{ B.toggleSort }}" style="border:1px solid #e3dfd7;background:#f7f5f1;border-radius:999px;padding:6px 12px;font:500 12px 'Public Sans'">{{ B.sortLabel }}</button></div>
+<div style="max-height:420px;overflow:auto">
+<sc-for list="{{ B.rows }}" as="r" hint-placeholder-count="8"><div onClick="{{ r.onClick }}" style="display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,2fr) 70px 110px;gap:14px;padding:7px 8px;border-radius:6px;align-items:center;font-size:13px;background:{{ r.bg }};cursor:pointer"><div style="display:flex;flex-direction:column;min-width:0"><span style="font-weight:{{ r.fw }};overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="{{ r.name }}">{{ r.name }}</span><span style="font-size:11px;color:#8a8a93">{{ r.el }} eleitores · {{ r.nl }} {{ r.nlw }}</span></div><div style="position:relative;height:14px;border-radius:7px;background:#f3efe8"><div style="position:absolute;left:{{ r.left }};width:{{ r.w }};top:0;bottom:0;border-radius:7px;background:{{ r.color }};transition:all .6s"></div></div><span style="font-weight:600;text-align:right">{{ r.val }}</span><span style="font-size:12px;font-weight:600;color:{{ r.wc }}">{{ r.win }}{{ r.flipMark }}</span></div></sc-for>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ===================== 1C NOITE ===================== -->
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Noite — imersivo: mapa em tela cheia, painéis flutuantes, legenda de procedência que muda com a métrica, agrupamento por bairro</div>
+<div class="dv-card" style="width:1280px;background:#0b0e13;font-family:'Instrument Sans',sans-serif;color:#e6e8eb;border-radius:16px;border-color:#1d232c">
+<div style="display:grid;grid-template-columns:280px 1fr 1fr 1fr;gap:16px;padding:20px 32px;border-bottom:1px solid rgba(255,255,255,.08)">
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font:500 11px 'JetBrains Mono',monospace;color:#9aa3ad">SISTEMA 1C</span><span style="font:600 30px/1.1 'Instrument Sans'">Noite</span><span style="font-size:13px;line-height:1.45;color:#9aa3ad">O mapa é a página. Tudo o mais flutua sobre ele e pode sair do caminho.</span></div>
+<div style="display:flex;flex-direction:column;gap:6px"><span style="font:500 11px 'JetBrains Mono';color:#9aa3ad">TIPO</span><span style="font:600 30px/1 'Instrument Sans'">+2,8 pp</span><span style="font:600 14px 'Instrument Sans'">Instrument Sans 400–700</span><span style="font:400 12px 'JetBrains Mono';color:#9aa3ad">JetBrains Mono · fonte e campo</span></div>
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font:500 11px 'JetBrains Mono';color:#9aa3ad">COR</span><div style="display:flex;gap:6px"><div style="width:34px;height:34px;border-radius:10px;background:#e3696b"></div><div style="width:34px;height:34px;border-radius:10px;background:#6890d0"></div><div style="width:34px;height:34px;border-radius:10px;background:#6bb889"></div><div style="width:34px;height:34px;border-radius:10px;background:#e29a34"></div><div style="width:34px;height:34px;border-radius:10px;background:#4eafac"></div><div style="width:34px;height:34px;border-radius:10px;background:#b07ee0"></div><div style="width:34px;height:34px;border-radius:10px;background:#161b22;border:1px solid #2a313b"></div></div><span style="font:400 12px 'JetBrains Mono';color:#9aa3ad">mesmas faixas · fundo #0b0e13 · vidro #161b22</span></div>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:13px;line-height:1.45;color:#c5cad1"><span style="font:500 11px 'JetBrains Mono';color:#9aa3ad">PRINCÍPIOS</span><span>Turno como controle central: 1º · Δ · 2º</span><span>Locais ↔ bairros: agrupar no centróide dos locais</span><span>Faixa de fonte no rodapé descreve o que a cor mostra agora</span></div>
+</div>
+<div onWheel="{{ C.onWheel }}" style="position:relative;width:1280px;height:800px;overflow:hidden;background-color:#0b0e13;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:22px 22px">
+<sc-if value="{{ C.mun.show }}"><div style="position:absolute;left:{{ C.mun.x }}px;top:{{ C.mun.y }}px;width:{{ C.mun.w }}px;height:{{ C.mun.h }}px;border:1.5px dashed rgba(255,255,255,.25);border-radius:30px"></div><div style="position:absolute;left:{{ C.core.x }}px;top:{{ C.core.y }}px;width:{{ C.core.w }}px;height:{{ C.core.h }}px;border:1px dashed rgba(255,255,255,.14);border-radius:10px"></div></sc-if>
+<sc-for list="{{ C.dots }}" as="d" hint-placeholder-count="0"><div onMouseEnter="{{ d.onEnter }}" onMouseLeave="{{ d.onLeave }}" onClick="{{ d.onClick }}" style="position:absolute;left:{{ d.x }}px;top:{{ d.y }}px;width:{{ d.d }}px;height:{{ d.d }}px;box-sizing:border-box;border-radius:50%;background:{{ d.color }};opacity:{{ d.op }};border:{{ d.bw }}px solid {{ d.bc }};z-index:{{ d.z }};cursor:pointer;display:flex;align-items:center;justify-content:center;font:600 11px 'JetBrains Mono';color:#0b0e13;box-shadow:0 0 18px {{ d.glow }};transition:background-color .8s ease,box-shadow .8s,opacity .3s,left .7s cubic-bezier(.2,.8,.2,1),top .7s cubic-bezier(.2,.8,.2,1),width .7s,height .7s;transition-delay:{{ d.delay }}ms">{{ d.lbl }}</div></sc-for>
+<sc-if value="{{ C.tip.show }}"><div style="position:absolute;left:{{ C.tip.x }}px;top:{{ C.tip.y }}px;z-index:30;width:220px;background:#e6e8eb;color:#0b0e13;border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:3px;pointer-events:none"><span style="font:600 13px 'Instrument Sans'">{{ C.tip.title }}</span><span style="font:700 22px 'Instrument Sans'">{{ C.tip.val }}</span><span style="font:400 11px 'JetBrains Mono';color:#3b424c">{{ C.tip.sub }}</span></div></sc-if>
+<div style="position:absolute;left:24px;top:24px;width:340px;z-index:20;display:flex;flex-direction:column;gap:12px">
+<div style="background:rgba(22,27,34,.82);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px 20px;display:flex;flex-direction:column;gap:8px">
+<span style="font:500 11px 'JetBrains Mono';color:#9aa3ad">PRESIDENTE 2026 · ARARAQUARA – SP</span>
+<span style="font:700 26px/1.1 'Instrument Sans'">Araraquara em dois turnos</span>
+<span style="font-size:13.5px;line-height:1.5;color:#c5cad1;text-wrap:pretty">169.890 eleitores em 45 bairros e 67 locais. No 2º turno a cidade ficou com <strong style="color:#f08a8c">Lula</strong>, com 52,1% dos válidos — depois de <strong style="color:#8fb0e6">Flávio Bolsonaro</strong> ter liderado o 1º com 45,8%.</span>
+</div>
+<div style="background:rgba(22,27,34,.82);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:8px;display:flex;flex-direction:column;gap:2px">
+<sc-for list="{{ C.metrics }}" as="m" hint-placeholder-count="5"><button onClick="{{ m.onClick }}" aria-pressed="{{ m.on }}" style="border:0;border-radius:10px;background:{{ m.bg }};color:{{ m.fg }};text-align:left;padding:9px 12px;display:flex;justify-content:space-between;align-items:baseline;gap:8px;transition:background .2s"><span style="font:600 13.5px 'Instrument Sans'">{{ m.l }}</span><span style="font:400 10.5px 'JetBrains Mono';opacity:.7">{{ m.u }}</span></button></sc-for>
+</div>
+</div>
+<div style="position:absolute;left:50%;top:24px;transform:translateX(-50%);z-index:20;display:flex;gap:4px;background:rgba(22,27,34,.82);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.08);border-radius:999px;padding:5px">
+<sc-for list="{{ C.tabs }}" as="t" hint-placeholder-count="3"><button onClick="{{ t.onClick }}" aria-current="{{ t.on }}" style="border:0;border-radius:999px;padding:9px 18px;background:{{ t.bg }};color:{{ t.fg }};display:flex;flex-direction:column;align-items:center;gap:0;transition:all .25s"><span style="font:700 14px 'Instrument Sans'">{{ t.l }}</span><span style="font:400 10px 'JetBrains Mono';opacity:.7">{{ t.sub }}</span></button></sc-for>
+</div>
+<div style="position:absolute;left:390px;top:96px;z-index:20;display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;gap:2px;background:rgba(22,27,34,.82);border:1px solid rgba(255,255,255,.08);border-radius:999px;padding:3px"><sc-for list="{{ C.clusters }}" as="v" hint-placeholder-count="2"><button onClick="{{ v.onClick }}" aria-pressed="{{ v.on }}" style="border:0;border-radius:999px;padding:6px 12px;font:600 12px 'Instrument Sans';background:{{ v.bg }};color:{{ v.fg }}">{{ v.l }}</button></sc-for></div>
+<div style="display:flex;gap:2px;background:rgba(22,27,34,.82);border:1px solid rgba(255,255,255,.08);border-radius:999px;padding:3px"><sc-for list="{{ C.views }}" as="v" hint-placeholder-count="2"><button onClick="{{ v.onClick }}" aria-pressed="{{ v.on }}" style="border:0;border-radius:999px;padding:6px 12px;font:600 12px 'Instrument Sans';background:{{ v.bg }};color:{{ v.fg }}">{{ v.l }}</button></sc-for></div>
+</div>
+<div style="position:absolute;right:24px;top:24px;bottom:72px;width:360px;z-index:20;overflow:auto;background:rgba(22,27,34,.86);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:18px;box-sizing:border-box">
+<sc-if value="{{ C.p.empty }}"><div style="display:flex;flex-direction:column;gap:10px"><span style="font:700 22px/1.2 'Instrument Sans'">Toque num círculo</span><span style="font-size:13.5px;line-height:1.55;color:#c5cad1">Cada círculo é um local de votação. Agrupe por bairro para ver quantos locais formam cada um — o Centro tem 10.</span></div></sc-if>
+<sc-if value="{{ C.p.has }}" hint-placeholder-val="{{ false }}"><div style="display:flex;flex-direction:column;gap:8px"><span style="font:500 11px 'JetBrains Mono';color:#9aa3ad">BAIRRO</span><span style="font:700 24px/1.15 'Instrument Sans';text-wrap:pretty">{{ C.p.name }}</span><span style="font-size:12.5px;color:#9aa3ad">{{ C.p.meta }}</span><div style="display:flex;gap:8px;align-items:center"><span style="background:{{ C.p.wc }};color:#fff;border-radius:8px;padding:5px 10px;font:700 12.5px 'Instrument Sans'">{{ C.p.winner }} · 2º turno</span><span style="font:500 12.5px 'JetBrains Mono'">{{ C.p.margin }}</span></div><sc-if value="{{ C.p.flip }}"><div style="background:rgba(226,154,52,.16);border:1px solid rgba(226,154,52,.4);border-radius:10px;color:#f3c47a;padding:10px 12px;font-size:12.5px;line-height:1.45">{{ C.p.flip }}</div></sc-if></div></sc-if>
+<div style="display:flex;flex-direction:column;gap:10px;background:rgba(255,255,255,.04);border-radius:12px;padding:14px">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:700 14px 'Instrument Sans'">Voto a dois</span><span style="font:700 14px 'Instrument Sans';color:#f08a8c">{{ C.p.shiftShort }}</span></div>
+<div style="position:relative;height:64px">
+<div style="position:absolute;left:0;right:0;top:30px;height:4px;border-radius:2px;background:linear-gradient(90deg,#1f4e9c,#1f4e9c 50%,#d92b3a 50%,#d92b3a)"></div>
+<div style="position:absolute;left:50%;top:20px;height:24px;width:1px;background:rgba(255,255,255,.5)"></div>
+<sc-for list="{{ C.p.v2 }}" as="r" hint-placeholder-count="2"><div style="position:absolute;left:{{ r.lw }};top:{{ r.top }}px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:2px;transition:left 1s cubic-bezier(.2,.8,.2,1)"><span style="font:500 10px 'JetBrains Mono';color:#9aa3ad;white-space:nowrap">{{ r.short }} {{ r.lt }}</span><span style="width:12px;height:12px;border-radius:50%;background:{{ r.dot }};border:2px solid #0b0e13"></span></div></sc-for>
+</div>
+<span style="font-size:11.5px;line-height:1.45;color:#9aa3ad">Fatia de Lula só entre os dois finalistas. ← Flávio · Lula → · linha = empate</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font:700 13px 'Instrument Sans'">{{ C.p.blockTitle }}</span>
+<sc-for list="{{ C.p.cands }}" as="c" hint-placeholder-count="3"><div style="display:grid;grid-template-columns:1fr auto;gap:3px 8px;align-items:baseline"><span style="font-size:13px">{{ c.n }}</span><span style="font:500 13px 'JetBrains Mono'">{{ c.pt }}</span><div style="grid-column:1/3;height:5px;border-radius:3px;background:rgba(255,255,255,.08)"><div style="height:5px;border-radius:3px;width:{{ c.w }};background:{{ c.c }};transition:width .8s"></div></div></div></sc-for>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px"><sc-for list="{{ C.p.minis }}" as="m" hint-placeholder-count="4"><div style="background:rgba(255,255,255,.04);border-radius:10px;padding:8px 10px;display:flex;flex-direction:column;gap:2px"><span style="font-size:11px;color:#9aa3ad">{{ m.l }}</span><span style="font:500 14px 'JetBrains Mono'">{{ m.v }}</span></div></sc-for></div>
+</div>
+<sc-if value="{{ C.p.has }}"><div style="display:flex;flex-direction:column;gap:6px"><span style="font:700 13px 'Instrument Sans'">{{ C.p.nl }} locais de votação</span><sc-for list="{{ C.p.locais }}" as="l" hint-placeholder-count="2"><button onClick="{{ l.onClick }}" style="border:1px solid rgba(255,255,255,.06);border-radius:10px;text-align:left;background:{{ l.bg }};padding:8px 10px;display:grid;grid-template-columns:1fr auto;gap:2px 8px"><span style="font:600 12.5px 'Instrument Sans'">{{ l.name }}</span><span style="font:700 12px 'Instrument Sans';color:{{ l.wcd }}">{{ l.win }}</span><span style="font-size:11px;color:#9aa3ad;grid-column:1/3">{{ l.addr }} · {{ l.meta }}</span></button></sc-for></div></sc-if>
+</div>
+<div style="position:absolute;left:24px;bottom:72px;width:560px;z-index:20;background:rgba(22,27,34,.86);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:14px 16px;display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;justify-content:space-between;align-items:center"><span style="font:700 13px 'Instrument Sans'">{{ C.metric.l }}</span><span style="font:500 10.5px 'JetBrains Mono';background:rgba(255,255,255,.08);border-radius:6px;padding:2px 7px;color:#c5cad1">{{ C.metric.u }}</span></div>
+<sc-for list="{{ C.legend }}" as="row" hint-placeholder-count="2"><div style="display:grid;grid-template-columns:120px repeat(5,1fr);gap:4px;align-items:start"><span style="font-size:11.5px;line-height:1.3;color:#c5cad1;padding-top:5px">{{ row.arrow }} {{ row.label }}</span><sc-for list="{{ row.cells }}" as="c" hint-placeholder-count="5"><div style="display:flex;flex-direction:column;gap:3px;opacity:{{ c.op }}"><div style="height:24px;border-radius:6px;background:{{ c.color }};color:{{ c.ink }};display:flex;align-items:center;justify-content:center;font:600 11.5px 'JetBrains Mono';transition:background-color .5s">{{ c.count }}</div><span style="font:400 10px 'JetBrains Mono';color:#9aa3ad;text-align:center">{{ c.range }}</span></div></sc-for></div></sc-for>
+</div>
+<sc-if value="{{ C.hasSel }}"><button onClick="{{ C.clear }}" style="position:absolute;left:600px;bottom:72px;z-index:20;border:0;border-radius:999px;background:#e6e8eb;color:#0b0e13;padding:9px 16px;font:700 12px 'Instrument Sans'">Limpar seleção ×</button></sc-if>
+<div style="position:absolute;left:0;right:0;bottom:0;height:52px;z-index:25;background:rgba(11,14,19,.92);border-top:1px solid rgba(255,255,255,.08);display:flex;align-items:center;gap:18px;padding:0 24px;font:400 11px 'JetBrains Mono';color:#9aa3ad">
+<span style="display:flex;align-items:center;gap:7px;color:#6bb889;flex:none"><span style="width:7px;height:7px;border-radius:50%;background:#6bb889"></span>OFICIAL</span>
+<span style="min-width:0;flex:1;line-height:1.4"><span style="color:#e6e8eb">cor</span> = {{ C.src }} · <span style="color:#e6e8eb">posição</span> = NR_LATITUDE/LONGITUDE · <span style="color:#e6e8eb">tamanho</span> = QT_ELEITOR_SECAO</span>
+<span style="flex:none;max-width:400px;line-height:1.4;color:#f3c47a;text-align:right">Bairro = do local de votação, não da residência. Penitenciária fora do mapa (0 eleitores).</span>
+</div>
+<sc-if value="{{ C.hint }}"><div style="position:absolute;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;color:#fff;font:700 18px 'Instrument Sans';z-index:40">Use Ctrl + roda para dar zoom</div></sc-if>
+</div>
+<div style="padding:28px 32px 32px;display:grid;grid-template-columns:340px minmax(0,1fr);gap:28px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<sc-for list="{{ C.cards }}" as="c" hint-placeholder-count="4"><div style="background:#161b22;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:12px 14px;display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:baseline"><span style="font-size:12px;color:#9aa3ad">{{ c.l }}</span><span style="font:700 20px 'Instrument Sans';color:{{ c.cd }};grid-row:1/3;grid-column:2">{{ c.v }}</span><span style="font:400 10.5px 'JetBrains Mono';color:#6f7883">{{ c.s }}</span></div></sc-for>
+<div style="background:rgba(226,154,52,.1);border:1px solid rgba(226,154,52,.3);border-radius:12px;padding:12px 14px;font-size:12.5px;line-height:1.5;color:#f3c47a">Crescer entre turnos é quase universal: no país, Lula ganhou votos em 98,4% dos municípios e Flávio em 83,1%.</div>
+</div>
+<div style="background:#161b22;border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px 20px;min-width:0">
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px"><span style="font:700 18px 'Instrument Sans'">45 bairros · {{ C.metric.l }}</span><button onClick="{{ C.toggleSort }}" style="border:1px solid rgba(255,255,255,.12);background:transparent;border-radius:999px;padding:6px 12px;font:600 12px 'Instrument Sans'">{{ C.sortLabel }}</button></div>
+<div style="max-height:400px;overflow-y:auto;overflow-x:hidden;scrollbar-color:#2a313b transparent">
+<sc-for list="{{ C.rows }}" as="r" hint-placeholder-count="8"><div onClick="{{ r.onClick }}" style="display:grid;grid-template-columns:28px minmax(0,1.4fr) minmax(0,2fr) 80px 90px;gap:12px;padding:6px 8px;border-radius:8px;align-items:center;font-size:13px;background:{{ r.bg }};cursor:pointer"><span style="font:400 10.5px 'JetBrains Mono';color:#6f7883">{{ r.rank }}</span><span style="font-weight:{{ r.fw }};overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="{{ r.name }}">{{ r.name }}</span><div style="position:relative;height:10px;border-radius:5px;background:rgba(255,255,255,.05)"><div style="position:absolute;left:{{ r.left }};width:{{ r.w }};top:0;bottom:0;border-radius:5px;background:{{ r.color }};transition:all .6s"></div></div><span style="font:500 12px 'JetBrains Mono';text-align:right">{{ r.val }}</span><span style="font-size:12px;font-weight:700;color:{{ r.wcd }}">{{ r.win }}{{ r.flipMark }}</span></div></sc-for>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Tente: "seguir com <a class="dv-oid" href="#1c">1c</a>, mas com a linha do tempo de <a class="dv-oid" href="#1b">1b</a>" · "a tabela densa de <a class="dv-oid" href="#1a">1a</a> dentro do <a class="dv-oid" href="#1c">1c</a>" · "desenhar a aba Brasil (Insights) e o mobile"</p>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const LULA='#d92b3a',FLA='#1f4e9c';
+const RAMP={red:['#f6d4d3','#eea19f','#e3696b','#d92b3a','#981423'],blue:['#d4e0f4','#a2bde7','#6890d0','#1f4e9c','#112f68'],green:['#dbeee2','#a7d6b7','#6bb889','#2e8d58','#135a34'],amber:['#fbe5c0','#f3c47a','#e29a34','#b56c12','#784408'],teal:['#cdeceb','#92d1cf','#4eafac','#1c807e','#0c514f']};
+const NAMES=['Centro','Vila Xavier','Jardim América','Selmi-Dei','Vale do Sol','Yolanda Ópice','Jardim Brasil','Vila Harmonia','Jardim Pinheiros','Quitandinha','Jardim Iguatemi','Santa Angelina','Cruzeiro do Sul','Vila Melhado','Jardim Europa','Carmo','São José','Jardim Paulistano','Jardim Primavera','Hortênsias','Parque São Paulo','Vila Furlan','Jardim Adalberto Frederico de Oliveira Roxo I','Jardim Indaiá','Vila Sedenho','Vila Ferroviária','Jardim Morumbi','Jardim Tabapuã','Jardim Victório de Santi','Jardim dos Manacás','Jardim Imperador','Vila Velosa','Jardim Santa Clara','Jardim Martinez','Jardim Botânico','Vila Biagioni','Altos do Jaraguá','Jardim Universal','Cecap','Jardim Roberto Selmi-Dei','Jardim Água Branca','Vila Santana','Bueno de Andrada','Assentamento Monte Alegre II','Assentamento Bela Vista'];
+const PRE=['E.E.','EMEF','E.E. Prof.','EMEI','Centro Comunitário','Colégio'],SUR=['Bento de Abreu','Pedro José Neto','Augusto Ferreira','Florestano Libutti','Antônio de Arruda','Carlos Baldassarini','Gilda Rocha','Mário Ybarra','Victor Lacorte','Dorival Alves','Ruth Marques','Joaquim Prado'],RUAS=['R. São Bento','Av. Brasil','R. Voluntários da Pátria','Av. Bento de Abreu','R. Padre Duarte','Av. Espanha','R. Gonçalves Dias','R. Carlos Gomes','Av. Djalma Dutra','R. Itália'];
+function rng(a){return()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const fmt=(v,d=0)=>v.toLocaleString('pt-BR',{minimumFractionDigits:d,maximumFractionDigits:d});
+function nice(x){if(!(x>0))return 1;const p=Math.pow(10,Math.floor(Math.log10(x)));const m=x/p;let b=1;[1,2,2.5,5,10].forEach(c=>{if(Math.abs(c-m)<Math.abs(b-m))b=c});return b*p}
+function pctl(a,p){const s=a.slice().sort((x,y)=>x-y);return s[Math.min(s.length-1,Math.floor(p*(s.length-1)))]}
+function derive(u){u.C1=u.el*(1-u.ab1);u.V1=u.C1*(1-u.bn1);u.L1=u.V1*u.s1*(1-u.o);u.F1=u.V1*(1-u.s1)*(1-u.o);u.C2=u.el*(1-u.ab2);u.V2=u.C2*(1-u.bn2);u.L2=u.V2*u.s2;u.F2=u.V2*(1-u.s2);u.sec=Math.max(1,Math.round(u.el/281));}
+function makeData(){
+  const R=rng(11),cnt=NAMES.map((_,i)=>i===0?10:(i<=12?2:1)),ruralEl={42:820,43:134,44:107};
+  const w=NAMES.map((_,i)=>i===0||i>=42?0:(0.5+R()*1.6)*cnt[i]),sw=w.reduce((a,b)=>a+b,0),rest=169890-22286-1061;
+  const B=NAMES.map((name,i)=>({i,name,el:i===0?22286:i>=42?ruralEl[i]:Math.round(w[i]/sw*rest)}));
+  B[1].el+=169890-B.reduce((a,b)=>a+b.el,0);
+  const FLIP=new Set([3,5,8,11,14,17,20,23,27,31,35,39]);
+  B.forEach(b=>{const i=b.i;let s1,s2;
+    if(FLIP.has(i)){s2=0.503+R()*0.035;s1=0.497-R()*0.02;}
+    else if(i===0||i>=42||R()<0.42){s2=0.36+R()*0.13;s1=s2-(0.008+R()*0.04);}
+    else{s1=0.505+R()*0.12;s2=s1+0.008+R()*0.04;}
+    const ab1=0.17+R()*0.08;Object.assign(b,{s1,s2,o:0.07+R()*0.05,ab1,ab2:ab1-0.01-R()*0.03,bn1:0.03+R()*0.03,bn2:0.05+R()*0.04,flip:FLIP.has(i)});
+    if(i===0){b.x=3.85;b.y=5.9}else if(i===42){b.x=-0.2;b.y=-7}else if(i===43){b.x=8;b.y=16}else if(i===44){b.x=7.2;b.y=19.5}
+    else{const a=R()*Math.PI*2,rad=0.9+R()*4.4;b.x=clamp(3.85+Math.cos(a)*rad*0.72,0.35,7.35);b.y=clamp(5.9+Math.sin(a)*rad*1.05,0.35,11.45);}
+    derive(b);});
+  const L=[];
+  B.forEach(b=>{const c=cnt[b.i],ws=Array.from({length:c},()=>0.5+R()),t=ws.reduce((a,x)=>a+x,0);let acc=0;b.loc=[];
+    for(let k=0;k<c;k++){const el=k===c-1?b.el-acc:Math.round(b.el*ws[k]/t);acc+=el;const sp=b.i===0?0.55:0.3,j=(R()-0.5)*0.04;
+      const l={id:L.length,b:b.i,name:PRE[Math.floor(R()*PRE.length)]+' '+SUR[Math.floor(R()*SUR.length)],addr:RUAS[Math.floor(R()*RUAS.length)]+', '+(100+Math.floor(R()*1800)),el,x:b.x+(c>1?(R()-0.5)*2*sp:0),y:b.y+(c>1?(R()-0.5)*2*sp:0),s1:b.s1+j,s2:b.s2+j,o:b.o,ab1:b.ab1+(R()-0.5)*0.03,ab2:b.ab2+(R()-0.5)*0.03,bn1:b.bn1,bn2:b.bn2};
+      derive(l);L.push(l);b.loc.push(l.id);}
+    b.nLoc=c;b.cx=b.loc.reduce((a,id)=>a+L[id].x*L[id].el,0)/b.el;b.cy=b.loc.reduce((a,id)=>a+L[id].y*L[id].el,0)/b.el;});
+  const sum=k=>B.reduce((a,b)=>a+b[k],0);
+  const dCity=B.reduce((a,b)=>a+(b.s2-b.s1)*b.V2,0)/sum('V2');
+  const city={name:'Araraquara',el:169890,s1:44.82/(44.82+45.82),s2:0.5208,C1:sum('C1'),V1:sum('V1'),C2:sum('C2'),V2:sum('V2'),o:0.0936};
+  city.L1=city.V1*0.4482;city.F1=city.V1*0.4582;city.L2=city.V2*0.5208;city.F2=city.V2*0.4792;
+  return {B,L,city,dCity,maxL:Math.max(...L.map(l=>l.el))};
+}
+const D=makeData();
+const MT={turn:[
+  {k:'vant',l:'Vantagem',u:'pp',type:'div',pos:['Lula à frente','red'],neg:['Flávio à frente','blue'],src:'TSE votacao_secao_2026_BR · QT_VOTOS por NR_VOTAVEL'},
+  {k:'pctL',l:'% Lula',u:'% dos válidos',type:'seq',ramp:'red',src:'TSE votacao_secao_2026_BR · QT_VOTOS (13) ÷ válidos'},
+  {k:'pctF',l:'% Flávio Bolsonaro',u:'% dos válidos',type:'seq',ramp:'blue',src:'TSE votacao_secao_2026_BR · QT_VOTOS (22) ÷ válidos'},
+  {k:'abst',l:'Abstenção',u:'% do eleitorado',type:'seq',ramp:'green',src:'TSE eleitorado_local_votacao_2026 · QT_ELEITOR_SECAO − comparecimento'},
+  {k:'bn',l:'Brancos e nulos',u:'% do comparecimento',type:'seq',ramp:'green',src:'TSE votacao_secao_2026_BR · brancos (95) + nulos (96)'}],
+ diff:[
+  {k:'vsm',l:'Vs. média da cidade',u:'pp',type:'div',pos:['mais para Lula que a cidade','red'],neg:['menos que a cidade','blue'],src:'deslocamento no voto a dois − média da cidade · TSE votacao_secao'},
+  {k:'desl',l:'Deslocamento',u:'pp',type:'div',pos:['andou para Lula','red'],neg:['andou para Flávio','blue'],src:'voto a dois 2º − 1º turno · TSE votacao_secao'},
+  {k:'gL',l:'Votos ganhos por Lula',u:'votos',type:'div',share:'g',pos:['ganhou','red'],neg:['perdeu','blue'],src:'QT_VOTOS (13) 2º − 1º turno · TSE votacao_secao'},
+  {k:'gF',l:'Votos ganhos por Flávio',u:'votos',type:'div',share:'g',pos:['ganhou','blue'],neg:['perdeu','red'],src:'QT_VOTOS (22) 2º − 1º turno · TSE votacao_secao'},
+  {k:'comp',l:'Mudança no comparecimento',u:'eleitores',type:'div',pos:['subiu','teal'],neg:['caiu','amber'],src:'comparecimento 2º − 1º turno · TSE votacao_secao'}]};
+function val(u,k,tab){const t=tab==='t1'?1:2,L=u['L'+t],F=u['F'+t],V=u['V'+t],C=u['C'+t];
+  switch(k){case'vant':return(L-F)/V*100;case'pctL':return L/V*100;case'pctF':return F/V*100;case'abst':return(1-C/u.el)*100;case'bn':return(1-V/C)*100;
+  case'vsm':return((u.s2-u.s1)-D.dCity)*100;case'desl':return(u.s2-u.s1)*100;case'gL':return u.L2-u.L1;case'gF':return u.F2-u.F1;case'comp':return u.C2-u.C1;}}
+const SC={};
+function scaleFor(tab,M){const key=(tab==='diff'?'d':'t')+M.k;if(SC[key])return SC[key];
+  const tabs=tab==='diff'?['diff']:['t1','t2'],keys=M.share==='g'?['gL','gF']:[M.k],vals=[];
+  D.B.forEach(b=>{if(b.el>0)tabs.forEach(t=>keys.forEach(k=>vals.push(val(b,k,t))))});
+  let sc;if(M.type==='div')sc={type:'div',s:nice(pctl(vals.map(Math.abs),0.95)/5)};
+  else{const lo=pctl(vals,0.02),hi=pctl(vals,0.98),s=nice((hi-lo)/5);sc={type:'seq',s,start:Math.floor(lo/s)*s};}
+  return SC[key]=sc;}
+function bandOf(v,sc){if(sc.type==='div')return v>=0?5+Math.min(4,Math.floor(v/sc.s)):4-Math.min(4,Math.floor(-v/sc.s));return clamp(Math.floor((v-sc.start)/sc.s),0,4);}
+function colorOf(M,sc,i){if(sc.type==='div')return i>=5?RAMP[M.pos[1]][i-5]:RAMP[M.neg[1]][4-i];return RAMP[M.ramp][i];}
+function fmtVal(v,M){if(M.u==='pp')return(v>=0?'+':'−')+fmt(Math.abs(v),1)+' pp';if(M.u.startsWith('%'))return fmt(v,1)+'%';return(v>=0?'+':'−')+fmt(Math.abs(Math.round(v)));}
+function legendRows(M,sc,counts){const d=Number.isInteger(sc.s)?0:Number.isInteger(sc.s*10)?1:2,f=v=>fmt(v,d),ink=j=>j>=3?'#fff':'#1c1c21';
+  if(sc.type==='div'){const mk=pos=>[0,1,2,3,4].map(j=>{const idx=pos?5+j:4-j,a=j*sc.s,b=(j+1)*sc.s,sg=pos?'+':'−';
+      const range=j===4?(pos?sg+f(a)+' ou mais':'até '+sg+f(a)):(j===0?'0':sg+f(a))+' a '+sg+f(b);
+      return{color:colorOf(M,sc,idx),count:String(counts[idx]),range,op:counts[idx]?1:0.3,ink:ink(j)}});
+    return[{label:M.pos[0],arrow:'↑',cells:mk(true)},{label:M.neg[0],arrow:'↓',cells:mk(false)}];}
+  const c=[1,2,3,4].map(k=>sc.start+k*sc.s);
+  return[{label:'menor → maior',arrow:'',cells:[0,1,2,3,4].map(j=>({color:colorOf(M,sc,j),count:String(counts[j]),range:j===0?'até '+f(c[0]):j===4?f(c[3])+' ou mais':f(c[j-1])+' a '+f(c[j]),op:counts[j]?1:0.3,ink:ink(j)}))}];}
+const TABS={t1:{l:'1º turno',sub:'04 out'},t2:{l:'2º turno',sub:'25 out'},diff:{l:'Diferença',sub:'o que mudou'},br:{l:'Brasil',sub:'5.715 municípios'}};
+const TITLES={t1:['Onde cada candidato foi forte no 1º turno','Votos por local de votação · 04/10/2026 · 13 chapas'],t2:['Onde cada candidato foi forte no 2º turno','Votos por local de votação · 25/10/2026 · Lula × Flávio Bolsonaro'],diff:['Para onde cada pedaço da cidade andou','Entre 04 e 25/10, medido no voto a dois']};
+const LIGHT={red:'#f08a8c',blue:'#8fb0e6'};
+const st0={metric:0,sel:null,selLocal:null,hover:null,view:'nucleo',asc:false,hint:false,cluster:false};
+
+class Component extends DCLogic {
+  state={a:{...st0,tab:'t2',sel:0,selLocal:D.B[0].loc[0]},a2:{...st0,tab:'diff',sel:3},b:{...st0,tab:'t1'},c:{...st0,tab:'diff',sel:5,cluster:false}};
+  componentWillUnmount(){clearTimeout(this._p);clearTimeout(this._h);}
+  build(key,W,H,th){
+    const st=this.state[key],set=p=>this.setState(s=>({[key]:{...s[key],...p}}));
+    const isDiff=st.tab==='diff',MS=isDiff?MT.diff:MT.turn,M=MS[st.metric],sc=scaleFor(st.tab,M),t=st.tab==='t1'?1:2;
+    const fr=st.view==='mun'?{x0:-2.2,y0:-11,w:12,h:34}:{x0:0,y0:0,w:7.7,h:11.8};
+    const s=Math.min(W/fr.w,(H-(th.padY||0))/fr.h),ox=(W-fr.w*s)/2+(th.dx||0),oy=(H-fr.h*s)/2+(th.dy||0),k=clamp(s/58,0.45,1.2);
+    const P=(x,y)=>[ox+(x-fr.x0)*s,oy+(y-fr.y0)*s],[ccx,ccy]=P(3.85,5.9);
+    const cl=!!st.cluster,units=cl?D.B:D.L,maxEl=cl?22286:D.maxL;
+    const gx=u=>cl?u.cx:u.x,gy=u=>cl?u.cy:u.y;
+    const inside=u=>gx(u)>=fr.x0&&gx(u)<=fr.x0+fr.w&&gy(u)>=fr.y0&&gy(u)<=fr.y0+fr.h;
+    const dots=units.filter(u=>u.el>0&&inside(u)).sort((a,b)=>b.el-a.el).map(u=>{
+      const bi=cl?u.i:u.b,[px,py]=P(gx(u),gy(u)),r=(cl?5+21*Math.sqrt(u.el/maxEl):3.5+14*Math.sqrt(u.el/maxEl))*k;
+      const v=val(u,M.k,st.tab),idx=bandOf(v,sc),sel=st.sel!=null,inSel=sel&&bi===st.sel,isLoc=!cl&&st.selLocal===u.id,color=colorOf(M,sc,idx);
+      return{x:px-r,y:py-r,d:r*2,color,op:sel&&!inSel?0.22:th.dotOp,bw:isLoc?3:inSel?2:1,bc:inSel?th.selRing:th.ring,z:inSel?3:1,
+        delay:Math.round(Math.hypot(px-ccx,py-ccy)*1.8),lbl:cl&&u.nLoc>1&&r>11?String(u.nLoc):'',glow:th.glow?color+'55':'transparent',
+        onEnter:()=>set({hover:{u,px,py,r,cl}}),onLeave:()=>set({hover:null}),onClick:()=>set({sel:bi,selLocal:cl?null:u.id})};});
+    let tip={show:false};
+    if(st.hover){const h=st.hover,u=h.u,b=D.B[h.cl?u.i:u.b];tip={show:true,x:clamp(h.px+h.r+10,8,W-230),y:clamp(h.py-30,8,H-110),title:h.cl?b.name:u.name,val:fmtVal(val(u,M.k,st.tab),M),sub:(h.cl?u.nLoc+' locais':b.name)+' · '+fmt(u.el)+' eleitores · '+(h.cl?b.loc.reduce((a,id)=>a+D.L[id].sec,0):u.sec)+' seções'};}
+    const counts=Array(sc.type==='div'?10:5).fill(0);D.B.forEach(b=>{if(b.el>0)counts[bandOf(val(b,M.k,st.tab),sc)]++});
+    const [mx0,my0]=P(-2.2,-11),[mx1,my1]=P(9.8,23),[cx0,cy0]=P(0,0),[cx1,cy1]=P(7.7,11.8);
+    const metrics=MS.map((m,i)=>{const on=i===st.metric;return{l:m.l,u:m.u,on,bg:on?th.onBg:th.offBg,fg:on?th.onFg:th.offFg,bd:on?th.onBg:th.offBd,onClick:()=>set({metric:i})}});
+    const tabs=th.order.map(kk=>{const on=st.tab===kk,br=kk==='br';return{...TABS[kk],on,bd:on?th.tabBd:'transparent',fg:on?th.tabFg:th.tabOff,bg:on?th.tabBg:th.tabOffBg,dim:br?0.55:1,onClick:()=>{if(!br)set({tab:kk,metric:0})}}});
+    const opt=(l,on,fn)=>({l,on,bg:on?th.onBg:'transparent',fg:on?th.onFg:th.offFg,onClick:fn});
+    const views=[opt('Núcleo urbano',st.view==='nucleo',()=>set({view:'nucleo'})),opt('Município inteiro',st.view==='mun',()=>set({view:'mun'}))];
+    const clusters=[opt('Locais',!cl,()=>set({cluster:false})),opt('Bairros',cl,()=>set({cluster:true,selLocal:null}))];
+    const rv=D.B.map(b=>({b,v:val(b,M.k,st.tab)})).sort((a,c)=>st.asc?a.v-c.v:c.v-a.v),mx=Math.max(...rv.map(r=>Math.abs(r.v)))||1;
+    const rows=rv.map(({b,v},n)=>{let left,w;if(sc.type==='div'){w=Math.abs(v)/mx*50;left=v>=0?50:50-w}else{left=0;w=v/mx*100}
+      const lw=b['L'+t]>b['F'+t],on=st.sel===b.i;
+      return{rank:n+1,name:b.name,el:fmt(b.el),nl:b.nLoc,nlw:b.nLoc>1?'locais':'local',val:fmtVal(v,M),color:colorOf(M,sc,bandOf(v,sc)),left:left+'%',w:w+'%',
+        c1:isDiff?fmt(b.s1*100,1):fmt(b['L'+t]/b['V'+t]*100,1),c2:isDiff?fmt(b.s2*100,1):fmt(b['F'+t]/b['V'+t]*100,1),
+        win:lw?'Lula':'Flávio',wc:th.dark?(lw?LIGHT.red:LIGHT.blue):(lw?LULA:FLA),wcd:lw?LIGHT.red:LIGHT.blue,flipMark:b.flip?' ↻':'',bg:on?th.rowSel:'transparent',fw:on?700:400,onClick:()=>set({sel:b.i,selLocal:null})};});
+    const b=st.sel!=null?D.B[st.sel]:null,u=b||D.city;
+    const v2=[{l:'1º turno · 04/10',short:'1º',s:u.s1,top:0,dot:'#9aa3ad'},{l:'2º turno · 25/10',short:'2º',s:u.s2,top:34,dot:'#ffffff'}].map(r=>({...r,lw:(r.s*100).toFixed(2)+'%',lt:fmt(r.s*100,1)+'%',ft:fmt(100-r.s*100,1)+'%'}));
+    const shiftPP=(u.s2-u.s1)*100;
+    const cand=(n,c,p,V)=>({n,c,pt:fmt(p*100,1)+'%',w:(p*100).toFixed(1)+'%',votes:fmt(Math.round(V*p))});
+    let cands,blockTitle,minis;
+    if(isDiff){blockTitle='Votos entre os turnos';
+      cands=[{n:'Lula · '+fmt(Math.round(u.L1))+' → '+fmt(Math.round(u.L2)),c:LULA,pt:'+'+fmt(Math.round(u.L2-u.L1)),w:clamp((u.L2-u.L1)/(u.L2)*100*3,2,100)+'%'},{n:'Flávio · '+fmt(Math.round(u.F1))+' → '+fmt(Math.round(u.F2)),c:FLA,pt:(u.F2>=u.F1?'+':'−')+fmt(Math.abs(Math.round(u.F2-u.F1))),w:clamp(Math.abs(u.F2-u.F1)/(u.F2)*100*3,2,100)+'%'}];
+      minis=[{l:'Voto a dois 1º',v:fmt(u.s1*100,1)+'%'},{l:'Voto a dois 2º',v:fmt(u.s2*100,1)+'%'},{l:'Deslocamento',v:'+'+fmt(shiftPP,1)+' pp'},{l:'Vs. média',v:(shiftPP-D.dCity*100>=0?'+':'−')+fmt(Math.abs(shiftPP-D.dCity*100),1)+' pp'},{l:'Comparecimento',v:(u.C2>=u.C1?'+':'−')+fmt(Math.abs(Math.round(u.C2-u.C1)))},{l:'Abstenção 2º',v:fmt((1-u.C2/u.el)*100,1)+'%'}];}
+    else{blockTitle=t===1?'1º turno · 04/10':'2º turno · 25/10';const V=u['V'+t];
+      cands=t===1?[cand('Flávio Bolsonaro · 22',FLA,u.F1/V,V),cand('Lula · 13',LULA,u.L1/V,V),cand('Outras 11 chapas',th.other,1-(u.L1+u.F1)/V,V)].sort((a,c)=>parseFloat(c.w)-parseFloat(a.w)):[cand('Lula · 13',LULA,u.L2/V,V),cand('Flávio Bolsonaro · 22',FLA,u.F2/V,V)].sort((a,c)=>parseFloat(c.w)-parseFloat(a.w));
+      const C=u['C'+t];minis=[{l:'Comparecimento',v:fmt(C/u.el*100,1)+'%'},{l:'Abstenção',v:fmt((1-C/u.el)*100,1)+'%'},{l:'Válidos',v:fmt(Math.round(V))},{l:'Brancos + nulos',v:fmt((1-V/C)*100,1)+'%'}];}
+    const lw2=u.s2>=0.5;
+    const p={has:!!b,empty:!b,name:b?b.name:'',meta:b?fmt(b.el)+' eleitores · '+fmt(b.el/169890*100,1)+'% da cidade · '+b.loc.reduce((a,id)=>a+D.L[id].sec,0)+' seções · '+b.nLoc+(b.nLoc>1?' locais':' local'):'',
+      winner:lw2?'Lula':'Flávio Bolsonaro',wc:lw2?LULA:FLA,margin:'+'+fmt(Math.abs(u.L2-u.F2)/u.V2*100,1)+' pp',
+      flip:b&&b.flip?'Mudou de lado: Flávio venceu aqui no 1º turno, Lula no 2º.':'',
+      v2,shift:(b?'':'Cidade: ')+'+'+fmt(shiftPP,1)+' pp para Lula no voto a dois',shiftShort:'+'+fmt(shiftPP,1)+' pp',
+      blockTitle,cands,minis,nl:b?b.nLoc:0,
+      locais:b?b.loc.map(id=>{const l=D.L[id],lw=l['L'+t]>l['F'+t],on=st.selLocal===id;return{name:l.name,addr:l.addr,meta:fmt(l.el)+' eleitores · '+l.sec+' seções',win:lw?'Lula':'Flávio',wc:th.dark?(lw?LIGHT.red:LIGHT.blue):(lw?LULA:FLA),wcd:lw?LIGHT.red:LIGHT.blue,bg:on?th.rowSel:th.locBg,onClick:()=>set({selLocal:id})}}):[]};
+    const flips=D.B.filter(x=>x.flip).map(x=>x.name);
+    const cards=isDiff?[{l:'Deslocamento da cidade',v:'+2,8 pp',s:'voto a dois, para Lula'},{l:'Andaram para Lula',v:'45 de 45',s:'todos os bairros'},{l:'Mudaram de lado',v:flips.length+' de 45',s:flips.slice(0,3).join(', ')+'…'},{l:'Votos ganhos · Lula',v:'+'+fmt(Math.round(D.city.L2-D.city.L1)),s:'entre os turnos',c:LULA,cd:LIGHT.red},{l:'Votos ganhos · Flávio',v:'+'+fmt(Math.round(D.city.F2-D.city.F1)),s:'entre os turnos',c:FLA,cd:LIGHT.blue},{l:'Comparecimento',v:'+4.418',s:'subiu no 2º turno — incomum'}]
+      :[{l:'Eleitorado',v:'169.890',s:'45 bairros · 604 seções'},{l:'Comparecimento',v:fmt(Math.round(D.city['C'+t])),s:'abstenção '+fmt((1-D.city['C'+t]/169890)*100,1)+'%'},{l:'Votos válidos',v:fmt(Math.round(D.city['V'+t])),s:'brancos e nulos '+fmt((1-D.city['V'+t]/D.city['C'+t])*100,1)+'%'},
+        t===1?{l:'Mais votado',v:'Flávio Bolsonaro',s:'45,82% · 04/10/2026',c:FLA,cd:LIGHT.blue}:{l:'Mais votado',v:'Lula',s:'52,08% · 25/10/2026',c:LULA,cd:LIGHT.red}];
+    cards.forEach(c=>{c.c=th.dark?(c.cd||th.ink):(c.c||th.ink);c.cd=c.cd||th.ink});
+    return{dots,tip,legend:legendRows(M,sc,counts),metric:{l:M.l,u:M.u},src:M.src,metrics,tabs,views,clusters,rows,p,cards,
+      title:TITLES[st.tab][0],subtitle:TITLES[st.tab][1],c1h:isDiff?'A DOIS 1º':'% LULA',c2h:isDiff?'A DOIS 2º':'% FLÁVIO',
+      mun:{show:st.view==='mun',x:mx0,y:my0,w:mx1-mx0,h:my1-my0},core:{x:cx0,y:cy0,w:cx1-cx0,h:cy1-cy0},ruralNote:st.view==='nucleo',
+      hasSel:st.sel!=null,clear:()=>set({sel:null,selLocal:null}),hint:st.hint,
+      sortLabel:st.asc?'Menor → maior':'Maior → menor',toggleSort:()=>set({asc:!st.asc}),
+      onWheel:e=>{if(!e.ctrlKey&&!st.hint){set({hint:true});clearTimeout(this._h);this._h=setTimeout(()=>set({hint:false}),1400)}},
+      play:()=>{set({tab:'t1',metric:0});clearTimeout(this._p);this._p=setTimeout(()=>set({tab:'t2',metric:0}),1700)}};
+  }
+  renderVals(){
+    const A=this.build('a',640,640,{ring:'#fff',selRing:'#161616',dotOp:0.9,rowSel:'#e8e8e8',locBg:'#fff',onBg:'#161616',onFg:'#fff',offBg:'transparent',offFg:'#393939',offBd:'#c6c6c6',order:['t1','t2','diff','br'],tabBd:'#161616',tabFg:'#161616',tabOff:'#6f6f6f',tabBg:'transparent',tabOffBg:'transparent',other:'#a8a8a8',ink:'#161616'});
+    const B=this.build('b',680,620,{ring:'#fff',selRing:'#1c1c21',dotOp:0.88,rowSel:'#f1ebe0',locBg:'#f7f5f1',onBg:'#1c1c21',onFg:'#f7f5f1',offBg:'#fff',offFg:'#1c1c21',offBd:'#e3dfd7',order:['t1','diff','t2'],tabBd:'#1c1c21',tabFg:'#1c1c21',tabOff:'#63636d',tabBg:'#1c1c21',tabOffBg:'#fff',other:'#b8b3a8',ink:'#1c1c21',dy:20,padY:60});
+    const C=this.build('c',1280,800,{ring:'#0b0e13',selRing:'#ffffff',dotOp:0.92,rowSel:'rgba(255,255,255,.09)',locBg:'rgba(255,255,255,.02)',onBg:'#e6e8eb',onFg:'#0b0e13',offBg:'transparent',offFg:'#c5cad1',offBd:'rgba(255,255,255,.12)',order:['t1','diff','t2','br'],tabBd:'transparent',tabFg:'#0b0e13',tabOff:'#c5cad1',tabBg:'#e6e8eb',tabOffBg:'transparent',other:'#5b636e',ink:'#e6e8eb',dx:-10,dy:-10,padY:40,glow:true});
+    const A2=this.build('a2',640,640,{dark:true,ring:'#161616',selRing:'#f4f4f4',dotOp:0.92,rowSel:'#393939',locBg:'#262626',onBg:'#f4f4f4',onFg:'#161616',offBg:'transparent',offFg:'#e0e0e0',offBd:'#6f6f6f',order:['t1','t2','diff','br'],tabBd:'#f4f4f4',tabFg:'#f4f4f4',tabOff:'#a8a8a8',tabBg:'transparent',tabOffBg:'transparent',other:'#6f6f6f',ink:'#f4f4f4'});
+    return{A,A2,B,C};
+  }
+}
+</script>
+</body>
+</html>

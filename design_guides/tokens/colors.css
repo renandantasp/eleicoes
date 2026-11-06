@@ -1,0 +1,110 @@
+/* Grade — cores. Tema claro em :root, escuro em [data-theme="dark"].
+   Regra: cores de DADO (chapas e faixas em scales.css) não mudam entre temas. */
+:root{
+  --ag-gray-100:#161616;--ag-gray-90:#262626;--ag-gray-80:#393939;--ag-gray-70:#525252;--ag-gray-60:#6f6f6f;
+  --ag-gray-50:#8d8d8d;--ag-gray-40:#a8a8a8;--ag-gray-30:#c6c6c6;--ag-gray-20:#e0e0e0;--ag-gray-10:#f4f4f4;--ag-white:#ffffff;
+
+  --ag-lula:#d92b3a;--ag-flavio:#1f4e9c;--ag-outros:#a8a8a8;--ag-destaque:#7322a8;
+
+  --ag-bg:var(--ag-gray-10);
+  --ag-layer:var(--ag-white);
+  --ag-layer-2:var(--ag-gray-10);
+  --ag-layer-inverse:var(--ag-gray-100);
+  --ag-border:var(--ag-gray-20);
+  --ag-border-strong:var(--ag-gray-30);
+  --ag-border-emphasis:var(--ag-gray-100);
+
+  --ag-text-1:var(--ag-gray-100);
+  --ag-text-2:var(--ag-gray-80);
+  --ag-text-3:var(--ag-gray-70);
+  --ag-text-helper:var(--ag-gray-60);
+  --ag-text-disabled:var(--ag-gray-50);
+  --ag-text-inverse:var(--ag-gray-10);
+
+  --ag-control-on-bg:var(--ag-gray-100);
+  --ag-control-on-fg:var(--ag-white);
+  --ag-control-hover:#e8e8e8;
+  --ag-row-selected:#e8e8e8;
+  --ag-focus:var(--ag-gray-100);
+
+  --ag-lula-text:#d92b3a;
+  --ag-flavio-text:#1f4e9c;
+  --ag-destaque-text:#7322a8;
+  --ag-destaque-bg:#f2e8fb;
+
+  --ag-tag-oficial-bg:#defbe6;--ag-tag-oficial-fg:#0e6027;
+  --ag-tag-ressalva-bg:#fcf4d6;--ag-tag-ressalva-fg:#8e6a00;
+  --ag-tag-fonte-bg:var(--ag-gray-20);--ag-tag-fonte-fg:var(--ag-gray-100);
+  --ag-callout-flip-bg:#fcf4d6;--ag-callout-flip-fg:#684e00;
+
+  --ag-provenance-bg:var(--ag-gray-100);
+  --ag-provenance-fg:var(--ag-gray-10);
+  --ag-provenance-muted:var(--ag-gray-40);
+  --ag-provenance-link:#78a9ff;
+  --ag-live:#42be65;
+
+  --ag-map-bg:#f2f2f0;
+  --ag-map-grid:#e6e6e3;
+  --ag-map-outline:var(--ag-gray-50);
+  --ag-map-control-bg:rgba(255,255,255,.92);
+  --ag-dot-ring:#ffffff;
+  --ag-dot-ring-selected:var(--ag-gray-100);
+  --ag-tooltip-bg:var(--ag-gray-100);
+  --ag-tooltip-fg:var(--ag-gray-10);
+  --ag-tooltip-muted:var(--ag-gray-30);
+  --ag-overlay:rgba(22,22,22,.7);
+
+  --ag-positive:#1a7f4b;
+  --ag-negative:#b8352c;
+  color-scheme:light;
+}
+[data-theme="dark"]{
+  --ag-bg:var(--ag-gray-100);
+  --ag-layer:var(--ag-gray-90);
+  --ag-layer-2:var(--ag-gray-100);
+  --ag-layer-inverse:var(--ag-gray-10);
+  --ag-border:var(--ag-gray-80);
+  --ag-border-strong:var(--ag-gray-60);
+  --ag-border-emphasis:var(--ag-gray-10);
+
+  --ag-text-1:var(--ag-gray-10);
+  --ag-text-2:var(--ag-gray-20);
+  --ag-text-3:var(--ag-gray-30);
+  --ag-text-helper:var(--ag-gray-40);
+  --ag-text-disabled:var(--ag-gray-60);
+  --ag-text-inverse:var(--ag-gray-100);
+
+  --ag-control-on-bg:var(--ag-gray-10);
+  --ag-control-on-fg:var(--ag-gray-100);
+  --ag-control-hover:#333333;
+  --ag-row-selected:var(--ag-gray-80);
+  --ag-focus:var(--ag-gray-10);
+
+  --ag-lula-text:#f08a8c;
+  --ag-flavio-text:#8fb0e6;
+  --ag-destaque-text:#be95ff;
+  --ag-destaque-bg:#31135e;
+
+  --ag-tag-oficial-bg:#044317;--ag-tag-oficial-fg:#6fdc8c;
+  --ag-tag-ressalva-bg:#3d2e00;--ag-tag-ressalva-fg:#f1c21b;
+  --ag-tag-fonte-bg:var(--ag-gray-80);--ag-tag-fonte-fg:var(--ag-gray-10);
+  --ag-callout-flip-bg:#3d2e00;--ag-callout-flip-fg:#f1c21b;
+
+  --ag-provenance-bg:#000000;
+  --ag-provenance-fg:var(--ag-gray-10);
+
+  --ag-map-bg:#1c1c1c;
+  --ag-map-grid:var(--ag-gray-90);
+  --ag-map-outline:var(--ag-gray-60);
+  --ag-map-control-bg:rgba(22,22,22,.92);
+  --ag-dot-ring:var(--ag-gray-100);
+  --ag-dot-ring-selected:var(--ag-gray-10);
+  --ag-tooltip-bg:var(--ag-gray-10);
+  --ag-tooltip-fg:var(--ag-gray-100);
+  --ag-tooltip-muted:var(--ag-gray-70);
+  --ag-overlay:rgba(0,0,0,.72);
+
+  --ag-positive:#42be65;
+  --ag-negative:#ff8389;
+  color-scheme:dark;
+}
