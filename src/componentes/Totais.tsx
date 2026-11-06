@@ -17,7 +17,50 @@ import { Callout, CandidateBars, StatTile } from "./grade";
 
 const tomDe = (id: string) => (id === candA.id ? "lula" : "flavio") as "lula" | "flavio";
 
-/** Cartoes de totais da cidade, mais as barras das chapas nas abas de turno. */
+/**
+ * Barras das chapas no municipio inteiro, num turno. Vive na sub-aba de
+ * graficos, onde o 1o e o 2o turno aparecem lado a lado em qualquer aba.
+ */
+export function GraficoChapas({ turno, topo = false }: { turno: "t1" | "t2"; topo?: boolean }) {
+  const t = turno === "t2" ? totais.t2 : totais.t1;
+  const data = turno === "t2" ? meta.datas.turno2 : meta.datas.turno1;
+
+  const chapas = (turno === "t2" ? [candA.id, candB.id] : ordemPrimeiroTurno)
+    .filter((id) => (t.votos[id] ?? 0) > 0)
+    .map((id) => {
+      const c = porCandidato(id);
+      return {
+        key: id,
+        label: c.nome,
+        number: c.numero,
+        tseName: c.nomeTse,
+        share: t.validos > 0 ? (t.votos[id] ?? 0) / t.validos : 0,
+        color: `var(--ag-${id === candA.id ? "lula" : id === candB.id ? "flavio" : "outros"})`,
+      };
+    });
+
+  return (
+    <div className={topo ? "bloco bloco--topo" : "bloco"}>
+      <div className="bloco__cab">
+        <h3>
+          Araraquara &mdash; {turno === "t1" ? "1o" : "2o"} turno, {data}
+        </h3>
+        <p className="bloco__nota">
+          {turno === "t1"
+            ? `As ${chapas.length} chapas da disputa, em percentual sobre os ${fmtInt(t.validos)} votos validos.`
+            : `Os dois finalistas, em percentual sobre os ${fmtInt(t.validos)} votos validos.`}{" "}
+          Nomes abreviados para a interface; o nome como o TSE publica aparece ao passar o mouse e na
+          tabela de chapas em &ldquo;Sobre os dados&rdquo;.
+        </p>
+      </div>
+      <div className="grafico-chapas">
+        <CandidateBars items={chapas} />
+      </div>
+    </div>
+  );
+}
+
+/** Cartoes de totais da cidade, no topo de cada aba de turno. */
 export function Totais({ vista }: { vista: Vista }) {
   if (vista === "dif") {
     const viraram = bairros.filter((b) => b.virou);
@@ -81,60 +124,29 @@ export function Totais({ vista }: { vista: Vista }) {
   const data = vista === "t2" ? meta.datas.turno2 : meta.datas.turno1;
   const vencedor = porCandidato(turno.vencedor);
 
-  const chapas = (vista === "t2" ? [candA.id, candB.id] : ordemPrimeiroTurno)
-    .filter((id) => (turno.votos[id] ?? 0) > 0)
-    .map((id) => {
-      const c = porCandidato(id);
-      return {
-        key: id,
-        label: c.nome,
-        number: c.numero,
-        tseName: c.nomeTse,
-        share: turno.validos > 0 ? (turno.votos[id] ?? 0) / turno.validos : 0,
-        color: `var(--ag-${id === candA.id ? "lula" : id === candB.id ? "flavio" : "outros"})`,
-      };
-    });
-
   return (
-    <>
-      <div className="ag-grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))" }}>
-        <StatTile
-          label="Eleitorado"
-          value={fmtInt(totais.eleitorado)}
-          note={`${bairros.length} bairros`}
-        />
-        <StatTile
-          label="Comparecimento"
-          value={fmtInt(turno.comparecimento)}
-          note={`abstencao de ${fmtPct(turno.abstencaoPct)}`}
-        />
-        <StatTile
-          label="Votos validos"
-          value={fmtInt(turno.validos)}
-          note={`brancos e nulos: ${fmtInt(turno.brancos + turno.nulos)}`}
-        />
-        <StatTile
-          label={vista === "t1" ? "Mais votado no 1o turno" : "Vencedor no municipio"}
-          value={vencedor.nome}
-          note={`${fmtPct(Math.max(turno.pctA, turno.pctB))} dos validos · ${data}`}
-          tone={tomDe(turno.vencedor)}
-        />
-      </div>
-
-      <div className="bloco">
-        <div className="bloco__cab">
-          <h3>
-            Araraquara &mdash; {vista === "t1" ? "1o" : "2o"} turno, {data}
-          </h3>
-          <p className="bloco__nota">
-            Percentual sobre os votos validos. Nomes abreviados para a interface; o nome como o TSE
-            publica aparece ao passar o mouse e na tabela de chapas em &ldquo;Sobre os dados&rdquo;.
-          </p>
-        </div>
-        <div style={{ background: "var(--ag-layer)", padding: "var(--ag-space-06)" }}>
-          <CandidateBars items={chapas} />
-        </div>
-      </div>
-    </>
+    <div className="ag-grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))" }}>
+      <StatTile
+        label="Eleitorado"
+        value={fmtInt(totais.eleitorado)}
+        note={`${bairros.length} bairros`}
+      />
+      <StatTile
+        label="Comparecimento"
+        value={fmtInt(turno.comparecimento)}
+        note={`abstencao de ${fmtPct(turno.abstencaoPct)}`}
+      />
+      <StatTile
+        label="Votos validos"
+        value={fmtInt(turno.validos)}
+        note={`brancos e nulos: ${fmtInt(turno.brancos + turno.nulos)}`}
+      />
+      <StatTile
+        label={vista === "t1" ? "Mais votado no 1o turno" : "Vencedor no municipio"}
+        value={vencedor.nome}
+        note={`${fmtPct(Math.max(turno.pctA, turno.pctB))} dos validos · ${data}`}
+        tone={tomDe(turno.vencedor)}
+      />
+    </div>
   );
 }

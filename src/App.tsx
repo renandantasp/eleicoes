@@ -3,9 +3,10 @@ import { useMemo, useState } from "react";
 import { Mapa } from "./componentes/Mapa";
 import { PainelBairro, VotoADois } from "./componentes/PainelBairro";
 import { TabelaBairros } from "./componentes/TabelaBairros";
-import { Totais } from "./componentes/Totais";
+import { GraficoChapas, Totais } from "./componentes/Totais";
 import { SobreDados } from "./componentes/SobreDados";
 import { Insights } from "./componentes/Insights";
+import { Entenda } from "./componentes/Entenda";
 import { Legend, MetricList, ProvenanceBar, Segmented, Tabs } from "./componentes/grade";
 import { linhasDaLegenda } from "./legenda";
 import { METRICAS, TITULOS, type Vista } from "./metricas";
@@ -24,7 +25,7 @@ import {
 } from "./dados/modelo";
 import { aplicarTema, temaAtual, type Tema } from "./tema";
 
-type Aba = Vista | "insights";
+type Aba = Vista | "insights" | "entenda";
 type SubAba = "mapa" | "graficos";
 
 const ABAS: { id: Aba; label: string; sub: string }[] = [
@@ -32,22 +33,32 @@ const ABAS: { id: Aba; label: string; sub: string }[] = [
   { id: "t2", label: "2o turno", sub: "25/10/2026" },
   { id: "dif", label: "Diferenca", sub: "entre os turnos" },
   { id: "insights", label: "Brasil", sub: "5.715 municipios" },
+  { id: "entenda", label: "Entenda", sub: "termos e medidas" },
 ];
 
 const SUB_ABAS: { id: SubAba; label: string }[] = [
   { id: "mapa", label: "Mapa e bairros" },
-  { id: "graficos", label: "Grafico por bairro" },
+  { id: "graficos", label: "Grafico geral e por bairro" },
 ];
 
 const NOTA_SUB_ABA: Record<SubAba, string> = {
   mapa: "Os locais de votacao no mapa, com o painel de anotacao do bairro selecionado.",
-  graficos: "Uma barra por bairro, ordenavel, com a metrica escolhida ao lado.",
+  graficos: "As chapas na cidade inteira, nos dois turnos, e depois uma barra por bairro.",
 };
 
-const TITULO_INSIGHTS = {
-  titulo: "Insights nacionais",
-  subtitulo: "Onde cada candidato cresceu entre os turnos, nos 5.715 municipios do pais",
+/** Abas que nao sao uma visualizacao do municipio e por isso tem titulo proprio. */
+const TITULOS_EXTRA: Record<"insights" | "entenda", { titulo: string; subtitulo: string }> = {
+  insights: {
+    titulo: "Insights nacionais",
+    subtitulo: "Onde cada candidato cresceu entre os turnos, nos 5.715 municipios do pais",
+  },
+  entenda: {
+    titulo: "Entenda as medidas",
+    subtitulo: "O que cada termo da pagina significa, com a conta que o produz",
+  },
 };
+
+const ABA_SEM_MAPA = (a: Aba): a is "insights" | "entenda" => a === "insights" || a === "entenda";
 
 export default function App() {
   const [aba, setAba] = useState<Aba>("t1");
@@ -57,7 +68,7 @@ export default function App() {
   const [localDestacado, setLocalDestacado] = useState<string | null>(null);
   const [tema, setTema] = useState<Tema>(() => temaAtual());
 
-  const vista: Vista = aba === "insights" ? "t1" : aba;
+  const vista: Vista = ABA_SEM_MAPA(aba) ? "t1" : aba;
   const metricas = METRICAS[vista];
   const metrica = useMemo(
     () => metricas.find((m) => m.id === metricaId) ?? metricas[0],
@@ -69,7 +80,7 @@ export default function App() {
   function trocaAba(id: string) {
     const nova = id as Aba;
     setAba(nova);
-    if (nova !== "insights") setMetricaId(METRICAS[nova][0].id);
+    if (!ABA_SEM_MAPA(nova)) setMetricaId(METRICAS[nova][0].id);
   }
 
   function trocaTema(t: Tema) {
@@ -139,12 +150,14 @@ export default function App() {
 
         <main className="faixa-pagina">
           <section className="secao-titulo">
-            <h2>{aba === "insights" ? TITULO_INSIGHTS.titulo : TITULOS[vista].titulo}</h2>
-            <p>{aba === "insights" ? TITULO_INSIGHTS.subtitulo : TITULOS[vista].subtitulo}</p>
+            <h2>{ABA_SEM_MAPA(aba) ? TITULOS_EXTRA[aba].titulo : TITULOS[vista].titulo}</h2>
+            <p>{ABA_SEM_MAPA(aba) ? TITULOS_EXTRA[aba].subtitulo : TITULOS[vista].subtitulo}</p>
           </section>
 
           {aba === "insights" ? (
             <Insights />
+          ) : aba === "entenda" ? (
+            <Entenda />
           ) : (
             <>
               <div className="bloco bloco--topo">
@@ -235,40 +248,53 @@ export default function App() {
                   </aside>
                 </div>
               ) : (
-                <div className="bloco bloco--topo">
-                  <div className="graficos-controles">
-                    <div className="graficos-controles__metricas">
-                      <span className="ag-label">Metrica da barra</span>
-                      <div className="metricas-linha">
-                        <MetricList
-                          items={metricas.map((m) => ({ id: m.id, label: m.rotulo, unit: m.unidade }))}
-                          value={metrica.id}
-                          onChange={setMetricaId}
-                          label="Metrica da barra"
+                <>
+                  <GraficoChapas turno="t1" topo />
+                  <GraficoChapas turno="t2" />
+
+                  <div className="bloco">
+                    <div className="bloco__cab">
+                      <h3>Cada bairro, na metrica escolhida</h3>
+                      <p className="bloco__nota">
+                        Acima, a cidade inteira; aqui, a mesma apuracao aberta nos {bairros.length}{" "}
+                        bairros.
+                      </p>
+                    </div>
+
+                    <div className="graficos-controles">
+                      <div className="graficos-controles__metricas">
+                        <span className="ag-label">Metrica da barra</span>
+                        <div className="metricas-linha">
+                          <MetricList
+                            items={metricas.map((m) => ({ id: m.id, label: m.rotulo, unit: m.unidade }))}
+                            value={metrica.id}
+                            onChange={setMetricaId}
+                            label="Metrica da barra"
+                          />
+                        </div>
+                      </div>
+                      <div className="graficos-controles__legenda">
+                        <Legend
+                          title={metrica.rotulo}
+                          unit={metrica.unidade}
+                          rows={linhasLegenda}
+                          footnote={
+                            <>
+                              numero no quadrado = bairros na faixa &middot; fonte: TSE, {metrica.fonte}
+                            </>
+                          }
                         />
                       </div>
                     </div>
-                    <div className="graficos-controles__legenda">
-                      <Legend
-                        title={metrica.rotulo}
-                        unit={metrica.unidade}
-                        rows={linhasLegenda}
-                        footnote={
-                          <>
-                            numero no quadrado = bairros na faixa &middot; fonte: TSE, {metrica.fonte}
-                          </>
-                        }
-                      />
-                    </div>
-                  </div>
 
-                  <TabelaBairros
-                    vista={vista}
-                    metrica={metrica}
-                    selecionado={bairroSel}
-                    onSelecionar={setBairroSel}
-                  />
-                </div>
+                    <TabelaBairros
+                      vista={vista}
+                      metrica={metrica}
+                      selecionado={bairroSel}
+                      onSelecionar={setBairroSel}
+                    />
+                  </div>
+                </>
               )}
             </>
           )}

@@ -132,6 +132,11 @@ button {
   margin-top: var(--ag-space-06);
 }
 
+.grafico-chapas {
+  background: var(--ag-layer);
+  padding: var(--ag-space-06);
+}
+
 .graficos-controles {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 300px;
@@ -508,6 +513,112 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+/* ---------------------------------------------------------------- entenda */
+
+.entenda__grupo {
+  margin-top: var(--ag-space-08);
+}
+
+.entenda__grupo-cab {
+  margin-bottom: var(--ag-space-05);
+  display: flex;
+  flex-direction: column;
+  gap: var(--ag-space-02);
+}
+
+.entenda__grupo-cab h3 {
+  font-size: var(--ag-fs-heading);
+  font-weight: var(--ag-weight-semibold);
+}
+
+.entenda__grupo-cab p {
+  font: 400 var(--ag-fs-mono) / 1.45 var(--ag-font-mono);
+  color: var(--ag-text-helper);
+  max-width: 90ch;
+}
+
+.verbetes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: var(--ag-hairline);
+  background: var(--ag-border);
+}
+
+.verbete {
+  background: var(--ag-layer);
+  padding: var(--ag-space-06);
+  display: flex;
+  flex-direction: column;
+  gap: var(--ag-space-04);
+  min-width: 0;
+}
+
+.verbete__cab {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ag-space-02) var(--ag-space-04);
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.verbete__cab h4 {
+  font-size: var(--ag-fs-body);
+  font-weight: var(--ag-weight-semibold);
+  color: var(--ag-text-1);
+}
+
+.verbete__onde {
+  font: 400 var(--ag-fs-mono-xs) var(--ag-font-mono);
+  color: var(--ag-text-helper);
+  text-transform: uppercase;
+  letter-spacing: var(--ag-tracking-label);
+}
+
+.verbete__texto {
+  color: var(--ag-text-2);
+  font-size: var(--ag-fs-small);
+  line-height: var(--ag-lh-body);
+}
+
+.verbete__dados {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--ag-space-03);
+  padding-top: var(--ag-space-04);
+  border-top: 1px solid var(--ag-border);
+}
+
+.verbete__dados > div {
+  display: flex;
+  gap: var(--ag-space-04);
+  align-items: baseline;
+}
+
+.verbete__dados dt {
+  flex: 0 0 96px;
+  font: var(--ag-weight-medium) var(--ag-fs-mono-xs) var(--ag-font-mono);
+  color: var(--ag-text-helper);
+  text-transform: uppercase;
+  letter-spacing: var(--ag-tracking-label);
+}
+
+.verbete__dados dd {
+  min-width: 0;
+  font: 400 var(--ag-fs-mono) / 1.45 var(--ag-font-mono);
+  color: var(--ag-text-3);
+}
+
+.entenda__ressalvas {
+  margin-top: var(--ag-space-09);
+}
+
+.entenda__ressalvas h3 {
+  font-size: var(--ag-fs-heading);
+  font-weight: var(--ag-weight-semibold);
+  margin-bottom: var(--ag-space-02);
 }
 
 /* ------------------------------------------------------------ sobre dados */
