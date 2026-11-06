@@ -150,6 +150,30 @@ function ZoomComCtrl({ onDica }: { onDica: () => void }) {
 }
 
 /**
+ * Clicar no mapa, mas fora dos circulos, desfaz a selecao do bairro.
+ *
+ * O clique num circulo tambem chega ao mapa, entao nao basta ouvir o evento:
+ * e preciso olhar o alvo no DOM. Os circulos sao os unicos elementos com a
+ * classe que o Leaflet da as camadas clicaveis - o contorno do municipio
+ * entra com interactive={false} e nao conta.
+ */
+function LimpaAoClicarFora({ onLimpar }: { onLimpar: () => void }) {
+  const mapa = useMap();
+  useEffect(() => {
+    const aoClicar = (e: L.LeafletMouseEvent) => {
+      const alvo = e.originalEvent.target;
+      if (alvo instanceof Element && alvo.closest(".leaflet-interactive")) return;
+      onLimpar();
+    };
+    mapa.on("click", aoClicar);
+    return () => {
+      mapa.off("click", aoClicar);
+    };
+  }, [mapa, onLimpar]);
+  return null;
+}
+
+/**
  * Onda de cor: ao trocar de metrica ou de turno, o atraso da transicao de cada
  * circulo cresce com a distancia ao centro, de modo que a mudanca varre o mapa
  * a partir do Centro em vez de piscar tudo de uma vez.
@@ -250,6 +274,7 @@ export function Mapa({
         />
         <AjustaVista enquadramento={enquadramento} nonce={nonce} />
         <ZoomComCtrl onDica={mostrarDica} />
+        <LimpaAoClicarFora onLimpar={onLimpar} />
         <OndaDeCor chave={metrica.id} />
 
         <GeoJSON data={municipio} style={estiloMunicipio} interactive={false} />
@@ -301,6 +326,7 @@ export function Mapa({
             {fmtInt(FORA_DO_NUCLEO.eleitores)} eleitores
           </span>
         )}
+        {temSelecao && <Button onClick={onLimpar}>Limpar selecao &times;</Button>}
       </div>
 
       <div className="ag-map__control ag-scale-key mapa-baixo-esq">
@@ -312,11 +338,6 @@ export function Mapa({
         area do circulo = eleitorado do local
       </div>
 
-      {temSelecao && (
-        <div className="ag-map__control mapa-baixo-dir">
-          <Button onClick={onLimpar}>Limpar selecao &times;</Button>
-        </div>
-      )}
 
       <div className="ag-map__hint" data-visivel={dicaZoom} aria-hidden={!dicaZoom}>
         <span>

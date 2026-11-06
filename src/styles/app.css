@@ -70,14 +70,33 @@ button {
   font: inherit;
 }
 
-.tema-switch {
+/*
+ * Botao unico de tema. O rotulo e o destino, nao o estado: no claro le-se
+ * "Escuro", que e o que o clique faz. Fica na faixa escura de procedencia,
+ * entao usa as cores dela em vez dos tokens de superficie da pagina.
+ */
+.tema-botao {
   margin-left: var(--ag-space-05);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ag-space-02);
+  padding: 2px var(--ag-space-03);
+  border: 1px solid var(--ag-provenance-muted);
+  background: transparent;
+  color: var(--ag-provenance-fg);
+  font: 400 var(--ag-fs-mono-xs) var(--ag-font-mono);
+  cursor: pointer;
+  transition: background var(--ag-dur-fast), border-color var(--ag-dur-fast);
 }
 
-.tema-switch .ag-seg__item {
-  padding: 2px var(--ag-space-03);
-  font-size: var(--ag-fs-mono-xs);
-  font-family: var(--ag-font-mono);
+.tema-botao:hover {
+  background: rgba(127, 127, 127, 0.22);
+  border-color: var(--ag-provenance-fg);
+}
+
+.tema-botao:focus-visible {
+  outline: 2px solid var(--ag-focus);
+  outline-offset: 2px;
 }
 
 /* --------------------------------------------------------------- cabecalho */
@@ -293,11 +312,12 @@ button {
   bottom: var(--ag-space-04);
 }
 
-.mapa-baixo-dir {
-  right: var(--ag-space-04);
-  bottom: var(--ag-space-04);
-  background: transparent;
-}
+/*
+ * O canto inferior direito e da atribuicao do Leaflet, que em tela estreita
+ * quebra em duas linhas e cobria o botao de limpar selecao - por isso ele
+ * sumia. O botao foi para o canto de cima, junto do enquadramento, onde nada
+ * disputa espaco com ele.
+ */
 
 .ag-map__hint {
   opacity: 0;

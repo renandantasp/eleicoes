@@ -108,17 +108,16 @@ export default function App() {
   return (
     <div className="ag-root">
       <ProvenanceBar onIrParaRessalvas={irParaRessalvas}>
-        <span className="tema-switch">
-          <Segmented
-            label="Tema"
-            value={tema}
-            onChange={trocaTema}
-            options={[
-              { id: "light", label: "Claro" },
-              { id: "dark", label: "Escuro" },
-            ]}
-          />
-        </span>
+        <button
+          type="button"
+          className="tema-botao"
+          onClick={() => trocaTema(tema === "dark" ? "light" : "dark")}
+          aria-label={`Mudar para o tema ${tema === "dark" ? "claro" : "escuro"}`}
+          title={`Mudar para o tema ${tema === "dark" ? "claro" : "escuro"}`}
+        >
+          <span aria-hidden="true">{tema === "dark" ? "☀" : "☾"}</span>
+          <span className="tema-botao__txt">{tema === "dark" ? "Claro" : "Escuro"}</span>
+        </button>
       </ProvenanceBar>
 
       <div className="pagina">
