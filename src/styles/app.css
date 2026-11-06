@@ -52,6 +52,15 @@ button {
     gap: var(--ag-space-04);
     flex-wrap: wrap;
   }
+  /*
+   * Com as datas sob cada aba a faixa mede 419px e a ultima aba fica fora
+   * da tela, atras de uma rolagem que quase ninguem procura. Sem elas as
+   * cinco abas cabem na largura do telefone e o site mostra tudo o que tem.
+   * As datas continuam no subtitulo da secao e em "Sobre os dados".
+   */
+  .ag-tab__sub {
+    display: none;
+  }
 }
 
 .ag-provenance__link {
@@ -515,6 +524,70 @@ button {
   white-space: nowrap;
 }
 
+/* -------------------------------------------------- tabelas no celular */
+
+/*
+ * As duas tabelas largas (bairros e ranking de municipios) nao cabem num
+ * telefone: sao 9 e 7 colunas. Em vez de encolher tudo ate ficar ilegivel,
+ * elas passam a rolar na horizontal dentro da propria caixa, com a coluna
+ * de nome fixa na borda esquerda para a linha nunca perder a referencia.
+ *
+ * O min-width vai no cabecalho E no corpo para que os dois rolem juntos;
+ * sem ele no corpo, a lista rolavel do ranking criaria uma rolagem propria
+ * e desalinharia das colunas do cabecalho. Acima de 760px nada disso vale:
+ * a tabela cabe inteira e o desktop fica exatamente como era.
+ */
+@media (max-width: 760px) {
+  .tabela-bairros .ag-table,
+  .bloco-mun .ag-table {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+  }
+
+  .tabela-bairros .ag-table__head,
+  .tabela-bairros .ag-table__body {
+    min-width: 960px;
+  }
+
+  /*
+   * O corpo tem rolagem vertical propria de 360px. Isso faz dele um
+   * contexto de rolagem, e dentro de um a celula grudada so se prende ao
+   * proprio corpo, que na horizontal nao se move - ou seja, o nome rolaria
+   * para fora junto com o resto. Soltando a altura, as linhas passam a ser
+   * filhas da caixa que rola de fato e o nome gruda. No telefone isso ainda
+   * elimina a rolagem dentro da rolagem, que no toque e sofrida.
+   */
+  .tabela-bairros .ag-table__body {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .tabela-bairros .ag-table__head,
+  .tabela-bairros .ag-table__row {
+    background: var(--ag-layer);
+  }
+
+  .tabela-bairros .ag-table__head > :first-child,
+  .tabela-bairros .ag-table__row > :first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    /* herda o fundo da linha, entao acompanha o estado de selecao */
+    background: inherit;
+  }
+
+  /*
+   * O ranking de municipios e virtualizado pela rolagem da propria lista,
+   * que por isso nao pode abrir mao do overflow - e sem isso nao ha como
+   * grudar a coluna do nome. Aqui ele so acompanha a largura do cabecalho,
+   * para os dois rolarem juntos.
+   */
+  .bloco-mun .ag-table__head,
+  .bloco-mun .lista-rolavel {
+    min-width: 760px;
+  }
+}
+
 /* ---------------------------------------------------------------- entenda */
 
 .entenda__grupo {
@@ -541,7 +614,8 @@ button {
 
 .verbetes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  /* o min() segura o piso de 340px em telas mais estreitas que isso */
+  grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
   gap: var(--ag-hairline);
   background: var(--ag-border);
 }
@@ -656,6 +730,10 @@ button {
   display: flex;
   gap: var(--ag-space-05);
   align-items: flex-start;
+  /* sem isto o item da grade nao encolhe abaixo do seu min-content, e os
+     nomes de campo do TSE, que nao quebram, empurram a pagina em telas
+     estreitas */
+  min-width: 0;
 }
 
 .proveniencia > div {
@@ -701,6 +779,9 @@ button {
   font-size: 0.92em;
   background: var(--ag-layer-2);
   padding: 1px 4px;
+  /* "votacao_secao_2026_BR" e companhia nao tem onde quebrar; numa linha
+     larga nada muda, numa estreita quebram em vez de estourar a caixa */
+  overflow-wrap: anywhere;
 }
 
 .sobre__rodape {

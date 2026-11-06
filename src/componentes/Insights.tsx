@@ -75,7 +75,9 @@ function ListaMunicipios({
   const visiveis = municipios.slice(inicio, fim);
 
   const posicao = cdDestaque ? municipios.findIndex((m) => m.cd === cdDestaque) : -1;
-  const template = `44px minmax(0,1fr) 68px ${colunas.map((c) => c.largura).join(" ")}`;
+  // piso na coluna do municipio: sem ele a coluna some em tela estreita e as
+  // colunas numericas empurram a pagina inteira para o lado
+  const template = `44px minmax(150px,1fr) 68px ${colunas.map((c) => c.largura).join(" ")}`;
 
   function irAoDestaque() {
     const caixa = refCaixa.current;

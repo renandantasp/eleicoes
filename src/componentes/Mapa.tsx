@@ -110,10 +110,19 @@ function AjustaVista({ enquadramento, nonce }: { enquadramento: Enquadramento; n
 }
 
 /** Zoom pela roda so com Ctrl/Cmd, para nao sequestrar a rolagem da pagina. */
+/**
+ * Num telefone o mapa ocupa boa parte da tela, e com o arrasto de um dedo
+ * ligado ele engole a rolagem vertical: a pagina trava ao passar por cima
+ * dele. Entao, no toque, o arrasto de um dedo fica com a pagina e o mapa
+ * responde a dois dedos - o mesmo contrato do Ctrl + roda no desktop.
+ */
+const TOQUE = L.Browser.mobile;
+
 function ZoomComCtrl({ onDica }: { onDica: () => void }) {
   const mapa = useMap();
   useEffect(() => {
     const alvo = mapa.getContainer();
+
     const aoGirar = (e: WheelEvent) => {
       if (!e.ctrlKey && !e.metaKey) {
         onDica();
@@ -124,8 +133,18 @@ function ZoomComCtrl({ onDica }: { onDica: () => void }) {
       const passo = e.deltaY > 0 ? -0.6 : 0.6;
       mapa.setZoomAround(mapa.containerPointToLatLng(ponto), mapa.getZoom() + passo);
     };
+
+    // um dedo rola a pagina; a dica explica por que o mapa nao se mexeu
+    const aoArrastar = (e: TouchEvent) => {
+      if (e.touches.length === 1) onDica();
+    };
+
     alvo.addEventListener("wheel", aoGirar, { passive: false });
-    return () => alvo.removeEventListener("wheel", aoGirar);
+    if (TOQUE) alvo.addEventListener("touchmove", aoArrastar, { passive: true });
+    return () => {
+      alvo.removeEventListener("wheel", aoGirar);
+      alvo.removeEventListener("touchmove", aoArrastar);
+    };
   }, [mapa, onDica]);
   return null;
 }
@@ -218,6 +237,7 @@ export function Mapa({
         style={{ height: "100%", width: "100%" }}
         bounds={FORA_DO_NUCLEO.limites}
         scrollWheelZoom={false}
+        dragging={!TOQUE}
         zoomControl
         attributionControl
         zoomSnap={0}
@@ -300,7 +320,13 @@ export function Mapa({
 
       <div className="ag-map__hint" data-visivel={dicaZoom} aria-hidden={!dicaZoom}>
         <span>
-          Use <kbd>Ctrl</kbd> + roda para dar zoom
+          {TOQUE ? (
+            <>Use dois dedos para mover e dar zoom</>
+          ) : (
+            <>
+              Use <kbd>Ctrl</kbd> + roda para dar zoom
+            </>
+          )}
         </span>
       </div>
     </div>

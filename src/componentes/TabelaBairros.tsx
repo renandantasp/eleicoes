@@ -55,7 +55,9 @@ export function TabelaBairros({
       {
         id: "nome",
         rotulo: "Bairro",
-        largura: "minmax(0,1fr)",
+        // o piso impede a coluna de colapsar para 0 quando a tabela nao cabe
+        // na largura da tela; em telas largas a sobra e sempre maior que ele
+        largura: "minmax(150px,1fr)",
         num: false,
         ordenar: (b) => b.nome,
         conteudo: (b) => (
