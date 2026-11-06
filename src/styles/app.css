@@ -63,6 +63,25 @@ button {
   }
 }
 
+/*
+ * A faixa e sticky no topo; quando a pagina desce ela sai de cena por cima,
+ * sem deixar o DOM - o espaco que ela ocupa no fluxo continua o mesmo, entao
+ * nada abaixo se desloca.
+ */
+.ag-provenance {
+  transition: transform var(--ag-dur-moderate) var(--ag-ease);
+}
+
+.ag-provenance[data-escondida] {
+  transform: translateY(-100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ag-provenance {
+    transition: none;
+  }
+}
+
 .ag-provenance__link {
   cursor: pointer;
   border: 0;
@@ -281,6 +300,24 @@ button {
 .ag-map {
   height: clamp(460px, 62vh, 680px);
   width: 100%;
+  /*
+   * O Leaflet numera os proprios paineis ate 1000 - o controle de zoom esta
+   * nesse topo - e, sem um contexto de empilhamento aqui, esses numeros
+   * disputam diretamente com o resto da pagina e passam por cima da faixa de
+   * procedencia, que e sticky no z-index 20. Isolando, toda a numeracao do
+   * Leaflet fica contida: por fora o mapa e uma caixa so.
+   *
+   * Em troca, os nossos controles passam a disputar com os paineis do Leaflet
+   * dentro desta caixa, e os 5 do token nao venceriam os 200 do painel de
+   * tiles. Dai os 800: acima de todos os paineis - o mais alto e o de popup,
+   * em 700 - e ainda abaixo da camada de controles do Leaflet, em 1000, para
+   * a atribuicao do OpenStreetMap continuar por cima quando ela quebra em
+   * duas linhas e alcanca a legenda de area. A dica de zoom cobre o mapa
+   * inteiro por 1,4s e fica acima de tudo.
+   */
+  isolation: isolate;
+  --ag-z-map-controls: 800;
+  --ag-z-overlay: 1200;
 }
 
 .ag-map .leaflet-container {

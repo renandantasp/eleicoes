@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { Mapa } from "./componentes/Mapa";
 import { PainelBairro, VotoADois } from "./componentes/PainelBairro";
@@ -60,6 +60,46 @@ const TITULOS_EXTRA: Record<"insights" | "entenda", { titulo: string; subtitulo:
 
 const ABA_SEM_MAPA = (a: Aba): a is "insights" | "entenda" => a === "insights" || a === "entenda";
 
+/** movimento minimo para contar como mudanca de direcao, em px */
+const LIMIAR_ROLAGEM = 6;
+/** faixa do topo em que a barra fica sempre visivel, em px */
+const ZONA_DO_TOPO = 80;
+
+/**
+ * A faixa de procedencia recolhe quando a pagina desce e volta quando sobe,
+ * para nao ocupar altura de tela durante a leitura. Perto do topo ela fica
+ * sempre visivel, e movimentos menores que o limiar sao ignorados para a
+ * barra nao piscar com a inercia do toque.
+ */
+function useBarraQueRecolhe() {
+  const [escondida, setEscondida] = useState(false);
+
+  useEffect(() => {
+    let ultimo = window.scrollY;
+    let agendado = false;
+
+    function avaliar() {
+      agendado = false;
+      const y = window.scrollY;
+      const delta = y - ultimo;
+      if (Math.abs(delta) < LIMIAR_ROLAGEM) return;
+      ultimo = y;
+      setEscondida(y > ZONA_DO_TOPO && delta > 0);
+    }
+
+    function aoRolar() {
+      if (agendado) return;
+      agendado = true;
+      requestAnimationFrame(avaliar);
+    }
+
+    window.addEventListener("scroll", aoRolar, { passive: true });
+    return () => window.removeEventListener("scroll", aoRolar);
+  }, []);
+
+  return escondida;
+}
+
 export default function App() {
   const [aba, setAba] = useState<Aba>("t1");
   const [subAba, setSubAba] = useState<SubAba>("mapa");
@@ -67,6 +107,7 @@ export default function App() {
   const [bairroSel, setBairroSel] = useState<string | null>(null);
   const [localDestacado, setLocalDestacado] = useState<string | null>(null);
   const [tema, setTema] = useState<Tema>(() => temaAtual());
+  const barraEscondida = useBarraQueRecolhe();
 
   const vista: Vista = ABA_SEM_MAPA(aba) ? "t1" : aba;
   const metricas = METRICAS[vista];
@@ -107,7 +148,7 @@ export default function App() {
 
   return (
     <div className="ag-root">
-      <ProvenanceBar onIrParaRessalvas={irParaRessalvas}>
+      <ProvenanceBar escondida={barraEscondida} onIrParaRessalvas={irParaRessalvas}>
         <button
           type="button"
           className="tema-botao"

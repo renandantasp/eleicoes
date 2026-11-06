@@ -317,6 +317,7 @@ export function MiniStat({ label, value }: { label: ReactNode; value: ReactNode 
 export function ProvenanceBar({
   dates = [],
   notes = [],
+  escondida = false,
   onIrParaRessalvas,
   children,
 }: {
@@ -324,11 +325,13 @@ export function ProvenanceBar({
   dates?: string[];
   /** avisos curtos ao lado das datas, igualmente opcionais */
   notes?: string[];
+  /** recolhe a faixa para fora da tela, sem tirar o conteudo do DOM */
+  escondida?: boolean;
   onIrParaRessalvas: () => void;
   children?: ReactNode;
 }) {
   return (
-    <div className="ag-provenance" role="note">
+    <div className="ag-provenance" role="note" data-escondida={escondida || undefined}>
       <span className="ag-provenance__live">Dados oficiais do TSE e do IBGE</span>
       {[...dates, ...notes].map((d) => (
         <span key={d} className="ag-provenance__muted">
